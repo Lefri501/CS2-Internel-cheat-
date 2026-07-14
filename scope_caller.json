@@ -1,0 +1,1307 @@
+{
+  "addr": "0x18113c9a0",
+  "code": "void __fastcall sub_18113C9A0(__int64 *a1, __int64 *a2, __int64 a3, __int64 a4, __int64 a5)\n{\n  bool v9; // di\n  int v10; // esi\n  __int64 v11; // rax\n  __int64 v12; // rbx\n  int *v13; // rdx\n  unsigned __int8 v14; // r8\n  bool v15; // zf\n  int v16; // eax\n  __int64 v17; // rdx\n  int v18; // eax\n  int v19; // ebx\n  int v20; // eax\n  int v21; // edx\n  _BYTE *v22; // rax\n  unsigned __int8 v23; // r13\n  int v24; // edi\n  __m128 v25; // xmm0\n  float v26; // xmm12_4\n  __int64 v27; // rax\n  int v28; // r12d\n  __int64 v29; // rax\n  __int64 v30; // rbx\n  __int64 v31; // rax\n  __int64 v32; // rcx\n  __int64 v33; // rdi\n  __int64 v34; // rsi\n  double v35; // xmm0_8\n  __m128 v36; // xmm0\n  unsigned int *v37; // rax\n  __m128 v38; // xmm8\n  unsigned int *v39; // rax\n  __m128 v40; // xmm7\n  __m128 v41; // xmm6\n  unsigned int *v42; // rax\n  unsigned int *v43; // rax\n  int v44; // ebx\n  unsigned int *v45; // rax\n  __int64 v46; // rax\n  float *v47; // rax\n  __m128i v48; // xmm0\n  unsigned int *v49; // rax\n  unsigned int *v50; // rax\n  unsigned int *v51; // rax\n  __int64 v52; // r9\n  __int64 v53; // rcx\n  __int64 v54; // rax\n  __int64 v55; // rcx\n  int v56; // edi\n  unsigned __int64 v57; // rbx\n  int v58; // eax\n  __int64 *v59; // rdi\n  unsigned __int64 v60; // rbx\n  int v61; // eax\n  __int64 v62; // rax\n  _BYTE *v63; // rax\n  int v64; // eax\n  int v65; // ebx\n  int v66; // r8d\n  unsigned __int8 v67; // bl\n  __int64 v68; // rax\n  __int64 v69; // rbx\n  __int64 v70; // rax\n  __int64 (__fastcall *v71)(__int64 *, const char *, __m128 *, _QWORD *, int); // rbx\n  _QWORD *v72; // rax\n  __int64 v73; // rax\n  _BYTE *v74; // rax\n  int v75; // r14d\n  __int64 v76; // r8\n  __int64 *v77; // r13\n  __int64 v78; // r9\n  __int64 v79; // rdx\n  char v80; // r8\n  BOOL v81; // eax\n  _BYTE *v82; // rax\n  __int64 v83; // r8\n  __int64 v84; // rbx\n  unsigned int v85; // eax\n  unsigned int v86; // eax\n  int v87; // eax\n  __int64 v88; // rcx\n  char v89; // dl\n  unsigned __int8 *v90; // rax\n  __int64 v91; // rcx\n  __m128i v92; // xmm11\n  int v93; // r9d\n  __int64 v94; // rdi\n  __int64 (__fastcall *v95)(__int64 *, const char *, __m128 *, int *); // rbx\n  __int64 v96; // rbx\n  __int64 v97; // rdx\n  char v98; // r8\n  __int64 v99; // rcx\n  __int64 v100; // rax\n  __int64 *v101; // rsi\n  __int64 v102; // r14\n  __int64 v103; // r15\n  __int64 (__fastcall *v104)(__int64 *, const char *, __m128 *, int *); // r10\n  __int64 v105; // rbx\n  int v106; // eax\n  __int64 (__fastcall *v107)(__int64 *, const char *, __m128 *, int *); // r10\n  __int64 v108; // rbx\n  unsigned int v109; // eax\n  int v110; // eax\n  _BYTE *v111; // rax\n  char v112; // bl\n  char v113; // si\n  int v114; // r9d\n  _BYTE *v115; // rax\n  int *v116; // rax\n  int v117; // r8d\n  int *v118; // rax\n  __int64 v119; // rbx\n  __int64 v120; // rbx\n  _BYTE *v121; // rax\n  _BYTE *v122; // rax\n  __int64 v123; // r8\n  _BYTE *v124; // rax\n  _BYTE *v125; // rax\n  unsigned int *v126; // rax\n  _BYTE *v127; // rax\n  __int64 v128; // rax\n  _BYTE *v129; // rax\n  int v130; // eax\n  __int64 v131; // rbx\n  _BYTE *v132; // rax\n  __int64 v133; // rax\n  int v134; // eax\n  __int64 v135; // rbx\n  char v136; // cl\n  __int64 v137; // r15\n  const char *v138; // rdx\n  int v139; // r8d\n  __int64 v140; // rax\n  __int64 v141; // r14\n  _QWORD *v142; // rbx\n  char *v143; // rax\n  char v144; // si\n  unsigned __int64 v145; // rdx\n  unsigned __int64 v146; // rcx\n  __int64 v147; // r14\n  const char *v148; // rdx\n  _BYTE *v149; // rax\n  __int64 v150; // rbx\n  char *v151; // rax\n  char v152; // si\n  unsigned __int64 v153; // rdx\n  unsigned __int64 v154; // rcx\n  const char *v155; // rdx\n  __int64 v156; // rbx\n  unsigned __int64 v157; // rdx\n  __int64 v158; // rax\n  _BYTE *v159; // rax\n  __int64 v160; // rax\n  __int64 v161; // rdi\n  unsigned __int64 v162; // rdx\n  const char *v163; // rdx\n  __int64 v164; // rbx\n  __int64 v165; // rax\n  _BYTE *v166; // rax\n  __int64 v167; // rax\n  __int64 (__fastcall *v168)(__int64 *, _QWORD); // rbx\n  _QWORD *v169; // rax\n  __int64 v170; // rcx\n  __int64 v171; // rsi\n  __int64 v172; // rax\n  __int64 v173; // rbx\n  __int64 v174; // r9\n  __int64 v175; // rbx\n  _QWORD *v176; // rax\n  _QWORD *v177; // rax\n  _QWORD *v178; // rax\n  __int64 v179; // rdi\n  _BYTE *v180; // rax\n  __int64 v181; // r8\n  unsigned __int8 v182; // al\n  __int64 v183; // rax\n  _BYTE *v184; // rax\n  __int64 v185; // r9\n  __int64 v186; // rbx\n  _BYTE *v187; // rax\n  _BYTE *v188; // rax\n  _BYTE *v189; // rax\n  __int64 v190; // r8\n  _QWORD *v191; // rdi\n  _BYTE *v192; // rax\n  signed int *v193; // rax\n  signed int v194; // esi\n  __int64 v195; // rbx\n  unsigned int v196; // xmm3_4\n  unsigned int v197; // xmm2_4\n  bool v198; // si\n  unsigned __int64 v199; // r8\n  unsigned __int64 v200; // rdx\n  unsigned __int64 v201; // r8\n  unsigned __int8 *v202; // rax\n  __int64 v203; // rbx\n  unsigned __int64 v204; // r8\n  unsigned __int64 v205; // rcx\n  __int64 v206; // r14\n  __int64 v207; // r9\n  __int64 *v208; // r14\n  __int64 *v209; // rdi\n  __int16 *v210; // rax\n  __int64 v211; // rax\n  __int64 v212; // r9\n  __int64 v213; // rax\n  unsigned int i; // esi\n  __int64 v215; // rax\n  unsigned __int64 v216; // rbx\n  void (__fastcall *v217)(unsigned __int64, __int128 **); // r8\n  __int64 v218; // r14\n  float *v219; // rax\n  float v220; // xmm6_4\n  __int64 (__fastcall *v221)(__int64 *, const char *, __int128 *, __int64, int); // rbx\n  __int64 v222; // r9\n  __int64 v223; // rax\n  int v224; // ecx\n  int v225; // edx\n  __int128 v226; // xmm0\n  __int64 v227; // rax\n  __int64 v228; // rdi\n  unsigned __int64 v229; // rdx\n  __int64 v230; // rbx\n  __m128 v231; // xmm0\n  float v232; // xmm3_4\n  float v233; // xmm0_4\n  float v234; // xmm4_4\n  float v235; // xmm0_4\n  float v236; // xmm4_4\n  float v237; // xmm0_4\n  float v238; // xmm4_4\n  float v239; // xmm0_4\n  char v240; // cl\n  __int16 v241; // ax\n  __int64 v242; // rax\n  __int64 (__fastcall *v243)(__int64 *, const char *, __m128 *, __int64, int); // rbx\n  __int64 v244; // r9\n  __int64 v245; // rax\n  int v246; // ecx\n  __int32 v247; // edx\n  __int128 v248; // xmm0\n  __int64 v249; // rax\n  __int64 v250; // rdi\n  __int64 v251; // rbx\n  __int64 v252; // rcx\n  char v253; // dl\n  __int64 (__fastcall *v254)(__int64 *, const char *, __m128 *, _QWORD *, int); // rsi\n  _QWORD *v255; // rdi\n  __int64 v256; // rax\n  volatile signed __int32 *v257; // rbx\n  __int64 v258; // rcx\n  __int64 v259; // rax\n  __int64 v260; // rax\n  __int64 v261; // rdx\n  char v262; // r8\n  unsigned int v263; // edi\n  __int64 *v264; // rbx\n  __int64 (__fastcall *v265)(__int64 *, const char *, __m128 *, int *); // rbx\n  __int64 v266; // rbx\n  __int64 v267; // rdx\n  unsigned __int8 v268; // di\n  _BYTE *v269; // rax\n  bool v270; // di\n  _BYTE *v271; // rdx\n  char *v272; // r9\n  bool v273; // cl\n  int *v274; // rax\n  __int64 v275; // rsi\n  int v276; // r15d\n  __int64 v277; // r9\n  __m128i v278; // xmm1\n  unsigned int v279; // ecx\n  __m128i *v280; // rax\n  int v281; // edx\n  int v282; // edx\n  _QWORD *v283; // rax\n  __m128i *v284; // rcx\n  int v285; // edx\n  int v286; // r8d\n  int v287; // r8d\n  __m128 v288; // xmm8\n  __int64 v289; // r14\n  __int64 (__fastcall *v290)(__int64 *, const char *, __m128 *, int *); // rbx\n  __int64 v291; // rbx\n  __int64 v292; // rdx\n  char v293; // r8\n  __int64 v294; // rcx\n  __int64 v295; // rax\n  __m128 *v296; // rcx\n  __int64 v297; // rdi\n  __int64 v298; // rsi\n  __int64 (__fastcall *v299)(__int64 *, const char *, __m128 *, int *); // r10\n  __int64 v300; // rbx\n  _BYTE *v301; // rax\n  __int64 v302; // r8\n  _BYTE *v303; // rax\n  int v304; // eax\n  int v305; // r9d\n  int v306; // kr0C_4\n  __int64 v307; // rdi\n  __int64 (__fastcall *v308)(__int64 *, const char *, __int64 *, int *); // rbx\n  __int64 v309; // rbx\n  __int16 v310; // ax\n  __int16 v311; // cx\n  __int64 v312; // rbx\n  float v313; // xmm6_4\n  float v314; // xmm7_4\n  float v315; // xmm1_4\n  float v316; // xmm7_4\n  __int64 v317; // r9\n  int v318; // eax\n  __int64 v319; // rax\n  __int64 v320; // rbx\n  __int64 v321; // rax\n  int v322; // ebx\n  float v323; // xmm2_4\n  float v324; // xmm0_4\n  int v325; // ebx\n  __int32 v326; // edx\n  int v327; // xmm6_4\n  __int64 v328; // rax\n  _BYTE *v329; // rax\n  __int64 v330; // rax\n  _BYTE *v331; // rax\n  __int64 v332; // r8\n  _QWORD *v333; // rbx\n  _BYTE *v334; // rax\n  _DWORD *v335; // rcx\n  __int64 (__fastcall *v336)(__int64 *, const char *, __m128 *, __int64, int); // rdi\n  __int64 v337; // rbx\n  __int64 v338; // rax\n  __int64 v339; // rax\n  __int64 v340; // rdx\n  char v341; // r8\n  __int64 v342; // rbx\n  __int16 *v343; // rax\n  int v344; // r9d\n  int v345; // r8d\n  int v346; // eax\n  __int64 v347; // r8\n  __int64 v348; // r9\n  __int64 v349; // rdx\n  double v350; // xmm0_8\n  float v351; // xmm1_4\n  __int64 v352; // r9\n  __int64 v353; // rdx\n  __int64 v354; // r9\n  _DWORD *v355; // rdx\n  unsigned __int64 v356; // rbx\n  __int16 *v357; // r14\n  unsigned int v358; // esi\n  char v359; // al\n  int v360; // ecx\n  __int64 (__fastcall *v361)(__int64 *, const char *, __m128 *, int *, _QWORD, int, int, __int64 *, _DWORD *); // r10\n  __int64 v362; // rax\n  __int64 v363; // rdx\n  __m128i *v364; // rdi\n  __m128i v365; // xmm1\n  __m128i *v366; // rax\n  unsigned int v367; // ecx\n  int v368; // edx\n  _QWORD *v369; // rax\n  __m128i *v370; // rcx\n  unsigned int v371; // edx\n  int v372; // r8d\n  int v373; // edx\n  __int32 *v374; // rax\n  int v375; // r8d\n  unsigned __int64 v376; // rax\n  unsigned __int64 v377; // rcx\n  __m128 v378; // xmm1\n  float v379; // xmm2_4\n  __m128 v380; // xmm0\n  __m128 v381; // xmm1\n  __int64 v382; // rdx\n  int v383; // ebx\n  int v384; // r14d\n  KeyValues *v385; // rax\n  KeyValues *Key; // rax\n  KeyValues *FirstSubKey; // r13\n  const char *Name; // rax\n  const char *v389; // r15\n  __int64 v390; // rdx\n  __int64 v391; // rsi\n  int j; // edi\n  void (__fastcall *v393)(__int64, __int64, _QWORD, const char *, int, int *, _QWORD); // rbx\n  __int64 v394; // rax\n  void (__fastcall *v395)(__int64, __int64, _QWORD, const char *, int, _BYTE *, _QWORD); // rbx\n  __int64 v396; // rax\n  char v397; // al\n  _BYTE *v398; // rax\n  __int64 v399; // rax\n  __m128 v400; // xmm0\n  __int64 v401; // xmm1_8\n  __int32 v402; // edx\n  int v403; // eax\n  __int64 v404; // rax\n  __int64 v405; // r13\n  __int64 (__fastcall *v406)(__int64 *, const char *, __m128 *, int *, _QWORD, int, int, __m128 *, __m128 *); // r10\n  __int64 v407; // rax\n  __int64 v408; // rdx\n  __int64 v409; // rbx\n  __m128 v410; // xmm0\n  __m128 v411; // xmm0\n  __m128 v412; // xmm0\n  __int64 (__fastcall *v413)(__int64 *, const char *, __m128 *, __int64, int, int); // rbx\n  __int64 v414; // rax\n  __int64 v415; // rax\n  __int64 v416; // r8\n  __int64 (__fastcall *v417)(__int64 *, const char *, __m128 *, _QWORD *, int); // rbx\n  _QWORD *v418; // rax\n  __int64 v419; // rax\n  __int64 v420; // rcx\n  _BYTE *v421; // rax\n  __int64 v422; // rbx\n  KeyValues *v423; // rax\n  int v424; // [rsp+20h] [rbp-E0h]\n  int v425; // [rsp+20h] [rbp-E0h]\n  int v426; // [rsp+20h] [rbp-E0h]\n  int v427; // [rsp+20h] [rbp-E0h]\n  char v428; // [rsp+28h] [rbp-D8h]\n  int v429; // [rsp+28h] [rbp-D8h]\n  int v430; // [rsp+28h] [rbp-D8h]\n  int v431; // [rsp+28h] [rbp-D8h]\n  int v432; // [rsp+28h] [rbp-D8h]\n  int v433; // [rsp+28h] [rbp-D8h]\n  int v434; // [rsp+28h] [rbp-D8h]\n  int v435; // [rsp+30h] [rbp-D0h]\n  int v436; // [rsp+30h] [rbp-D0h]\n  int v437; // [rsp+30h] [rbp-D0h]\n  int v438; // [rsp+38h] [rbp-C8h]\n  int v439; // [rsp+38h] [rbp-C8h]\n  int v440; // [rsp+38h] [rbp-C8h]\n  int v441; // [rsp+38h] [rbp-C8h]\n  int v442; // [rsp+38h] [rbp-C8h]\n  int v443; // [rsp+40h] [rbp-C0h]\n  int v444; // [rsp+40h] [rbp-C0h]\n  char v445; // [rsp+70h] [rbp-90h]\n  bool v446; // [rsp+71h] [rbp-8Fh]\n  _DWORD v447[3]; // [rsp+74h] [rbp-8Ch] BYREF\n  __m128 si128; // [rsp+80h] [rbp-80h] BYREF\n  __int64 v449; // [rsp+90h] [rbp-70h]\n  int v450; // [rsp+98h] [rbp-68h]\n  bool v451; // [rsp+A0h] [rbp-60h]\n  char v452; // [rsp+A1h] [rbp-5Fh] BYREF\n  char v453; // [rsp+A2h] [rbp-5Eh] BYREF\n  char v454; // [rsp+A3h] [rbp-5Dh] BYREF\n  char v455; // [rsp+A4h] [rbp-5Ch] BYREF\n  unsigned __int8 v456; // [rsp+A5h] [rbp-5Bh]\n  bool v457; // [rsp+A6h] [rbp-5Ah]\n  char v458; // [rsp+A7h] [rbp-59h] BYREF\n  char v459[4]; // [rsp+A8h] [rbp-58h] BYREF\n  int v460; // [rsp+ACh] [rbp-54h]\n  int v461; // [rsp+B0h] [rbp-50h]\n  int v462; // [rsp+B4h] [rbp-4Ch]\n  __int64 v463; // [rsp+B8h] [rbp-48h]\n  __int64 *v464; // [rsp+C0h] [rbp-40h] BYREF\n  __m128 *v465; // [rsp+C8h] [rbp-38h]\n  __m128 v466; // [rsp+D0h] [rbp-30h] BYREF\n  __int64 v467; // [rsp+E0h] [rbp-20h]\n  unsigned int v468; // [rsp+E8h] [rbp-18h]\n  int *v469; // [rsp+F0h] [rbp-10h]\n  __int64 v470; // [rsp+F8h] [rbp-8h]\n  __int64 v471; // [rsp+100h] [rbp+0h]\n  __int64 v472; // [rsp+110h] [rbp+10h]\n  __int64 v473; // [rsp+118h] [rbp+18h]\n  __m128i v474; // [rsp+120h] [rbp+20h] BYREF\n  __int64 v475; // [rsp+130h] [rbp+30h]\n  __int64 v476; // [rsp+138h] [rbp+38h] BYREF\n  __int64 v477; // [rsp+140h] [rbp+40h] BYREF\n  __int64 v478; // [rsp+148h] [rbp+48h]\n  __int64 v479; // [rsp+150h] [rbp+50h]\n  __int64 v480[4]; // [rsp+160h] [rbp+60h] BYREF\n  __int64 v481; // [rsp+180h] [rbp+80h]\n  __int64 v482; // [rsp+188h] [rbp+88h]\n  __int64 v483; // [rsp+190h] [rbp+90h]\n  char v484; // [rsp+198h] [rbp+98h] BYREF\n  _BYTE v485[32]; // [rsp+1B8h] [rbp+B8h] BYREF\n  _BYTE v486[32]; // [rsp+1D8h] [rbp+D8h] BYREF\n  int v487; // [rsp+1F8h] [rbp+F8h]\n  unsigned __int64 v488; // [rsp+200h] [rbp+100h]\n  __int64 v489; // [rsp+208h] [rbp+108h]\n  __int64 v490; // [rsp+210h] [rbp+110h] BYREF\n  char v491; // [rsp+218h] [rbp+118h] BYREF\n  _QWORD v492[3]; // [rsp+220h] [rbp+120h] BYREF\n  __int64 v493; // [rsp+238h] [rbp+138h]\n  __int64 v494; // [rsp+240h] [rbp+140h]\n  unsigned __int8 v495; // [rsp+248h] [rbp+148h]\n  char v496[8]; // [rsp+250h] [rbp+150h] BYREF\n  char v497[16]; // [rsp+258h] [rbp+158h] BYREF\n  int v498; // [rsp+268h] [rbp+168h]\n  char v499; // [rsp+26Ch] [rbp+16Ch]\n  char v500; // [rsp+26Dh] [rbp+16Dh]\n  char v501; // [rsp+26Fh] [rbp+16Fh]\n  char v502; // [rsp+270h] [rbp+170h]\n  char v503; // [rsp+271h] [rbp+171h]\n  char v504; // [rsp+272h] [rbp+172h]\n  char v505; // [rsp+275h] [rbp+175h]\n  char v506; // [rsp+276h] [rbp+176h]\n  char v507; // [rsp+277h] [rbp+177h]\n  char v508; // [rsp+278h] [rbp+178h]\n  unsigned __int8 v509; // [rsp+279h] [rbp+179h]\n  char v510; // [rsp+27Ah] [rbp+17Ah]\n  char v511; // [rsp+27Bh] [rbp+17Bh]\n  char v512; // [rsp+27Ch] [rbp+17Ch]\n  char v513; // [rsp+27Dh] [rbp+17Dh]\n  int v514; // [rsp+280h] [rbp+180h] BYREF\n  int v515; // [rsp+284h] [rbp+184h] BYREF\n  _BYTE v516[4]; // [rsp+288h] [rbp+188h] BYREF\n  int v517; // [rsp+28Ch] [rbp+18Ch]\n  _BYTE v518[4]; // [rsp+290h] [rbp+190h] BYREF\n  int v519[3]; // [rsp+294h] [rbp+194h] BYREF\n  __m128 v520; // [rsp+2A0h] [rbp+1A0h] BYREF\n  unsigned int v521; // [rsp+2B0h] [rbp+1B0h] BYREF\n  unsigned int v522; // [rsp+2B4h] [rbp+1B4h] BYREF\n  unsigned int v523; // [rsp+2B8h] [rbp+1B8h] BYREF\n  unsigned int v524; // [rsp+2BCh] [rbp+1BCh] BYREF\n  unsigned int v525; // [rsp+2C0h] [rbp+1C0h] BYREF\n  unsigned int v526; // [rsp+2C4h] [rbp+1C4h] BYREF\n  __int64 v527; // [rsp+2C8h] [rbp+1C8h] BYREF\n  __int64 v528; // [rsp+2D0h] [rbp+1D0h] BYREF\n  __int64 v529; // [rsp+2D8h] [rbp+1D8h] BYREF\n  __int64 v530; // [rsp+2E0h] [rbp+1E0h] BYREF\n  __int64 v531; // [rsp+2E8h] [rbp+1E8h] BYREF\n  __int64 v532; // [rsp+2F0h] [rbp+1F0h] BYREF\n  __int64 v533; // [rsp+2F8h] [rbp+1F8h] BYREF\n  __int64 v534; // [rsp+300h] [rbp+200h] BYREF\n  __int64 v535; // [rsp+308h] [rbp+208h] BYREF\n  __int64 v536; // [rsp+310h] [rbp+210h] BYREF\n  __int64 v537; // [rsp+318h] [rbp+218h] BYREF\n  __int64 v538; // [rsp+320h] [rbp+220h] BYREF\n  __int64 v539; // [rsp+328h] [rbp+228h] BYREF\n  __int128 v540; // [rsp+330h] [rbp+230h] BYREF\n  __int64 v541; // [rsp+340h] [rbp+240h]\n  unsigned int v542; // [rsp+348h] [rbp+248h]\n  int v543; // [rsp+350h] [rbp+250h] BYREF\n  int v544; // [rsp+354h] [rbp+254h]\n  int v545; // [rsp+358h] [rbp+258h] BYREF\n  int v546; // [rsp+35Ch] [rbp+25Ch] BYREF\n  int v547; // [rsp+360h] [rbp+260h]\n  __int64 v548; // [rsp+368h] [rbp+268h] BYREF\n  __int64 v549; // [rsp+370h] [rbp+270h] BYREF\n  int v550; // [rsp+378h] [rbp+278h] BYREF\n  int v551; // [rsp+37Ch] [rbp+27Ch] BYREF\n  unsigned __int64 v552; // [rsp+380h] [rbp+280h] BYREF\n  unsigned __int64 v553; // [rsp+388h] [rbp+288h] BYREF\n  int v554; // [rsp+390h] [rbp+290h] BYREF\n  __m128 v555; // [rsp+398h] [rbp+298h] BYREF\n  __int64 v556; // [rsp+3A8h] [rbp+2A8h]\n  int v557; // [rsp+3B0h] [rbp+2B0h]\n  __int64 v558; // [rsp+3B8h] [rbp+2B8h] BYREF\n  int v559; // [rsp+3C0h] [rbp+2C0h]\n  int v560; // [rsp+3C4h] [rbp+2C4h]\n  int v561; // [rsp+3C8h] [rbp+2C8h]\n  int v562; // [rsp+3CCh] [rbp+2CCh]\n  int v563; // [rsp+3D0h] [rbp+2D0h]\n  __m128i v564; // [rsp+3E0h] [rbp+2E0h] BYREF\n  __m128i v565; // [rsp+3F0h] [rbp+2F0h]\n  __m128i v566; // [rsp+400h] [rbp+300h] BYREF\n  __m128i v567; // [rsp+410h] [rbp+310h]\n  __m128i v568; // [rsp+420h] [rbp+320h]\n  _QWORD v569[2]; // [rsp+430h] [rbp+330h] BYREF\n  __m128i v570; // [rsp+440h] [rbp+340h]\n  __int64 v571; // [rsp+450h] [rbp+350h]\n  __int128 v572; // [rsp+460h] [rbp+360h] BYREF\n  int v573; // [rsp+470h] [rbp+370h]\n  __int64 v574; // [rsp+478h] [rbp+378h] BYREF\n  int v575; // [rsp+480h] [rbp+380h]\n  int v576; // [rsp+484h] [rbp+384h]\n  int v577; // [rsp+488h] [rbp+388h]\n  int v578; // [rsp+48Ch] [rbp+38Ch]\n  unsigned int v579; // [rsp+490h] [rbp+390h]\n  _DWORD v580[2]; // [rsp+498h] [rbp+398h] BYREF\n  _DWORD v581[2]; // [rsp+4A0h] [rbp+3A0h] BYREF\n  __int64 v582; // [rsp+4A8h] [rbp+3A8h] BYREF\n  __int64 v583; // [rsp+4B0h] [rbp+3B0h] BYREF\n  __int64 v584; // [rsp+4B8h] [rbp+3B8h]\n  __int128 v585; // [rsp+4C0h] [rbp+3C0h] BYREF\n  int v586; // [rsp+4D0h] [rbp+3D0h]\n  __m128 v587; // [rsp+4D8h] [rbp+3D8h]\n  __m128 v588; // [rsp+4E8h] [rbp+3E8h]\n  __m128 v589; // [rsp+4F8h] [rbp+3F8h]\n  __m128 v590; // [rsp+508h] [rbp+408h]\n  __m128 v591; // [rsp+518h] [rbp+418h]\n  __m128 v592; // [rsp+528h] [rbp+428h]\n  __m128 v593; // [rsp+538h] [rbp+438h]\n  __m128 v594; // [rsp+548h] [rbp+448h]\n  __m128 v595; // [rsp+558h] [rbp+458h]\n  __m128 v596; // [rsp+568h] [rbp+468h]\n  __m128 v597; // [rsp+578h] [rbp+478h]\n  __m128 v598; // [rsp+588h] [rbp+488h]\n  __m128 v599; // [rsp+598h] [rbp+498h]\n  __m128 v600; // [rsp+5A8h] [rbp+4A8h]\n  __m128 v601; // [rsp+5B8h] [rbp+4B8h]\n  __m128 v602; // [rsp+5C8h] [rbp+4C8h]\n  _DWORD v603[3]; // [rsp+5D8h] [rbp+4D8h] BYREF\n  char v604; // [rsp+5E4h] [rbp+4E4h]\n  int v605; // [rsp+5E8h] [rbp+4E8h]\n  __int128 v606; // [rsp+5F0h] [rbp+4F0h] BYREF\n  int v607; // [rsp+600h] [rbp+500h]\n  _DWORD v608[3]; // [rsp+608h] [rbp+508h] BYREF\n  unsigned __int8 v609; // [rsp+614h] [rbp+514h]\n  int v610; // [rsp+618h] [rbp+518h]\n  _DWORD v611[3]; // [rsp+620h] [rbp+520h] BYREF\n  unsigned __int8 v612; // [rsp+62Ch] [rbp+52Ch]\n  int v613; // [rsp+630h] [rbp+530h]\n  _DWORD v614[3]; // [rsp+638h] [rbp+538h] BYREF\n  unsigned __int8 v615; // [rsp+644h] [rbp+544h]\n  int v616; // [rsp+648h] [rbp+548h]\n  _DWORD v617[3]; // [rsp+650h] [rbp+550h] BYREF\n  char v618; // [rsp+65Ch] [rbp+55Ch]\n  int v619; // [rsp+660h] [rbp+560h]\n  int v620; // [rsp+668h] [rbp+568h] BYREF\n  _DWORD v621[2]; // [rsp+670h] [rbp+570h] BYREF\n  __int64 v622; // [rsp+678h] [rbp+578h]\n  int v623; // [rsp+680h] [rbp+580h] BYREF\n  _DWORD v624[2]; // [rsp+688h] [rbp+588h] BYREF\n  __int64 v625; // [rsp+690h] [rbp+590h]\n  int v626; // [rsp+698h] [rbp+598h] BYREF\n  _DWORD v627[2]; // [rsp+6A0h] [rbp+5A0h] BYREF\n  __int64 v628; // [rsp+6A8h] [rbp+5A8h]\n  int v629; // [rsp+6B0h] [rbp+5B0h] BYREF\n  _DWORD v630[2]; // [rsp+6B8h] [rbp+5B8h] BYREF\n  __int64 v631; // [rsp+6C0h] [rbp+5C0h]\n  int v632; // [rsp+6C8h] [rbp+5C8h] BYREF\n  _DWORD v633[2]; // [rsp+6D0h] [rbp+5D0h] BYREF\n  __int64 v634; // [rsp+6D8h] [rbp+5D8h]\n  int v635; // [rsp+6E0h] [rbp+5E0h] BYREF\n  _DWORD v636[2]; // [rsp+6E8h] [rbp+5E8h] BYREF\n  __int64 v637; // [rsp+6F0h] [rbp+5F0h]\n  __int64 v638; // [rsp+6F8h] [rbp+5F8h] BYREF\n  int v639; // [rsp+700h] [rbp+600h]\n  __int32 v640; // [rsp+704h] [rbp+604h]\n  int v641; // [rsp+708h] [rbp+608h]\n  int v642; // [rsp+70Ch] [rbp+60Ch]\n  int v643; // [rsp+710h] [rbp+610h]\n  __int64 v644; // [rsp+718h] [rbp+618h] BYREF\n  int v645; // [rsp+720h] [rbp+620h]\n  int v646; // [rsp+724h] [rbp+624h]\n  int v647; // [rsp+728h] [rbp+628h]\n  int v648; // [rsp+72Ch] [rbp+62Ch]\n  int v649; // [rsp+730h] [rbp+630h]\n  __int64 v650; // [rsp+738h] [rbp+638h] BYREF\n  int v651; // [rsp+740h] [rbp+640h]\n  __int32 v652; // [rsp+744h] [rbp+644h]\n  int v653; // [rsp+748h] [rbp+648h]\n  int v654; // [rsp+74Ch] [rbp+64Ch]\n  int v655; // [rsp+750h] [rbp+650h]\n  _DWORD v656[8]; // [rsp+758h] [rbp+658h] BYREF\n  __int64 v657; // [rsp+778h] [rbp+678h] BYREF\n  int v658; // [rsp+780h] [rbp+680h]\n  int v659; // [rsp+784h] [rbp+684h]\n  int v660; // [rsp+788h] [rbp+688h]\n  int v661; // [rsp+78Ch] [rbp+68Ch]\n  int v662; // [rsp+790h] [rbp+690h]\n  __int128 *v663; // [rsp+798h] [rbp+698h] BYREF\n  int v664; // [rsp+7A0h] [rbp+6A0h]\n  int v665; // [rsp+7A4h] [rbp+6A4h]\n  int v666; // [rsp+7A8h] [rbp+6A8h] BYREF\n  _DWORD v667[2]; // [rsp+7B0h] [rbp+6B0h] BYREF\n  __int64 v668; // [rsp+7B8h] [rbp+6B8h]\n  int v669; // [rsp+7C0h] [rbp+6C0h] BYREF\n  _DWORD v670[2]; // [rsp+7C8h] [rbp+6C8h] BYREF\n  __int64 v671; // [rsp+7D0h] [rbp+6D0h]\n  int v672; // [rsp+7D8h] [rbp+6D8h] BYREF\n  _DWORD v673[2]; // [rsp+7E0h] [rbp+6E0h] BYREF\n  __int64 v674; // [rsp+7E8h] [rbp+6E8h]\n  __int128 v675; // [rsp+800h] [rbp+700h] BYREF\n  int v676; // [rsp+810h] [rbp+710h]\n  __int64 v677; // [rsp+820h] [rbp+720h] BYREF\n  __int128 v678; // [rsp+828h] [rbp+728h] BYREF\n  int v679; // [rsp+838h] [rbp+738h]\n  __int64 v680; // [rsp+840h] [rbp+740h] BYREF\n  __m128 v681; // [rsp+848h] [rbp+748h] BYREF\n  int v682; // [rsp+858h] [rbp+758h]\n  int v683; // [rsp+85Ch] [rbp+75Ch]\n  unsigned int v684; // [rsp+860h] [rbp+760h]\n  __int64 v685[3]; // [rsp+870h] [rbp+770h] BYREF\n  _QWORD v686[14]; // [rsp+888h] [rbp+788h] BYREF\n  char v687; // [rsp+8F8h] [rbp+7F8h]\n  int v688; // [rsp+8F9h] [rbp+7F9h]\n  __int16 v689; // [rsp+8FDh] [rbp+7FDh]\n  char v690; // [rsp+8FFh] [rbp+7FFh]\n  int v691; // [rsp+900h] [rbp+800h]\n  __int16 v692; // [rsp+904h] [rbp+804h]\n  char v693; // [rsp+906h] [rbp+806h]\n  __int128 v694; // [rsp+908h] [rbp+808h] BYREF\n  int v695; // [rsp+918h] [rbp+818h]\n  __int16 v696; // [rsp+920h] [rbp+820h] BYREF\n  __int16 v697; // [rsp+922h] [rbp+822h]\n  __int64 v698; // [rsp+924h] [rbp+824h]\n  int v699; // [rsp+92Ch] [rbp+82Ch]\n  __int128 v700; // [rsp+930h] [rbp+830h]\n  __int128 v701; // [rsp+940h] [rbp+840h]\n  _BYTE v702[28]; // [rsp+950h] [rbp+850h]\n  int v703; // [rsp+96Ch] [rbp+86Ch]\n  __int128 v704; // [rsp+970h] [rbp+870h]\n  __int128 v705; // [rsp+980h] [rbp+880h]\n  __int64 v706; // [rsp+990h] [rbp+890h]\n  __int64 v707; // [rsp+9A0h] [rbp+8A0h] BYREF\n  int v708; // [rsp+9A8h] [rbp+8A8h]\n  __m128 v709; // [rsp+9B0h] [rbp+8B0h]\n  _QWORD v710[2]; // [rsp+9C0h] [rbp+8C0h] BYREF\n  _QWORD v711[2]; // [rsp+9D0h] [rbp+8D0h] BYREF\n  __m128 v712; // [rsp+9E0h] [rbp+8E0h]\n  unsigned __int64 v713; // [rsp+9F0h] [rbp+8F0h] BYREF\n  int v714; // [rsp+9F8h] [rbp+8F8h]\n  __int64 v715; // [rsp+A00h] [rbp+900h] BYREF\n  int v716; // [rsp+A08h] [rbp+908h]\n  __m128 v717; // [rsp+A10h] [rbp+910h]\n  __int64 v718; // [rsp+A20h] [rbp+920h] BYREF\n  int v719; // [rsp+A28h] [rbp+928h]\n  __m128 v720; // [rsp+A30h] [rbp+930h]\n  unsigned __int64 v721; // [rsp+A40h] [rbp+940h] BYREF\n  int v722; // [rsp+A48h] [rbp+948h]\n  unsigned __int64 v723; // [rsp+A50h] [rbp+950h] BYREF\n  int v724; // [rsp+A58h] [rbp+958h]\n  __m128 v725; // [rsp+A60h] [rbp+960h]\n  __m128 v726; // [rsp+A70h] [rbp+970h]\n  _BYTE v727[32]; // [rsp+A80h] [rbp+980h] BYREF\n  char v728[16]; // [rsp+AA0h] [rbp+9A0h] BYREF\n  char v729[8]; // [rsp+AB0h] [rbp+9B0h] BYREF\n  char v730[16]; // [rsp+AB8h] [rbp+9B8h] BYREF\n  char v731[8]; // [rsp+AC8h] [rbp+9C8h] BYREF\n  __int128 v732; // [rsp+AD0h] [rbp+9D0h] BYREF\n  __int128 v733; // [rsp+AE0h] [rbp+9E0h]\n  __int128 v734; // [rsp+AF0h] [rbp+9F0h]\n  char v735[8]; // [rsp+B08h] [rbp+A08h] BYREF\n  char v736[8]; // [rsp+B10h] [rbp+A10h] BYREF\n  char v737[8]; // [rsp+B18h] [rbp+A18h] BYREF\n  _QWORD v738[2]; // [rsp+B20h] [rbp+A20h] BYREF\n  __int128 v739; // [rsp+B30h] [rbp+A30h]\n  __int128 v740; // [rsp+B40h] [rbp+A40h]\n  __int128 v741; // [rsp+B50h] [rbp+A50h]\n  __int128 v742; // [rsp+B60h] [rbp+A60h]\n  __int128 v743; // [rsp+B70h] [rbp+A70h]\n  __int128 v744; // [rsp+B80h] [rbp+A80h]\n  __int128 v745; // [rsp+B90h] [rbp+A90h]\n  _QWORD v746[2]; // [rsp+BA0h] [rbp+AA0h] BYREF\n  __int128 v747; // [rsp+BB0h] [rbp+AB0h]\n  __int128 v748; // [rsp+BC0h] [rbp+AC0h]\n  __int128 v749; // [rsp+BD0h] [rbp+AD0h]\n  __int128 v750; // [rsp+BE0h] [rbp+AE0h]\n  __int128 v751; // [rsp+BF0h] [rbp+AF0h]\n  __int128 v752; // [rsp+C00h] [rbp+B00h]\n  __int128 v753; // [rsp+C10h] [rbp+B10h]\n  _QWORD v754[2]; // [rsp+C20h] [rbp+B20h] BYREF\n  __int128 v755; // [rsp+C30h] [rbp+B30h]\n  __int128 v756; // [rsp+C40h] [rbp+B40h]\n  __int128 v757; // [rsp+C50h] [rbp+B50h]\n  __int128 v758; // [rsp+C60h] [rbp+B60h]\n  __int128 v759; // [rsp+C70h] [rbp+B70h]\n  __int128 v760; // [rsp+C80h] [rbp+B80h]\n  __int128 v761; // [rsp+C90h] [rbp+B90h]\n  _QWORD v762[2]; // [rsp+CA0h] [rbp+BA0h] BYREF\n  __int128 v763; // [rsp+CB0h] [rbp+BB0h]\n  __int128 v764; // [rsp+CC0h] [rbp+BC0h]\n  __int128 v765; // [rsp+CD0h] [rbp+BD0h]\n  __int128 v766; // [rsp+CE0h] [rbp+BE0h]\n  __int128 v767; // [rsp+CF0h] [rbp+BF0h]\n  __int128 v768; // [rsp+D00h] [rbp+C00h]\n  __int128 v769; // [rsp+D10h] [rbp+C10h]\n  _QWORD v770[2]; // [rsp+D20h] [rbp+C20h] BYREF\n  __int128 v771; // [rsp+D30h] [rbp+C30h]\n  __int128 v772; // [rsp+D40h] [rbp+C40h]\n  __int128 v773; // [rsp+D50h] [rbp+C50h]\n  __int128 v774; // [rsp+D60h] [rbp+C60h]\n  __int128 v775; // [rsp+D70h] [rbp+C70h]\n  __int128 v776; // [rsp+D80h] [rbp+C80h]\n  __int128 v777; // [rsp+D90h] [rbp+C90h]\n  _QWORD v778[2]; // [rsp+DA0h] [rbp+CA0h] BYREF\n  __int128 v779; // [rsp+DB0h] [rbp+CB0h]\n  __int128 v780; // [rsp+DC0h] [rbp+CC0h]\n  __int128 v781; // [rsp+DD0h] [rbp+CD0h]\n  __int128 v782; // [rsp+DE0h] [rbp+CE0h]\n  __int128 v783; // [rsp+DF0h] [rbp+CF0h]\n  __int128 v784; // [rsp+E00h] [rbp+D00h]\n  __int128 v785; // [rsp+E10h] [rbp+D10h]\n  _QWORD v786[2]; // [rsp+E20h] [rbp+D20h] BYREF\n  __int128 v787; // [rsp+E30h] [rbp+D30h]\n  __int128 v788; // [rsp+E40h] [rbp+D40h]\n  __int128 v789; // [rsp+E50h] [rbp+D50h]\n  __int128 v790; // [rsp+E60h] [rbp+D60h]\n  __int128 v791; // [rsp+E70h] [rbp+D70h]\n  __int128 v792; // [rsp+E80h] [rbp+D80h]\n  __int128 v793; // [rsp+E90h] [rbp+D90h]\n  _QWORD v794[2]; // [rsp+EA0h] [rbp+DA0h] BYREF\n  __int128 v795; // [rsp+EB0h] [rbp+DB0h]\n  __int128 v796; // [rsp+EC0h] [rbp+DC0h]\n  __int128 v797; // [rsp+ED0h] [rbp+DD0h]\n  __int128 v798; // [rsp+EE0h] [rbp+DE0h]\n  __int128 v799; // [rsp+EF0h] [rbp+DF0h]\n  __int128 v800; // [rsp+F00h] [rbp+E00h]\n  __int128 v801; // [rsp+F10h] [rbp+E10h]\n  char v802[96]; // [rsp+F20h] [rbp+E20h] BYREF\n  char v803[80]; // [rsp+F80h] [rbp+E80h] BYREF\n  _BYTE v804[32]; // [rsp+FD0h] [rbp+ED0h] BYREF\n  __int128 v805; // [rsp+FF0h] [rbp+EF0h]\n  __int128 v806; // [rsp+1000h] [rbp+F00h]\n  char v807[32]; // [rsp+1030h] [rbp+F30h] BYREF\n  char v808[16]; // [rsp+1050h] [rbp+F50h] BYREF\n  char v809[32]; // [rsp+1060h] [rbp+F60h] BYREF\n  char v810[32]; // [rsp+1080h] [rbp+F80h] BYREF\n  char v811[32]; // [rsp+10A0h] [rbp+FA0h] BYREF\n  char v812[64]; // [rsp+10C0h] [rbp+FC0h] BYREF\n  char v813[32]; // [rsp+1100h] [rbp+1000h] BYREF\n  _BYTE v814[16]; // [rsp+1120h] [rbp+1020h] BYREF\n  __int64 v815; // [rsp+1130h] [rbp+1030h]\n  int v816; // [rsp+1138h] [rbp+1038h]\n  int v817; // [rsp+113Ch] [rbp+103Ch]\n  int v818; // [rsp+1140h] [rbp+1040h]\n  int v819; // [rsp+1144h] [rbp+1044h]\n  unsigned int v820; // [rsp+1148h] [rbp+1048h]\n  __int64 v821[35]; // [rsp+11A0h] [rbp+10A0h] BYREF\n  char v822[40]; // [rsp+12B8h] [rbp+11B8h] BYREF\n  _BYTE v823[4]; // [rsp+12E0h] [rbp+11E0h] BYREF\n  int v824; // [rsp+12E4h] [rbp+11E4h]\n  const char *v825; // [rsp+12E8h] [rbp+11E8h] BYREF\n  _BYTE v826[4]; // [rsp+13F0h] [rbp+12F0h] BYREF\n  int v827; // [rsp+13F4h] [rbp+12F4h]\n  const char *v828; // [rsp+13F8h] [rbp+12F8h] BYREF\n  _BYTE v829[4]; // [rsp+1500h] [rbp+1400h] BYREF\n  int v830; // [rsp+1504h] [rbp+1404h]\n  const char *v831; // [rsp+1508h] [rbp+1408h] BYREF\n  _BYTE v832[4]; // [rsp+1610h] [rbp+1510h] BYREF\n  int v833; // [rsp+1614h] [rbp+1514h]\n  const char *v834; // [rsp+1618h] [rbp+1518h] BYREF\n  __int64 v835; // [rsp+1720h] [rbp+1620h] BYREF\n  int v836; // [rsp+1728h] [rbp+1628h]\n  int v837; // [rsp+172Ch] [rbp+162Ch]\n  int v838; // [rsp+1730h] [rbp+1630h]\n  int v839; // [rsp+1734h] [rbp+1634h]\n  int v840; // [rsp+1738h] [rbp+1638h]\n  float v841; // [rsp+173Ch] [rbp+163Ch]\n  int v842; // [rsp+1740h] [rbp+1640h]\n  int v843; // [rsp+1744h] [rbp+1644h]\n  float v844; // [rsp+1748h] [rbp+1648h]\n  float v845; // [rsp+174Ch] [rbp+164Ch]\n  __m128i v846; // [rsp+1890h] [rbp+1790h]\n  _BYTE v847[96]; // [rsp+1B40h] [rbp+1A40h] BYREF\n  __m128i v848; // [rsp+1BA0h] [rbp+1AA0h]\n  char v849[40]; // [rsp+1CD8h] [rbp+1BD8h] BYREF\n  _BYTE v850[96]; // [rsp+1D00h] [rbp+1C00h] BYREF\n  __m128i v851; // [rsp+1D60h] [rbp+1C60h]\n  char v852[40]; // [rsp+1E98h] [rbp+1D98h] BYREF\n  __int64 v854; // [rsp+1F78h] [rbp+1E78h] BYREF\n\n  sub_181167980(a2);\n  sub_180189820(&v583, 0, unk_1825C7498, \"Create PerViewConstantBufferCsgo_t\");\n  sub_181130A20((unsigned int)&v464, v583, (_DWORD)a2, a3, a4, a5);\n  sub_18116A7B0(a1, &v464);\n  if ( v509 && !v508 && v489 == unk_182407E40 && *((_DWORD *)off_18208ED60 + 1) == dword_1820A7BF4 )\n    sub_181180060(a1, &v583, &v464);\n  else\n    v505 = 0;\n  if ( v511 )\n    sub_181156B80(&v464);\n  v9 = v495 != 0;\n  if ( v508 )\n    v10 = 15;\n  else\n    v10 = (*(__int64 (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1256LL))(qword_1825C74E8);\n  v11 = sub_181169A40(v470 + 784, 3952000259LL, -1);\n  v12 = v11;\n  if ( v509 )\n  {\n    if ( v11 != -1 )\n      goto LABEL_21;\n    v585 = 0;\n    v586 = 13;\n    v694 = 0;\n    v695 = 13;\n    (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v473, &v585);\n    (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v471, &v694);\n    v13 = v469;\n    if ( (_QWORD)v585 != *(_QWORD *)v469 )\n      v9 = 1;\n    v14 = v495;\n    if ( BYTE12(v585) != v495 )\n      goto LABEL_20;\n    v15 = !v9;\n  }\n  else\n  {\n    v13 = v469;\n    v14 = v495;\n    v15 = *((_BYTE *)v469 + 8) == v495;\n  }\n  if ( !v15 )\n  {\nLABEL_20:\n    v16 = *v13;\n    v614[1] = v13[1];\n    v615 = v14;\n    v614[0] = v16;\n    v614[2] = 42;\n    v616 = 13;\n    v473 = (*(__int64 (__fastcall **)(__int64 *, const char *, _DWORD *, __int64))(*v464 + 728))(\n             v464,\n             \"intermediate_depth_rt\",\n             v614,\n             1);\n    goto LABEL_22;\n  }\nLABEL_21:\n  (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 744))(v464, v473);\nLABEL_22:\n  if ( v509 )\n  {\n    if ( v12 != -1 )\n    {\n      v472 = v12;\n      v17 = v12;\nLABEL_30:\n      (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 744))(v464, v17);\n      goto LABEL_31;\n    }\n    v18 = *v469;\n    v611[1] = v469[1];\n    v611[0] = v18;\n    v611[2] = v10;\n    v612 = v495;\n    v613 = 13;\n    v472 = (*(__int64 (__fastcall **)(__int64 *, const char *, _DWORD *, __int64))(*v464 + 728))(\n             v464,\n             \"intermediate_color_rt\",\n             v611,\n             1);\n  }\n  else\n  {\n    v19 = (*(__int64 (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1264LL))(qword_1825C74E8);\n    if ( (*(unsigned int (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1256LL))(qword_1825C74E8) == v19 || v504 )\n    {\n      v17 = v471;\n      v472 = v471;\n      goto LABEL_30;\n    }\n    v20 = (*(__int64 (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1256LL))(qword_1825C74E8);\n    v21 = v469[1];\n    v608[0] = *v469;\n    v608[2] = v20;\n    v608[1] = v21;\n    v609 = v495;\n    v610 = 13;\n    v472 = (*(__int64 (__fastcall **)(__int64 *, const char *, _DWORD *, __int64))(*v464 + 728))(\n             v464,\n             \"intermediate_color_rt\",\n             v608,\n             1);\n  }\nLABEL_31:\n  sub_180170090(v470 + 784, 1026319250, v472);\n  sub_180170090(v470 + 784, 3004380427LL, v473);\n  if ( dword_182433F30 > *(_DWORD *)(*((_QWORD *)NtCurrentTeb()->ThreadLocalStoragePointer + MEMORY[0x1825C8E50]) + 104LL) )\n  {\n    sub_1818AA338(&dword_182433F30);\n    if ( dword_182433F30 == -1 )\n    {\n      v423 = (KeyValues *)(*(__int64 (__fastcall **)(_QWORD *))(*qword_1825C7330 + 144LL))(qword_1825C7330);\n      unk_182433F2C = KeyValues::GetInt(v423, \"Engine2/RenderingPipeline/AmbientOcclusionProxies\", 0) != 0;\n      sub_1818AA2CC(&dword_182433F30);\n    }\n  }\n  v451 = v483 != 0;\n  if ( !(unsigned int)sub_180166DF0(v470 + 272, 2558215573LL, 1) || v507 || (LOBYTE(v854) = 1, v508) )\n    LOBYTE(v854) = 0;\n  if ( !unk_182433F2C )\n    goto LABEL_43;\n  v22 = (_BYTE *)sub_1818607C0(&unk_182432A70, 0xFFFFFFFFLL);\n  if ( !v22 )\n    v22 = *(_BYTE **)(unk_182432A78 + 8LL);\n  if ( !*v22 || v507 || v508 )\nLABEL_43:\n    v23 = 0;\n  else\n    v23 = 1;\n  v457 = (unsigned int)sub_180166DF0(v470 + 272, 3067023714LL, 0) != 0;\n  v456 = v509;\n  v544 = sub_180166DF0(v470 + 272, 2267796280LL, 0);\n  v460 = sub_180166DF0(v470 + 272, 994151133, 0);\n  v24 = v460;\n  v547 = sub_180166DF0(v470 + 272, 2438506207LL, 0);\n  v462 = sub_180166DF0(v470 + 272, 1711203742, 0);\n  v446 = (unsigned int)sub_180166DF0(v470 + 272, 200801324, 0) != 0;\n  v461 = sub_180166DF0(v470 + 272, 1926493664, 0);\n  v25 = 0;\n  v517 = sub_180166DF0(v470 + 272, 3803931177LL, 0);\n  si128 = 0;\n  v26 = *(float *)sub_1801CBB80(v470, v807, 2542338989LL, &si128);\n  sub_181131180(v727);\n  if ( !v503 )\n  {\n    v27 = sub_180C107D0();\n    if ( v27 )\n      sub_1808A0520(v27, (__int64)v727);\n  }\n  v28 = 0;\n  v506 = v727[4];\n  v29 = sub_180926510(0);\n  v30 = v29;\n  if ( v29 && (*(unsigned __int8 (__fastcall **)(__int64))(*(_QWORD *)v29 + 1240LL))(v29) )\n  {\n    v31 = (*(__int64 (__fastcall **)(__int64 *))(*a2 + 440))(a2);\n    v32 = *(_QWORD *)(v30 + 4672);\n    v33 = v31;\n    v463 = v30;\n    v34 = v31;\n    if ( v32 )\n    {\n      v463 = v30;\n      if ( *(int *)(a3 + 16) > 0 )\n      {\n        v35 = (*(double (__fastcall **)(__int64))(*(_QWORD *)v32 + 288LL))(v32);\n        if ( *(float *)&v35 != (*(float (__fastcall **)(_QWORD))(**(_QWORD **)(v30 + 4672) + 280LL))(*(_QWORD *)(v30 + 4672)) )\n        {\n          *(double *)v25.m128_u64 = sub_18161A890();\n          v25 = _mm_shuffle_ps(v25, v25, 0);\n          si128 = v25;\n          v591 = v25;\n          sub_1801702B0(v33, 388775114, &si128);\n        }\n        *(double *)v25.m128_u64 = sub_180848E20(*(_QWORD *)(v30 + 4672));\n        v36 = _mm_shuffle_ps(v25, v25, 0);\n        v463 = v30;\n        if ( v36.m128_f32[0] > 0.0 )\n        {\n          si128 = v36;\n          v592 = v36;\n          sub_1801702B0(v33, 1643823977, &si128);\n          v463 = v30;\n        }\n      }\n    }\n    v24 = v460;\n  }\n  else\n  {\n    v46 = *a2;\n    v463 = 0;\n    v34 = (*(__int64 (__fastcall **)(__int64 *))(v46 + 440))(a2);\n  }\n  si128 = 0;\n  v37 = (unsigned int *)sub_1801CBB80(v470, v808, 388775114, &si128);\n  si128 = 0;\n  v38 = _mm_shuffle_ps((__m128)*v37, (__m128)*v37, 0);\n  v39 = (unsigned int *)sub_1801CBB80(v470, v810, 1643823977, &si128);\n  si128 = 0;\n  v40 = _mm_shuffle_ps((__m128)*v39, (__m128)*v39, 0);\n  v41 = (__m128)*(unsigned int *)sub_1801CBB80(v470, v811, 1885619013, &si128);\n  if ( v509 )\n  {\n    if ( v38.m128_f32[0] > 0.0 )\n    {\n      si128 = v38;\n      v593 = v38;\n      sub_1801702B0(v34, 388775114, &si128);\n    }\n    if ( v40.m128_f32[0] > 0.0 )\n    {\n      si128 = v40;\n      v594 = v40;\n      sub_1801702B0(v34, 1643823977, &si128);\n    }\n    v42 = (unsigned int *)sub_1818607C0(&unk_182433210, 0xFFFFFFFFLL);\n    if ( !v42 )\n      v42 = *(unsigned int **)(unk_182433218 + 8LL);\n    si128 = _mm_shuffle_ps((__m128)*v42, (__m128)*v42, 0);\n    v589 = si128;\n    sub_1801702B0(v34, 3080966357LL, &si128);\n    v43 = (unsigned int *)sub_1818607C0(&unk_182433230, 0xFFFFFFFFLL);\n    if ( !v43 )\n      v43 = *(unsigned int **)(unk_182433238 + 8LL);\n    si128 = _mm_shuffle_ps((__m128)*v43, (__m128)*v43, 0);\n    v590 = si128;\n    sub_1801702B0(v34, 3037116747LL, &si128);\n    if ( v508 )\n    {\n      v44 = sub_180166DF0(v470 + 272, 2066993713, 0);\n      sub_18016FE80(v34 + 272, 167418481, 1);\n      sub_18016FE80(v34 + 272, 2066993713, v44 != 0);\n      si128 = (__m128)_mm_load_si128((const __m128i *)&xmmword_1819ADBD0);\n      v45 = (unsigned int *)sub_1801CBB80(v470, v812, 3080966357LL, &si128);\n      v595 = _mm_shuffle_ps((__m128)*v45, (__m128)*v45, 0);\n      si128 = v595;\n      sub_1801702B0(v34, 3080966357LL, &si128);\n      v24 = v460;\n    }\n    sub_18016FE80(v34 + 272, 4036842645LL, 1);\n    sub_18016FE80(v34 + 272, 1594702161, v24 == 0);\n    if ( v41.m128_f32[0] <= 0.0 || v24 || v508 )\n    {\n      v48 = _mm_load_si128((const __m128i *)&xmmword_181979D70);\n    }\n    else\n    {\n      v47 = (float *)sub_1818607C0(&unk_182433240, 0xFFFFFFFFLL);\n      if ( !v47 )\n        v47 = *(float **)(unk_182433248 + 8LL);\n      v41.m128_f32[0] = fminf(v41.m128_f32[0], *v47);\n      v596 = _mm_shuffle_ps(v41, v41, 0);\n      v48 = (__m128i)v596;\n    }\n    si128 = (__m128)v48;\n    sub_1801702B0(v34, 1885619013, &si128);\n  }\n  else\n  {\n    v49 = (unsigned int *)sub_1818607C0(&unk_182433200, 0xFFFFFFFFLL);\n    if ( !v49 )\n      v49 = *(unsigned int **)(unk_182433208 + 8LL);\n    si128 = _mm_shuffle_ps((__m128)*v49, (__m128)*v49, 0);\n    v597 = si128;\n    sub_1801702B0(v34, 3080966357LL, &si128);\n    v50 = (unsigned int *)sub_1818607C0(&unk_182433220, 0xFFFFFFFFLL);\n    if ( !v50 )\n      v50 = *(unsigned int **)(unk_182433228 + 8LL);\n    si128 = _mm_shuffle_ps((__m128)*v50, (__m128)*v50, 0);\n    v598 = si128;\n    sub_1801702B0(v34, 3037116747LL, &si128);\n    si128 = (__m128)_mm_load_si128((const __m128i *)&xmmword_181979D70);\n    sub_1801702B0(v34, 1885619013, &si128);\n  }\n  v51 = (unsigned int *)sub_1818607C0(&unk_1824331F0, 0xFFFFFFFFLL);\n  if ( !v51 )\n    v51 = *(unsigned int **)(unk_1824331F8 + 8LL);\n  si128 = _mm_shuffle_ps((__m128)*v51, (__m128)*v51, 0);\n  v599 = si128;\n  sub_1801702B0(v34, 689327323, &si128);\n  if ( ((*(__int64 (__fastcall **)(__int64 *))(*a2 + 200))(a2) & 0x400) != 0\n    && v23\n    && (unsigned __int8)sub_180362EC0(&dword_18200DBF0) )\n  {\n    if ( dword_18200DBF0 != -1\n      && unk_1821CFDF0\n      && dword_18200DBF0 != -2\n      && (v52 = *(_QWORD *)(unk_1821CFDF0 + 8 * ((unsigned __int64)(dword_18200DBF0 & 0x7FFF) >> 9))) != 0\n      && (v53 = v52 + 112LL * (dword_18200DBF0 & 0x1FF)) != 0 )\n    {\n      if ( *(_DWORD *)(v53 + 16) != dword_18200DBF0 )\n        v53 = 0;\n    }\n    else\n    {\n      v53 = 0;\n    }\n    if ( !*(_QWORD *)v53\n      || (v54 = *(unsigned __int16 *)(*(_QWORD *)(*(_QWORD *)(v53 + 8) + 136LL) + 2LL * dword_18200F0D0),\n          (_WORD)v54 == 0xFFFF) )\n    {\n      v55 = 0;\n    }\n    else\n    {\n      v55 = *(_QWORD *)(v54 + *(_QWORD *)v53);\n    }\n    sub_1801DF7D0(v55, v34);\n  }\n  if ( (unsigned int)sub_180166DF0(v470 + 272, 2269733470LL, 0) )\n  {\n    si128 = (__m128)_mm_load_si128((const __m128i *)&xmmword_181983290);\n    sub_1801CBB80(v470, v813, 2224694337LL, &si128);\n    v56 = (int)(float)((float)(V_sinf() * 63.0) + 192.0);\n    strcpy(v803, \"Lightmaps are out of date !!! - Please re-bake. Rendering as FULLBRIGHT\");\n    v57 = (unsigned __int64)(v465->m128_i32[3] - 504LL) >> 1;\n    v58 = (*(__int64 (**)(void))(*v464 + 424))();\n    v428 = v56;\n    v59 = a1;\n    sub_18116E060((_DWORD)a1, v58, (unsigned int)v803, v57, 30, v428, 0, 0);\n  }\n  else if ( (unsigned int)sub_180166DF0(v470 + 272, 2364121648LL, 0) )\n  {\n    strcpy(v802, \"Preview Lighting - Not indicative of shipping quality or performance. Please bake lightmaps.\");\n    v60 = (unsigned __int64)(v465->m128_i32[3] - 651LL) >> 1;\n    v61 = (*(__int64 (**)(void))(*v464 + 424))();\n    v59 = a1;\n    sub_18116E060((_DWORD)a1, v61, (unsigned int)v802, v60, 30, 255, 255, 0);\n    v62 = (*(__int64 (__fastcall **)(__int64 *))(*v464 + 440))(v464);\n    sub_18016FE80(v62 + 272, 2364121648LL, 1);\n  }\n  else\n  {\n    v59 = a1;\n  }\n  v466 = *v465;\n  v467 = v465[1].m128_i64[0];\n  v468 = v465[1].m128_u32[2];\n  v63 = (_BYTE *)sub_1818607C0(&unk_182433300, 0xFFFFFFFFLL);\n  if ( !v63 )\n    v63 = *(_BYTE **)(unk_182433308 + 8LL);\n  if ( *v63 )\n    sub_18117BFE0(v59 + 47, v464, v583, a5);\n  (*(void (__fastcall **)(__int64 *, _QWORD, __m128 *, __m128 *))(*v59 + 24))(v59, 0, v465, &v466);\n  v548 = -1;\n  v549 = -1;\n  if ( (unsigned int)sub_180166DF0(v470 + 272, 2774703139LL, v508 == 0) )\n  {\n    v64 = sub_180166DF0(v470 + 272, 1719014299, 0);\n    v675 = 0;\n    v676 = 13;\n    v65 = v64;\n    (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v473, &v675);\n    if ( ((*(__int64 (__fastcall **)(__int64 *))(*v464 + 200))(v464) & 2) != 0 )\n      v65 |= 1u;\n    v66 = *v469;\n    v439 = v469[1];\n    v710[0] = \"CsgoReflectionColor\";\n    v710[1] = \"CsgoReflectionDepth\";\n    v581[1] = DWORD2(v675);\n    v711[0] = &v548;\n    v711[1] = &v549;\n    v581[0] = 0;\n    v580[0] = 13;\n    v580[1] = 13;\n    (*(void (__fastcall **)(__int64 *, __int64, _QWORD *, _DWORD *, _DWORD *, _QWORD *, int, int, _BYTE, int))(*v464 + 736))(\n      v464,\n      2,\n      v710,\n      v581,\n      v580,\n      v711,\n      v66,\n      v439,\n      0,\n      v65);\n  }\n  v67 = sub_18117D190(v59, &v464);\n  if ( (unsigned int)sub_180166DF0(v470 + 272, 3560904624LL, v508 == 0) )\n  {\n    si128.m128_u64[0] = 0;\n    v499 = sub_18116BFE0(v59, &v464, v67, &si128);\n    v488 = si128.m128_u64[0];\n  }\n  else\n  {\n    v499 = 0;\n    v488 = 0;\n  }\n  sub_181160200(v59, &v464);\n  if ( v462 && qword_182433338 && *qword_182433338 )\n  {\n    v446 = 0;\n    v68 = (*(__int64 (__fastcall **)(__int64 *, const char *, _QWORD *, __int64))(*v464 + 720))(\n            v464,\n            \"panoRT\",\n            qword_182433338,\n            1);\n    v746[1] = v472;\n    LOBYTE(v438) = 0;\n    v746[0] = v472 != -1;\n    v69 = v68;\n    v750 = 0;\n    v751 = 0xFFFFFFFFFFFFFFFFuLL;\n    v747 = 0;\n    BYTE8(v750) = 1;\n    v748 = 0;\n    v749 = 0;\n    v752 = 0;\n    v753 = 0;\n    (*(void (__fastcall **)(__int64 *, const char *, __int64, __m128 *, __m128 *, _QWORD *, _QWORD, int, _QWORD, _QWORD))(*v464 + 344))(\n      v464,\n      \"CopyGameBackground\",\n      v68,\n      &v466,\n      &v466,\n      v746,\n      0,\n      v438,\n      0,\n      0);\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v69);\n  }\n  v70 = (*(__int64 (__fastcall **)(__int64 *))(*v464 + 440))(v464);\n  if ( (unsigned __int8)sub_180166DF0(v70 + 272, 3382129058LL, 0) )\n  {\n    v71 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, _QWORD *, int))(*v464 + 16);\n    v72 = (_QWORD *)sub_180BCAC10(8);\n    if ( v72 )\n      *v72 = &CClearQuadOverdrawVisualizationTextures::`vftable';\n    else\n      v72 = nullptr;\n    LOBYTE(v424) = 1;\n    v73 = v71(v464, \"ClearQuadCoverage\", &v466, v72, v424);\n    *(_QWORD *)(v73 + 72) |= 4uLL;\n    *(_QWORD *)(v73 + 168) = v473;\n    *(_DWORD *)(v73 + 88) = 0;\n    *(_QWORD *)(v73 + 96) = -1;\n    *(_BYTE *)(v73 + 160) = 0;\n  }\n  v74 = (_BYTE *)sub_1818607C0(&unk_182432A90, 0xFFFFFFFFLL);\n  if ( !v74 )\n    v74 = *(_BYTE **)(unk_182432A98 + 8LL);\n  v75 = v461;\n  if ( !*v74 || v507 || v461 )\n  {\n    v502 = 0;\n  }\n  else\n  {\n    v502 = 1;\n    sub_1811653E0((_DWORD)v59, (unsigned int)&v464, v23, 0, 0);\n  }\n  if ( v499 && !v517 && !v508 )\n    v475 = sub_18114ADD0(v59, &v464);\n  if ( !v23 || v75 || (v76 = 1, v508) )\n    v76 = 0;\n  v77 = a1;\n  if ( (unsigned int)sub_180166DF0(v470 + 272, 2310563440LL, v76) )\n    sub_181134600(a1, &v464, &v474, &v474.m128i_u64[1]);\n  v78 = (*(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, char *))(*v464 + 8))(\n          v464,\n          \"OcclusionQueryIssueLayer\",\n          &v466,\n          v496);\n  *(_QWORD *)(v78 + 72) |= 0x4400000uLL;\n  *(_QWORD *)(v78 + 1152) |= 0x800000000uLL;\n  v79 = v472;\n  v80 = *((_BYTE *)v469 + 9);\n  v81 = v472 != -1;\n  *(_QWORD *)(v78 + 168) = v473;\n  *(_DWORD *)(v78 + 88) = v81;\n  *(_QWORD *)(v78 + 96) = v79;\n  *(_BYTE *)(v78 + 160) = v80;\n  v82 = (_BYTE *)sub_1818607C0(&unk_182433310, 0xFFFFFFFFLL);\n  if ( !v82 )\n    v82 = *(_BYTE **)(unk_182433318 + 8LL);\n  if ( *v82 )\n  {\n    if ( v503 || v508 || (v83 = 1, v509) )\n      v83 = 0;\n    if ( (unsigned int)sub_180166DF0(v470 + 272, 1134011241, v83) )\n    {\n      v84 = (*(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, char *))(*v464 + 8))(\n              v464,\n              \"PlayerOcclusionQueryReadbackLayer\",\n              &v466,\n              v496);\n      v85 = sub_1801922F0(\"PlayerOcclusionQuerySceneObject\", 826366265);\n      v86 = sub_1801922F0(\"clusionQuerySceneObject\", v85);\n      v87 = sub_1801922F0(\"uerySceneObject\", v86);\n      *(_DWORD *)(v84 + 1756) = (1540483477\n                               * ((1540483477 * ((1540483477 * v87) ^ 0x6DF0439F))\n                                ^ ((1540483477 * ((1540483477 * v87) ^ 0x6DF0439Fu)) >> 13)))\n                              ^ ((1540483477\n                                * ((1540483477 * ((1540483477 * v87) ^ 0x6DF0439F))\n                                 ^ ((1540483477 * ((1540483477 * v87) ^ 0x6DF0439Fu)) >> 13))) >> 15);\n      v88 = v472;\n      v15 = v472 == -1;\n      v89 = *((_BYTE *)v469 + 9);\n      *(_QWORD *)(v84 + 168) = v473;\n      *(_DWORD *)(v84 + 88) = !v15;\n      *(_QWORD *)(v84 + 96) = v88;\n      *(_BYTE *)(v84 + 160) = v89;\n    }\n  }\n  v445 = 0;\n  if ( v502 )\n  {\n    v90 = (unsigned __int8 *)sub_1818607C0(&unk_182433080, 0xFFFFFFFFLL);\n    if ( !v90 )\n      v90 = *(unsigned __int8 **)(unk_182433088 + 8LL);\n    v445 = sub_1811653E0((_DWORD)a1, (unsigned int)&v464, 0, *v90, 1);\n  }\n  if ( v512 && !v507 )\n    sub_18113AAA0(a1, v464, (__int64)v465, v472, v473);\n  sub_18113B170((_DWORD)a1, (_DWORD)v464, (unsigned int)&v466, 0, 1);\n  v527 = 0;\n  CUtlString::Set((CUtlString *)&v527, \"Static AlphaTest Forward\");\n  sub_181134180((_DWORD)a1, (unsigned int)v492, (unsigned int)&v464, 0, (__int64)&v527, 0, 0x6000000000000LL, 0, 0);\n  if ( v527 )\n    CUtlString::FreeMemoryBlock((CUtlString *)&v527);\n  v91 = v492[0];\n  if ( v492[0] )\n  {\n    (*(void (__fastcall **)(_QWORD, const char *))(*(_QWORD *)v492[0] + 120LL))(v492[0], \"Alpha Test\");\n    v91 = v492[0];\n  }\n  v92 = _mm_load_si128((const __m128i *)&xmmword_181979D90);\n  if ( v501 )\n  {\n    sub_1811306A0(v847, &v464);\n    v848 = v92;\n    v530 = 0;\n    CUtlString::Set((CUtlString *)&v530, \"Dynamic AlphaTest Forward\");\n    LOBYTE(v93) = 1;\n    sub_181134180(\n      (_DWORD)a1,\n      (unsigned int)&v491,\n      (unsigned int)v847,\n      v93,\n      (__int64)&v530,\n      0,\n      0x6000000000000LL,\n      0,\n      0x800000);\n    if ( v530 )\n      CUtlString::FreeMemoryBlock((CUtlString *)&v530);\n    CBufferString::Purge((CBufferString *)v849, 0);\n    v91 = v492[0];\n  }\n  v94 = v451;\n  if ( v451 )\n  {\n    LOBYTE(v440) = 1;\n    v754[1] = v472;\n    v754[0] = v472 != -1;\n    v758 = 0;\n    v759 = 0xFFFFFFFFFFFFFFFFuLL;\n    v755 = 0;\n    BYTE8(v758) = 1;\n    v756 = 0;\n    v757 = 0;\n    v760 = 0;\n    v761 = 0;\n    (*(void (__fastcall **)(_QWORD *, __int64 *, const char *, _QWORD *, __m128 *, __int64, _DWORD, int))(*qword_1825C74F8 + 224LL))(\n      qword_1825C74F8,\n      v464,\n      \"HammerRaytracedImage\",\n      v754,\n      &v466,\n      v483,\n      0,\n      v440);\n    v91 = v492[0];\n  }\n  if ( !v75 )\n  {\n    v531 = 0;\n    CUtlString::Set((CUtlString *)&v531, \"Static Opaque Forward\");\n    LOBYTE(v425) = 0;\n    sub_181149C90(\n      (_DWORD)a1,\n      (unsigned int)&v464,\n      (unsigned int)&v490,\n      v492[0],\n      v425,\n      1,\n      (__int64)&v531,\n      0,\n      0x40000,\n      v94 << 9,\n      0,\n      0,\n      0);\n    if ( v531 )\n      CUtlString::FreeMemoryBlock((CUtlString *)&v531);\n    *(_QWORD *)(v490 + 72) |= 0x100uLL;\n    v91 = v492[0];\n  }\n  if ( v91 || (v91 = v490) != 0 )\n    (*(void (__fastcall **)(__int64, const char *))(*(_QWORD *)v91 + 120LL))(v91, \"Opaque\");\n  if ( v503 )\n  {\n    v95 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v464 + 8);\n    v635 = 0;\n    v636[1] = -1073741816;\n    v636[0] = 0;\n    v637 = 0;\n    sub_180DD5C80(&v635, \"ToolsUtil\");\n    v96 = v95(v464, \"ToolsUtil Opaque\", &v466, &v635);\n    CBufferString::Purge((CBufferString *)v636, 0);\n    v97 = v472;\n    v15 = v472 == -1;\n    v98 = *((_BYTE *)v469 + 9);\n    *(_QWORD *)(v96 + 168) = v473;\n    *(_DWORD *)(v96 + 88) = !v15;\n    *(_QWORD *)(v96 + 96) = v97;\n    *(_BYTE *)(v96 + 160) = v98;\n    v99 = *(_QWORD *)(v96 + 1152) | 1LL;\n    *(_QWORD *)(v96 + 1152) = v99;\n    v100 = *(_QWORD *)(v96 + 1160) | 0x400000000LL;\n    *(_QWORD *)(v96 + 1160) = v100;\n    if ( v500 )\n      *(_QWORD *)(v96 + 1152) = v99 | 0x400000;\n    else\n      *(_QWORD *)(v96 + 1160) = v100 | 0x800000;\n    v101 = v464;\n    v102 = v473;\n    v103 = v472;\n    v104 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v464 + 8);\n    v666 = 0;\n    v667[1] = -1073741816;\n    v667[0] = 0;\n    v668 = 0;\n    v105 = v104(v464, \"Tools_Opaque\", &v466, &v666);\n    CBufferString::Purge((CBufferString *)v667, 0);\n    *(_QWORD *)(v105 + 168) = v102;\n    LODWORD(v94) = v103 != -1;\n    *(_DWORD *)(v105 + 88) = v94;\n    *(_QWORD *)(v105 + 96) = v103;\n    *(_BYTE *)(v105 + 160) = 1;\n    v106 = sub_1801922F0(\"Tools_Opaque\", 826366250);\n    *(_DWORD *)(v105 + 1756) = (1540483477\n                              * ((1540483477 * v106) ^ 0xA835BEBD ^ (((1540483477 * v106) ^ 0xA835BEBD) >> 13)))\n                             ^ ((1540483477\n                               * ((1540483477 * v106) ^ 0xA835BEBD ^ (((1540483477 * v106) ^ 0xA835BEBD) >> 13))) >> 15);\n    v107 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v101 + 8);\n    v669 = 0;\n    v670[1] = -1073741816;\n    v670[0] = 0;\n    v671 = 0;\n    v108 = v107(v101, \"Tools_PreTranslucent\", &v466, &v669);\n    CBufferString::Purge((CBufferString *)v670, 0);\n    *(_QWORD *)(v108 + 168) = v102;\n    *(_DWORD *)(v108 + 88) = v94;\n    *(_QWORD *)(v108 + 96) = v103;\n    *(_BYTE *)(v108 + 160) = 1;\n    *(_QWORD *)(v108 + 72) |= 1uLL;\n    v109 = sub_1801922F0(\"Tools_PreTranslucent\", 826366258);\n    v110 = sub_1801922F0(\"eTranslucent\", v109);\n    LOBYTE(v94) = v451;\n    v75 = v461;\n    *(_DWORD *)(v108 + 1756) = (1540483477\n                              * ((1540483477 * v110) ^ 0xA1D1FDF2 ^ (((1540483477 * v110) ^ 0xA1D1FDF2) >> 13)))\n                             ^ ((1540483477\n                               * ((1540483477 * v110) ^ 0xA1D1FDF2 ^ (((1540483477 * v110) ^ 0xA1D1FDF2) >> 13))) >> 15);\n  }\n  v111 = (_BYTE *)sub_1818607C0(&unk_182432B20, 0xFFFFFFFFLL);\n  if ( !v111 )\n    v111 = *(_BYTE **)(unk_182432B28 + 8LL);\n  if ( *v111 && !(_BYTE)v94 && !v75 )\n  {\n    sub_181152270(a1, &v464);\nLABEL_187:\n    v113 = v854;\n    v112 = sub_181132B90(\n             (_DWORD)v464,\n             (_DWORD)v465,\n             v472,\n             v473,\n             v470,\n             v854,\n             0,\n             *((_BYTE *)v469 + 8) != 0,\n             *((_BYTE *)v469 + 9));\n    goto LABEL_189;\n  }\n  v112 = 0;\n  if ( !(_BYTE)v94 )\n    goto LABEL_187;\n  v113 = v854;\nLABEL_189:\n  if ( v501 )\n  {\n    sub_1811306A0(v850, &v464);\n    v851 = v92;\n    v532 = 0;\n    CUtlString::Set((CUtlString *)&v532, \"Cables (alphatest particle objects)\");\n    LOBYTE(v114) = 1;\n    sub_181134180(\n      (_DWORD)a1,\n      (unsigned int)&v491,\n      (unsigned int)v850,\n      v114,\n      (__int64)&v532,\n      0,\n      0x6000000000000LL,\n      0x800000,\n      0);\n    if ( v532 )\n      CUtlString::FreeMemoryBlock((CUtlString *)&v532);\n    CBufferString::Purge((CBufferString *)v852, 0);\n    if ( v501 )\n    {\n      v854 = 0;\n      v533 = 0;\n      CUtlString::Set((CUtlString *)&v533, \"Dynamic Opaque Forward (receiving AO proxies)\");\n      LOBYTE(v425) = 1;\n      sub_181149C90(\n        (_DWORD)a1,\n        (unsigned int)&v464,\n        (unsigned int)&v854,\n        0,\n        v425,\n        0,\n        (__int64)&v533,\n        0x10000000000000LL,\n        0x40000,\n        0,\n        0,\n        0,\n        0);\n      if ( v533 )\n        CUtlString::FreeMemoryBlock((CUtlString *)&v533);\n    }\n  }\n  v115 = (_BYTE *)sub_1818607C0(&unk_182432A50, 0xFFFFFFFFLL);\n  if ( !v115 )\n    v115 = *(_BYTE **)(unk_182432A58 + 8LL);\n  if ( !*v115 )\n  {\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v474.m128i_i64[0]);\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v474.m128i_i64[1]);\n    v474 = v92;\n  }\n  if ( v501 )\n  {\n    v116 = (int *)sub_1818607C0(&unk_182432D40, 0xFFFFFFFFLL);\n    if ( !v116 )\n      v116 = *(int **)(unk_182432D48 + 8LL);\n    LOBYTE(v117) = *v116 > 0 && !v503 && !v508 && !v509;\n    LOBYTE(v429) = v445;\n    v492[1] = sub_181139610(\n                (_DWORD)a1,\n                (unsigned int)&v464,\n                v117,\n                v548,\n                v549,\n                v429,\n                0x10000000000000LL,\n                v517 != 0 ? 0x800000 : 0);\n  }\n  (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v548);\n  (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v549);\n  v118 = (int *)sub_1818607C0(&unk_182432E70, 0xFFFFFFFFLL);\n  if ( !v118 )\n    v118 = *(int **)(unk_182432E78 + 8LL);\n  if ( *v118 < 2 )\n    (*(void (__fastcall **)(__int64 *, _QWORD))(*v464 + 792))(v464, 0);\n  if ( !(_BYTE)v94 && v113 && !v75 )\n  {\n    if ( !v112 )\n    {\n      v632 = 0;\n      v633[1] = -1073741816;\n      v633[0] = 0;\n      v634 = 0;\n      sub_180DD5C80(&v632, \"Forward\");\n      v119 = sub_181136300(\n               (unsigned int)\"Sky\",\n               (_DWORD)v464,\n               (_DWORD)v465,\n               v472,\n               v473,\n               *((_BYTE *)v469 + 9),\n               (__int64)&v632);\n      CBufferString::Purge((CBufferString *)v633, 0);\n      *(_QWORD *)(v119 + 1160) |= 0x100000uLL;\n    }\n    if ( ((*(__int64 (__fastcall **)(__int64 *))(*v464 + 200))(v464) & 0x10) != 0 )\n    {\n      v629 = 0;\n      v630[1] = -1073741816;\n      v630[0] = 0;\n      v631 = 0;\n      sub_180DD5C80(&v629, \"Forward\");\n      v120 = sub_181136300(\n               (unsigned int)\"HammerSelectedSky\",\n               (_DWORD)v464,\n               (_DWORD)v465,\n               v472,\n               v473,\n               *((_BYTE *)v469 + 9),\n               (__int64)&v629);\n      CBufferString::Purge((CBufferString *)v630, 0);\n      *(_QWORD *)(v120 + 1152) |= 0x100000uLL;\n    }\n  }\n  if ( v503 )\n  {\n    v854 = 0;\n    v534 = 0;\n    CUtlString::Set((CUtlString *)&v534, \"Tools Post Occlusion Query\");\n    LOBYTE(v425) = 0;\n    sub_181149C90(\n      (_DWORD)a1,\n      (unsigned int)&v464,\n      (unsigned int)&v854,\n      v492[0],\n      v425,\n      0,\n      (__int64)&v534,\n      0x40000,\n      0,\n      0,\n      0,\n      0,\n      0);\n    if ( v534 )\n      CUtlString::FreeMemoryBlock((CUtlString *)&v534);\n  }\n  (*(void (__fastcall **)(__int64 *, const char *))(*v464 + 40))(v464, \"BeforeTranslucent\");\n  sub_181167D50(a1, &v466);\n  si128.m128_u64[0] = 0;\n  if ( v512 )\n  {\n    if ( v511 )\n      goto LABEL_228;\n    v121 = (_BYTE *)sub_1818607C0(&unk_1824330C0, 0xFFFFFFFFLL);\n    if ( !v121 )\n      v121 = *(_BYTE **)(unk_1824330C8 + 8LL);\n    if ( !*v121 )\n    {\nLABEL_228:\n      v122 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n      if ( !v122 )\n        v122 = *(_BYTE **)(unk_182432B68 + 8LL);\n      if ( *v122 )\n      {\n        v123 = v477;\n        if ( v477 == -1 )\n        {\n          sub_18114F620(a1, &v464, 0);\n          v123 = v477;\n        }\n        si128.m128_u64[0] = sub_181155560(a1, &v464, v123, 1);\n      }\n    }\n    if ( v512 )\n      goto LABEL_236;\n  }\n  if ( v510 )\n  {\nLABEL_236:\n    if ( v511 )\n    {\n      v124 = (_BYTE *)sub_1818607C0(&unk_182432F60, 0xFFFFFFFFLL);\n      if ( !v124 )\n        v124 = *(_BYTE **)(unk_182432F68 + 8LL);\n      if ( *v124 )\n      {\n        v125 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n        if ( !v125 )\n          v125 = *(_BYTE **)(unk_182432B68 + 8LL);\n        if ( *v125 )\n        {\n          sub_181149210(a1, &v464);\n          v126 = (unsigned int *)sub_1818607C0(&unk_182432F80, 0xFFFFFFFFLL);\n          if ( !v126 )\n            v126 = *(unsigned int **)(unk_182432F88 + 8LL);\n          sub_181155560(a1, &v464, v476, *v126);\n        }\n      }\n    }\n  }\n  if ( v512 && v511 && !v507 )\n  {\n    v127 = (_BYTE *)sub_1818607C0(&unk_182432BD0, 0xFFFFFFFFLL);\n    if ( !v127 )\n      v127 = *(_BYTE **)(unk_182432BD8 + 8LL);\n    if ( *v127 || sub_1807939A0() != 0.0 || (unsigned __int8)sub_1809EC310(&unk_182432A60, -1) )\n    {\n      sub_181138CA0(a1, &v464);\n      sub_181155560(a1, &v464, v480[0], 4);\n    }\n  }\n  v564 = v92;\n  v569[0] = -1;\n  v569[1] = -1;\n  v571 = -1;\n  v565 = v92;\n  v566 = v92;\n  v567 = v92;\n  v568 = v92;\n  v570 = v92;\n  if ( v512 )\n  {\n    if ( !v507 )\n    {\n      v493 = 0;\n      v128 = (*(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, char *))(*v464 + 8))(\n               v464,\n               \"SmokeLPVSetup\",\n               &v466,\n               v496);\n      *(_QWORD *)(v128 + 1152) = 0x8000000000000LL;\n      *(_QWORD *)(v128 + 72) |= 0x400004uLL;\n      sub_18016FE80(v128 + 496, 3488455204LL, 1);\n      if ( !v503 && sub_1807939A0() != 0.0 && !v507 && !v508 )\n      {\n        if ( (unsigned __int8)sub_1809EC310(&unk_182432F60, 0xFFFFFFFFLL) )\n        {\n          sub_1811606E0(&v464, 4, &v564);\n          v493 = sub_181151970(&v464, 4, &v564, v480);\n          sub_1811606E0(&v464, 2, &v566.m128i_u64[1]);\n        }\n        else\n        {\n          sub_1811606E0(&v464, 1, &v566.m128i_u64[1]);\n          v493 = sub_181151970(&v464, 1, &v566.m128i_u64[1], &v477);\n        }\n      }\n    }\n  }\n  v129 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n  if ( !v129 )\n    v129 = *(_BYTE **)(unk_182432B68 + 8LL);\n  if ( *v129 && !v508 && !v75 )\n  {\n    v447[0] = (v511 != 0) + 1;\n    v130 = 0;\n    v462 = 0;\n    while ( 1 )\n    {\n      v487 = v130;\n      sub_1811306A0(v814, &v464);\n      if ( (unsigned __int8)sub_18116BB50(v495) && v511 )\n      {\n        v817 = v466.m128_i32[3] / 2;\n        v819 = HIDWORD(v467);\n        v820 = v468;\n        v818 = (int)v467 / 2;\n        v821[0] = v476;\n        v815 = 1;\n        v816 = 0;\n      }\n      v131 = sub_181152FA0(a1, v814);\n      v132 = (_BYTE *)sub_1818607C0(&unk_182432F60, 0xFFFFFFFFLL);\n      if ( !v132 )\n        v132 = *(_BYTE **)(unk_182432F68 + 8LL);\n      if ( !*v132 || (v133 = 4096, !v511) )\n        v133 = 0;\n      if ( v509 )\n        v133 = 0x8000000000000LL;\n      *(_QWORD *)(v131 + 1160) |= v133;\n      if ( v511 )\n      {\n        v134 = sub_181169480(&v464);\n        sub_18117CB30((_DWORD)a1, v131, v462, v134, (__int64)v821, 1);\n      }\n      v135 = sub_181148230(a1, v814);\n      v520.m128_u64[0] = v135;\n      if ( !v511 )\n        goto LABEL_369;\n      v136 = v503;\n      v137 = 0;\n      if ( !v503 && !v510 )\n      {\n        sub_18014C0E0(v832, \"MBOIT(%d) Smoke 1/4\", v487 + 1);\n        if ( (v833 & 0x40000000) != 0 )\n        {\n          v138 = (const char *)&v834;\n        }\n        else\n        {\n          v138 = &byte_181969088;\n          if ( (v833 & 0x3FFFFFFF) != 0 )\n            v138 = v834;\n        }\n        v535 = 0;\n        CUtlString::Set((CUtlString *)&v535, v138);\n        v137 = sub_181148470((_DWORD)a1, (unsigned int)&v535, (unsigned int)&v464, 4, (__int64)&v564, v135, 1);\n        if ( v535 )\n          CUtlString::FreeMemoryBlock((CUtlString *)&v535);\n        *(_QWORD *)(v137 + 1152) |= 0x8000000000000uLL;\n        if ( !v487 )\n          sub_181131EE0((unsigned int)&v854, v137, v137 + 88, (unsigned int)&v564, 0);\n        CBufferString::Purge((CBufferString *)v832, 0);\n        v136 = v503;\n      }\n      v139 = v487;\n      if ( !v487 && !v136 && !v510 )\n      {\n        v140 = sub_181151970(&v464, 2, &v566.m128i_u64[1], &v476);\n        LODWORD(v854) = -278294927;\n        v141 = v140;\n        v142 = (_QWORD *)(v140 + 1128);\n        if ( (unsigned __int8)sub_180DBD2E0(v140 + 496, &v551, &v854, 0) )\n          *v142 ^= (0x94D049BB133111EBuLL\n                  * ((0xBF58476D1CE4E5B9uLL * ((v551 | 0xEF698E7100000000uLL) ^ ((v551 | 0xEF698E7100000000uLL) >> 30)))\n                   ^ ((0xBF58476D1CE4E5B9uLL * ((v551 | 0xEF698E7100000000uLL) ^ ((v551 | 0xEF698E7100000000uLL) >> 30))) >> 27)))\n                 ^ ((0x94D049BB133111EBuLL\n                   * ((0xBF58476D1CE4E5B9uLL * ((v551 | 0xEF698E7100000000uLL) ^ ((v551 | 0xEF698E7100000000uLL) >> 30)))\n                    ^ ((0xBF58476D1CE4E5B9uLL * ((v551 | 0xEF698E7100000000uLL) ^ ((v551 | 0xEF698E7100000000uLL) >> 30))) >> 27))) >> 31);\n        sub_18016FE80(v141 + 496, 4016672369LL, 1);\n        *v142 ^= 0xA7277B50BC18050DuLL;\n        v143 = (char *)sub_1818607C0(&unk_182432FE0, 0xFFFFFFFFLL);\n        if ( !v143 )\n          v143 = *(char **)(unk_182432FE8 + 8LL);\n        v144 = *v143;\n        LODWORD(v854) = 1606943397;\n        if ( (unsigned __int8)sub_180DBD2E0(v141 + 496, &v543, &v854, 0) )\n        {\n          v145 = 0x94D049BB133111EBuLL\n               * ((0xBF58476D1CE4E5B9uLL * ((v543 | 0x5FC802A500000000LL) ^ ((v543 | 0x5FC802A500000000uLL) >> 30)))\n                ^ ((0xBF58476D1CE4E5B9uLL * ((v543 | 0x5FC802A500000000LL) ^ ((v543 | 0x5FC802A500000000uLL) >> 30))) >> 27));\n          *v142 ^= v145 ^ (v145 >> 31);\n        }\n        sub_18016FE80(v141 + 496, 1606943397, v144 != 0);\n        v146 = 0xBF58476D1CE4E5B9uLL\n             * (((v144 != 0) | 0x5FC802A500000000LL) ^ (((v144 != 0) | 0x5FC802A500000000uLL) >> 30));\n        *v142 ^= (0x94D049BB133111EBuLL * (v146 ^ (v146 >> 27)))\n               ^ ((0x94D049BB133111EBuLL * (v146 ^ (v146 >> 27))) >> 31);\n        sub_18117ACB0(v141, v486);\n        v136 = v503;\n        v139 = v487;\n        v135 = v520.m128_u64[0];\n      }\n      v147 = 0;\n      if ( !v136 && !v510 )\n      {\n        sub_18014C0E0(v823, \"MBOIT(%d) Smoke 1/2\", v139 + 1);\n        if ( (v824 & 0x40000000) != 0 )\n        {\n          v148 = (const char *)&v825;\n        }\n        else\n        {\n          v148 = &byte_181969088;\n          if ( (v824 & 0x3FFFFFFF) != 0 )\n            v148 = v825;\n        }\n        v536 = 0;\n        CUtlString::Set((CUtlString *)&v536, v148);\n        v147 = sub_181148470(\n                 (_DWORD)a1,\n                 (unsigned int)&v536,\n                 (unsigned int)&v464,\n                 2,\n                 (__int64)&v566.m128i_i64[1],\n                 v135,\n                 1);\n        if ( v536 )\n          CUtlString::FreeMemoryBlock((CUtlString *)&v536);\n        *(_QWORD *)(v147 + 1152) |= 0x8000000000000uLL;\n        if ( !v487 )\n          sub_181131EE0((unsigned int)&v854, v147, v147 + 88, (unsigned int)&v566.m128i_u32[2], 0);\n        CBufferString::Purge((CBufferString *)v823, 0);\n      }\n      v149 = (_BYTE *)sub_1818607C0(&unk_1824330E0, 0xFFFFFFFFLL);\n      if ( !v149 )\n        v149 = *(_BYTE **)(unk_1824330E8 + 8LL);\n      if ( !*v149 )\n        goto LABEL_337;\n      if ( !v503 && !v510 )\n        break;\nLABEL_355:\n      sub_18014C0E0(v829, \"MBOIT(%d) Translucent 1/2\", v487 + 1);\n      if ( (v830 & 0x40000000) != 0 )\n      {\n        v163 = (const char *)&v831;\n      }\n      else\n      {\n        v163 = &byte_181969088;\n        if ( (v830 & 0x3FFFFFFF) != 0 )\n          v163 = v831;\n      }\n      v537 = 0;\n      CUtlString::Set((CUtlString *)&v537, v163);\n      v164 = sub_181148470(\n               (_DWORD)a1,\n               (unsigned int)&v537,\n               (unsigned int)&v464,\n               2,\n               (__int64)&v566.m128i_i64[1],\n               v520.m128_i64[0],\n               1);\n      if ( v537 )\n        CUtlString::FreeMemoryBlock((CUtlString *)&v537);\n      *(_QWORD *)(v164 + 1160) |= 0x8000000000000uLL;\n      CBufferString::Purge((CBufferString *)v829, 0);\n      if ( !(unsigned __int8)sub_18116BB50(v495) )\n      {\n        v165 = sub_1811447B0(\n                 (_DWORD)a1,\n                 (unsigned int)&v464,\n                 2,\n                 (unsigned int)&v566.m128i_u32[2],\n                 (__int64)&v566.m128i_i64[1],\n                 (__int64)&v564,\n                 v164);\n        sub_18016FE80(v165 + 496, 231554009, 1);\n      }\n      if ( !v487 )\n      {\n        v166 = (_BYTE *)sub_1818607C0(&unk_182432FF0, 0xFFFFFFFFLL);\n        if ( !v166 )\n          v166 = *(_BYTE **)(unk_182432FF8 + 8LL);\n        if ( !*v166 )\n        {\n          sub_181144A10((_DWORD)a1, (unsigned int)&v464, (unsigned int)v485, 2, 0, 0);\n          v167 = sub_181144A10((_DWORD)a1, (unsigned int)&v464, (unsigned int)v486, 4, 0, 0);\n          if ( v167 )\n          {\n            v854 = v493;\n            sub_181152480(v167 + 1784, &v854);\n          }\n        }\n      }\nLABEL_369:\n      CBufferString::Purge((CBufferString *)v822, 0);\n      v130 = v462 + 1;\n      v462 = v130;\n      if ( v130 >= v447[0] )\n      {\n        if ( v481 != -1 )\n        {\n          v168 = *(__int64 (__fastcall **)(__int64 *, _QWORD))(*v464 + 784);\n          v169 = (_QWORD *)(*(__int64 (__fastcall **)(__int64 *, char *, __int64))(*v464 + 360))(v464, v736, v481);\n          LODWORD(v168) = v168(v464, *v169);\n          (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v481);\n          v170 = v481;\n          if ( (_DWORD)v168 == 1 )\n            v170 = -1;\n          v481 = v170;\n        }\n        goto LABEL_374;\n      }\n    }\n    if ( !v487 )\n    {\n      sub_1811606E0(&v464, 1, v569);\n      v150 = sub_181151970(&v464, 1, v569, &v477);\n      v151 = (char *)sub_1818607C0(&unk_1824330F0, 0xFFFFFFFFLL);\n      if ( !v151 )\n        v151 = *(char **)(unk_1824330F8 + 8LL);\n      v152 = *v151;\n      LODWORD(v854) = -2057225662;\n      if ( (unsigned __int8)sub_180DBD2E0(v150 + 496, &v554, &v854, 0) )\n      {\n        v153 = 0x94D049BB133111EBuLL\n             * ((0xBF58476D1CE4E5B9uLL * ((v554 | 0x85613A4200000000uLL) ^ ((v554 | 0x85613A4200000000uLL) >> 30)))\n              ^ ((0xBF58476D1CE4E5B9uLL * ((v554 | 0x85613A4200000000uLL) ^ ((v554 | 0x85613A4200000000uLL) >> 30))) >> 27));\n        *(_QWORD *)(v150 + 1128) ^= v153 ^ (v153 >> 31);\n      }\n      sub_18016FE80(v150 + 496, 2237741634LL, (unsigned int)(v152 != 0) + 1);\n      v154 = 0xBF58476D1CE4E5B9uLL\n           * ((((v152 != 0) + 1LL) | 0x85613A4200000000uLL) ^ ((((v152 != 0) + 1LL) | 0x85613A4200000000uLL) >> 30));\n      *(_QWORD *)(v150 + 1128) ^= (0x94D049BB133111EBuLL * (v154 ^ (v154 >> 27)))\n                                ^ ((0x94D049BB133111EBuLL * (v154 ^ (v154 >> 27))) >> 31);\n      sub_181179B40(v150, 871544675, v568.m128i_i32[0], 0, 1, 0);\n      sub_181179B40(v150, 1434308022, v565.m128i_i32[2], 0, 1, 0);\n      sub_181179B40(v150, -1352975540, v476, 0, 1, 0);\n      sub_181179B40(v150, -1997250103, v480[0], 0, 1, 0);\n      sub_181179B40(v150, -380875998, v566.m128i_i32[2], 0, 1, 0);\n      sub_181179B40(v150, -1422041040, v564.m128i_i32[0], 0, 1, 0);\n    }\n    if ( !(unsigned __int8)sub_18116BB50(v495) )\n    {\n      sub_18014C0E0(v826, \"MBOIT(%d) Smoke Full\", v487 + 1);\n      if ( (v827 & 0x40000000) != 0 )\n      {\n        v155 = (const char *)&v828;\n      }\n      else\n      {\n        v155 = &byte_181969088;\n        if ( (v827 & 0x3FFFFFFF) != 0 )\n          v155 = v828;\n      }\n      v529 = 0;\n      CUtlString::Set((CUtlString *)&v529, v155);\n      v156 = sub_181148470((_DWORD)a1, (unsigned int)&v529, (unsigned int)&v464, 1, (__int64)v569, v520.m128_i64[0], 0);\n      if ( v529 )\n        CUtlString::FreeMemoryBlock((CUtlString *)&v529);\n      LODWORD(v854) = 439605781;\n      *(_QWORD *)(v156 + 1152) |= 0x8000000000000uLL;\n      if ( (unsigned __int8)sub_180DBD2E0(v156 + 496, &v550, &v854, 0) )\n      {\n        v157 = 0x94D049BB133111EBuLL\n             * ((0xBF58476D1CE4E5B9uLL * ((v550 | 0x1A33DA1500000000LL) ^ ((v550 | 0x1A33DA1500000000uLL) >> 30)))\n              ^ ((0xBF58476D1CE4E5B9uLL * ((v550 | 0x1A33DA1500000000LL) ^ ((v550 | 0x1A33DA1500000000uLL) >> 30))) >> 27));\n        *(_QWORD *)(v156 + 1128) ^= v157 ^ (v157 >> 31);\n      }\n      sub_18016FE80(v156 + 496, 439605781, 1);\n      *(_QWORD *)(v156 + 1128) ^= 0x76902B8B8ED6DE00uLL;\n      CBufferString::Purge((CBufferString *)v826, 0);\n      if ( !v487 )\n        sub_181131EE0((unsigned int)&v854, v156, v156 + 88, (unsigned int)v569, 1);\n    }\nLABEL_337:\n    if ( !v503 && !v510 )\n    {\n      v158 = sub_1811447B0(\n               (_DWORD)a1,\n               (unsigned int)&v464,\n               4,\n               (unsigned int)&v564,\n               (__int64)&v566.m128i_i64[1],\n               (__int64)&v564,\n               v137);\n      if ( v158 )\n      {\n        v854 = v137;\n        sub_181152480(v158 + 1784, &v854);\n      }\n      if ( !v487 )\n      {\n        v159 = (_BYTE *)sub_1818607C0(&unk_182432FF0, 0xFFFFFFFFLL);\n        if ( !v159 )\n          v159 = *(_BYTE **)(unk_182432FF8 + 8LL);\n        if ( !*v159 )\n          sub_18117FAA0(&v464, &v564, &v566.m128i_u64[1]);\n      }\n      if ( !v503 && !v510 && !(unsigned __int8)sub_18116BB50(v495) )\n      {\n        v160 = sub_1811447B0(\n                 (_DWORD)a1,\n                 (unsigned int)&v464,\n                 2,\n                 (unsigned int)&v566.m128i_u32[2],\n                 (__int64)&v566.m128i_i64[1],\n                 (__int64)&v564,\n                 v147);\n        v161 = v160;\n        if ( v569[0] != -1 )\n        {\n          LODWORD(v854) = -1110947807;\n          if ( (unsigned __int8)sub_180DBD2E0(v160 + 496, v519, &v854, 0) )\n          {\n            v162 = 0x94D049BB133111EBuLL\n                 * ((0xBF58476D1CE4E5B9uLL\n                   * ((v519[0] | 0xBDC8482100000000uLL) ^ ((v519[0] | 0xBDC8482100000000uLL) >> 30)))\n                  ^ ((0xBF58476D1CE4E5B9uLL\n                    * ((v519[0] | 0xBDC8482100000000uLL) ^ ((v519[0] | 0xBDC8482100000000uLL) >> 30))) >> 27));\n            *(_QWORD *)(v161 + 1128) ^= v162 ^ (v162 >> 31);\n          }\n          sub_18016FE80(v161 + 496, 3184019489LL, 1);\n          *(_QWORD *)(v161 + 1128) ^= 0xD6F7EE35D85E8106uLL;\n          sub_181179B40(v161, -309480986, v569[0], 0, 1, 0);\n        }\n        if ( v161 )\n        {\n          v854 = v147;\n          sub_181152480(v161 + 1784, &v854);\n          v854 = v493;\n          sub_181152480(v161 + 1784, &v854);\n        }\n      }\n    }\n    goto LABEL_355;\n  }\nLABEL_374:\n  if ( v511 )\n    sub_181144F90(a1, &v464, &v564);\n  if ( v508 || v509 || v507 )\n  {\n    v171 = si128.m128_u64[0];\n    if ( !si128.m128_u64[0] )\n      goto LABEL_398;\n  }\n  else\n  {\n    v171 = si128.m128_u64[0];\n    if ( !si128.m128_u64[0] )\n      goto LABEL_398;\n    v172 = sub_181145E50(a1, &v464);\n    v173 = v172;\n    if ( v172 )\n    {\n      v854 = v171;\n      sub_181152480(v172 + 1784, &v854);\n    }\n    (*(void (__fastcall **)(__int64, const char *))(*(_QWORD *)v173 + 120LL))(v173, \"Water Translucent Combine\");\n  }\n  v762[0] = 0;\n  v766 = 0;\n  v762[1] = -1;\n  v767 = (unsigned __int64)v478;\n  v763 = 0;\n  BYTE8(v766) = 1;\n  v764 = 0;\n  v765 = 0;\n  v768 = 0;\n  v769 = 0;\n  if ( qword_182432920 )\n    v174 = *qword_182432920;\n  else\n    v174 = 0;\n  LOBYTE(v429) = 0;\n  v175 = (*(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, __int64, _QWORD *, int))(*v464 + 88))(\n           v464,\n           \"WriteSmokeDepth\",\n           &v466,\n           v174,\n           v762,\n           v429);\n  sub_181179B40(v175, -1157013688, v477, 0, 1, 0);\n  if ( v175 )\n  {\n    v854 = v493;\n    sub_181152480(v175 + 1784, &v854);\n  }\n  v176 = (_QWORD *)(*(__int64 (__fastcall **)(_QWORD *, char *, _QWORD))(*qword_1825C74E8 + 408LL))(\n                     qword_1825C74E8,\n                     v735,\n                     0);\n  sub_181162380(v175, 3087591061LL, v567.m128i_i64[1], *v176);\n  v177 = (_QWORD *)(*(__int64 (__fastcall **)(_QWORD *, char *, _QWORD))(*qword_1825C74E8 + 408LL))(\n                     qword_1825C74E8,\n                     v731,\n                     0);\n  sub_181162380(v175, 2117934265, v565.m128i_i64[0], *v177);\n  v178 = (_QWORD *)sub_181169480(&v464);\n  sub_181179B40(v175, -1942457949, *v178, 0, 1, 0);\n  v179 = sub_181169480(&v464);\n  v180 = (_BYTE *)sub_1818607C0(&unk_182432FE0, 0xFFFFFFFFLL);\n  if ( !v180 )\n    v180 = *(_BYTE **)(unk_182432FE8 + 8LL);\n  if ( *v180 )\n    v181 = *(_QWORD *)(v179 + 16);\n  else\n    v181 = *(_QWORD *)(v179 + 24);\n  sub_181179B40(v175, 1972792617, v181, 0, 1, 0);\n  v182 = sub_18116BB50(v495);\n  sub_18016FE80(v175 + 496, 1351822766, v182);\n  if ( v175 )\n  {\n    v854 = v171;\n    sub_181152480(v175 + 1784, &v854);\n  }\n  v183 = sub_1811557A0((_DWORD)a1, (unsigned int)&v464, (_DWORD)v469, v481, v478, v481, v478, v445);\n  if ( v183 )\n  {\n    v854 = v171;\n    sub_181152480(v183 + 1784, &v854);\n  }\nLABEL_398:\n  if ( v481 != -1 )\n  {\n    (*(void (__fastcall **)(__int64 *))(*v464 + 752))(v464);\n    v481 = -1;\n  }\n  if ( v478 != -1 )\n  {\n    (*(void (__fastcall **)(__int64 *))(*v464 + 752))(v464);\n    v478 = -1;\n  }\n  v184 = (_BYTE *)sub_1818607C0(&unk_182432B30, 0xFFFFFFFFLL);\n  if ( !v184 )\n    v184 = *(_BYTE **)(unk_182432B38 + 8LL);\n  if ( *v184 && v512 )\n  {\n    LOBYTE(v185) = 1;\n    sub_1811372F0(a1, &v464, 0, v185);\n  }\n  v186 = 0;\n  v187 = (_BYTE *)sub_1818607C0(&unk_182432F60, 0xFFFFFFFFLL);\n  if ( !v187 )\n    v187 = *(_BYTE **)(unk_182432F68 + 8LL);\n  if ( *v187 )\n  {\n    if ( v511 )\n      goto LABEL_444;\n    v188 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n    if ( !v188 )\n      v188 = *(_BYTE **)(unk_182432B68 + 8LL);\n    if ( *v188 )\n    {\n      if ( v512 )\n      {\n        if ( !v507 )\n        {\n          v538 = 0;\n          CUtlString::Set((CUtlString *)&v538, \"Mixed Resolution Particles\");\n          v186 = sub_181148F00(a1, &v464, &v538);\n          if ( v538 )\n            CUtlString::FreeMemoryBlock((CUtlString *)&v538);\n        }\n      }\n    }\n  }\n  if ( !v511 )\n  {\n    v189 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n    if ( !v189 )\n      v189 = *(_BYTE **)(unk_182432B68 + 8LL);\n    if ( *v189 && v501 )\n    {\n      v539 = 0;\n      CUtlString::Set((CUtlString *)&v539, \"Dynamic\");\n      LOBYTE(v190) = 1;\n      v191 = (_QWORD *)sub_1811527E0(a1, &v464, v190, &v539);\n      if ( v539 )\n        CUtlString::FreeMemoryBlock((CUtlString *)&v539);\n      (*(void (__fastcall **)(_QWORD *, _QWORD *))(*v191 + 48LL))(v191, v191);\n      if ( v517 )\n        v191[147] |= 0x800000uLL;\n      (*(void (__fastcall **)(_QWORD *, __int64))(*v191 + 40LL))(v191, v186);\n      v192 = (_BYTE *)sub_1818607C0(&unk_182432F60, 0xFFFFFFFFLL);\n      if ( !v192 )\n        v192 = *(_BYTE **)(unk_182432F68 + 8LL);\n      if ( *v192 )\n      {\n        v193 = (signed int *)sub_1818607C0(&unk_182432F80, 0xFFFFFFFFLL);\n        if ( !v193 )\n          v193 = *(signed int **)(unk_182432F88 + 8LL);\n        v194 = *v193;\n        v606 = 0;\n        v607 = 13;\n        (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v473, &v606);\n        v195 = a1[19];\n        v452 = 0;\n        v521 = -1;\n        if ( (*(unsigned __int8 (__fastcall **)(_QWORD, __int64, unsigned int *, char *))(*(_QWORD *)v191[222] + 776LL))(\n               v191[222],\n               v195,\n               &v521,\n               &v452) )\n        {\n          v854 = v521 | 0x100000000LL;\n          sub_180DD95B0(v191 + 160, 3802601121LL, v854);\n        }\n        v709.m128_u64[0] = v195;\n        v709.m128_i32[2] = -1;\n        si128 = v709;\n        sub_180194250(v191 + 76, 3802601121LL, &si128);\n        v707 = v195;\n        v708 = 0;\n        sub_180DAF5A0(v191 + 227, &v707);\n        sub_18016FE80(v191 + 62, 495850988, 1);\n        sub_18016FE80(v191 + 62, 4111784333LL, (unsigned int)v194);\n        sub_181179B40((_DWORD)v191, 1165933618, v476, 0, 1, 0);\n        sub_181179B40((_DWORD)v191, 1024913489, v473, BYTE12(v606) != 0, 1, 0);\n        *(float *)&v196 = (float)(*v469 / v194);\n        *(float *)&v197 = (float)(v469[1] / v194);\n        si128.m128_f32[0] = 1.0 / *(float *)&v196;\n        si128.m128_f32[1] = 1.0 / *(float *)&v197;\n        si128.m128_u64[1] = __PAIR64__(v197, v196);\n        sub_1801702B0(v191 + 28, 20556096, &si128);\n        LODWORD(v854) = 1236190598;\n        v198 = BYTE12(v606) != 0;\n        if ( (unsigned __int8)sub_180DBD2E0(v191 + 62, v447, &v854, 0) )\n        {\n          v199 = 0x94D049BB133111EBuLL\n               * ((0xBF58476D1CE4E5B9uLL * ((v447[0] | 0x49AEC58600000000LL) ^ ((v447[0] | 0x49AEC58600000000uLL) >> 30)))\n                ^ ((0xBF58476D1CE4E5B9uLL\n                  * ((v447[0] | 0x49AEC58600000000LL) ^ ((v447[0] | 0x49AEC58600000000uLL) >> 30))) >> 27));\n          v191[141] ^= v199 ^ (v199 >> 31);\n        }\n        sub_18016FE80(v191 + 62, 1236190598, v198);\n        LODWORD(v854) = 541929153;\n        v200 = (0xBF58476D1CE4E5B9uLL * ((v198 | 0x49AEC58600000000LL) ^ ((v198 | 0x49AEC58600000000uLL) >> 30)))\n             ^ ((0xBF58476D1CE4E5B9uLL * ((v198 | 0x49AEC58600000000LL) ^ ((v198 | 0x49AEC58600000000uLL) >> 30))) >> 27);\n        v191[141] ^= (0x94D049BB133111EBuLL * v200) ^ ((0x94D049BB133111EBuLL * v200) >> 31);\n        if ( (unsigned __int8)sub_180DBD2E0(v191 + 62, v447, &v854, 0) )\n        {\n          v201 = 0x94D049BB133111EBuLL\n               * ((0xBF58476D1CE4E5B9uLL * ((v447[0] | 0x204D2EC100000000LL) ^ ((v447[0] | 0x204D2EC100000000uLL) >> 30)))\n                ^ ((0xBF58476D1CE4E5B9uLL\n                  * ((v447[0] | 0x204D2EC100000000LL) ^ ((v447[0] | 0x204D2EC100000000uLL) >> 30))) >> 27));\n          v191[141] ^= v201 ^ (v201 >> 31);\n        }\n        sub_18016FE80(v191 + 62, 541929153, 1);\n        v191[141] ^= 0xCE7F7D73DA029DE7uLL;\n        v202 = (unsigned __int8 *)sub_1818607C0(&unk_182432F70, 0xFFFFFFFFLL);\n        if ( !v202 )\n          v202 = *(unsigned __int8 **)(unk_182432F78 + 8LL);\n        v203 = *v202;\n        LODWORD(v854) = -748973440;\n        if ( (unsigned __int8)sub_180DBD2E0(v191 + 62, v447, &v854, 0) )\n        {\n          v204 = 0x94D049BB133111EBuLL\n               * ((0xBF58476D1CE4E5B9uLL\n                 * ((v447[0] | 0xD35B928000000000uLL) ^ ((v447[0] | 0xD35B928000000000uLL) >> 30)))\n                ^ ((0xBF58476D1CE4E5B9uLL\n                  * ((v447[0] | 0xD35B928000000000uLL) ^ ((v447[0] | 0xD35B928000000000uLL) >> 30))) >> 27));\n          v191[141] ^= v204 ^ (v204 >> 31);\n        }\n        sub_18016FE80(v191 + 62, 3545993856LL, (unsigned int)v203);\n        v205 = 0xBF58476D1CE4E5B9uLL * ((v203 | 0xD35B928000000000uLL) ^ ((v203 | 0xD35B928000000000uLL) >> 30));\n        v191[141] ^= (0x94D049BB133111EBuLL * (v205 ^ (v205 >> 27)))\n                   ^ ((0x94D049BB133111EBuLL * (v205 ^ (v205 >> 27))) >> 31);\n        if ( v476 != -1 )\n          (*(void (__fastcall **)(__int64 *))(*v464 + 752))(v464);\n      }\n    }\n  }\nLABEL_444:\n  v206 = v463;\n  v482 = 0;\n  if ( v512 && v463 && v513 && v565.m128i_i64[0] != -1 )\n  {\n    v573 = 13;\n    v572 = 0;\n    (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v565.m128i_i64[0], &v572);\n    v208 = a1 + 9;\n    v209 = a1 + 9;\n    if ( !a1[9] )\n      goto LABEL_454;\n    v210 = (__int16 *)(*(__int64 (__fastcall **)(_QWORD))(*unk_1825C7498 + 720LL))(unk_1825C7498);\n    v208 = a1 + 9;\n    v209 = a1 + 9;\n    if ( !v210 )\n      goto LABEL_454;\n    v208 = a1 + 9;\n    v209 = a1 + 9;\n    if ( *v210 == (_DWORD)v572 )\n    {\n      v208 = a1 + 9;\n      v209 = a1 + 9;\n      if ( DWORD1(v572) == v210[1] )\n      {\nLABEL_454:\n        if ( !a1[9] )\n        {\n          LOBYTE(v443) = 0;\n          dword_182433F34 = 0;\n          v706 = 0;\n          LOBYTE(v207) = 1;\n          v696 = v572;\n          v700 = 0;\n          v697 = WORD2(v572);\n          *(_OWORD *)v702 = 0;\n          v698 = 65537;\n          v699 = 0;\n          v701 = 0;\n          LODWORD(v700) = 13;\n          v705 = 0;\n          v703 = 0;\n          *(__m128i *)&v702[12] = _mm_load_si128((const __m128i *)&xmmword_181979D70);\n          v704 = 4u;\n          v211 = (*(__int64 (__fastcall **)(_QWORD, char *, const char *, __int64, __int16 *, _QWORD, _QWORD, _DWORD, int))(*unk_1825C7498 + 408LL))(\n                   unk_1825C7498,\n                   v730,\n                   \"SmokeOverlayDataA.vtex\",\n                   v207,\n                   &v696,\n                   0,\n                   0,\n                   0,\n                   v443);\n          sub_180202760(v208, v211);\n          LOBYTE(v444) = 0;\n          LOBYTE(v212) = 1;\n          v213 = (*(__int64 (__fastcall **)(_QWORD, char *, const char *, __int64, __int16 *, _QWORD, _QWORD, _DWORD, int))(*unk_1825C7498 + 408LL))(\n                   unk_1825C7498,\n                   v729,\n                   \"SmokeOverlayDataB.vtex\",\n                   v212,\n                   &v696,\n                   0,\n                   0,\n                   0,\n                   v444);\n          sub_180202760(a1 + 10, v213);\n          for ( i = 0; i < 2; ++i )\n          {\n            v215 = *v209;\n            v693 &= ~1u;\n            v686[0] = v215;\n            memset(&v686[1], 0, 104);\n            v688 = 0;\n            v689 = 0;\n            v690 = 0;\n            v691 = 0;\n            v692 = 1;\n            v687 = 0;\n            sub_181130190(&si128, 0, unk_1825C7498, v686, \"CRenderingPipelineCsgo::AddLayersToView(10761): \");\n            v216 = si128.m128_u64[0];\n            v646 = v696;\n            v647 = v697;\n            v644 = 1;\n            v645 = 0;\n            v648 = 0;\n            v649 = 1065353216;\n            (*(void (__fastcall **)(unsigned __int64, __int64, __int64 *))(*(_QWORD *)si128.m128_u64[0] + 120LL))(\n              si128.m128_u64[0],\n              1,\n              &v644);\n            v732 = 0;\n            v217 = *(void (__fastcall **)(unsigned __int64, __int128 **))(*(_QWORD *)v216 + 32LL);\n            v663 = &v732;\n            v664 = 1;\n            v665 = 255;\n            v217(v216, &v663);\n            if ( v216 )\n            {\n              (*(void (__fastcall **)(unsigned __int64))(*(_QWORD *)v216 + 80LL))(v216);\n              (*(void (__fastcall **)(unsigned __int64, unsigned __int64))(*(_QWORD *)si128.m128_u64[1] + 504LL))(\n                si128.m128_u64[1],\n                v216);\n              si128 = 0;\n            }\n            ++v209;\n          }\n          a1[11] = a1[9];\n          a1[12] = a1[10];\n          sub_180DACD10(&v696);\n        }\n        v218 = (*(__int64 (__fastcall **)(__int64 *, const char *, __int64, _QWORD))(*v464 + 720))(\n                 v464,\n                 \"rt_SmokeOverlayData\",\n                 a1[11],\n                 0);\n        *(float *)&dword_182433F34 = *(float *)&dword_182433F34 + *((float *)off_18208ED60 + 13);\n        v219 = (float *)sub_1818607C0(&unk_1824330D0, 0xFFFFFFFFLL);\n        if ( !v219 )\n          v219 = *(float **)(unk_1824330D8 + 8LL);\n        v220 = *v219;\n        if ( *(float *)&dword_182433F34 >= *v219 )\n        {\n          HIDWORD(v541) = HIDWORD(v467);\n          HIDWORD(v540) = v466.m128_i32[3] / 4;\n          v542 = v468;\n          *(_QWORD *)&v540 = 1;\n          DWORD2(v540) = 0;\n          LODWORD(v541) = (int)v467 / 4;\n          v221 = *(__int64 (__fastcall **)(__int64 *, const char *, __int128 *, __int64, int))(*v464 + 16);\n          v222 = sub_180BCAC10(104);\n          if ( v222 )\n          {\n            v223 = unk_1824328A8;\n            v224 = v541;\n            v225 = HIDWORD(v540);\n            *(_QWORD *)v222 = &CCsgoQuadRenderer::`vftable';\n            *(_DWORD *)(v222 + 8) = 0;\n            *(_QWORD *)(v222 + 16) = 0;\n            v733 = 0;\n            if ( v223 )\n            {\n              *(_QWORD *)(v222 + 16) = v223;\n              _InterlockedIncrement((volatile signed __int32 *)(v223 + 32));\n            }\n            *(_OWORD *)(v222 + 24) = v540;\n            *(_QWORD *)(v222 + 40) = v541;\n            *(_DWORD *)(v222 + 48) = v542;\n            *(_OWORD *)(v222 + 52) = v540;\n            v226 = v733;\n            *(_QWORD *)(v222 + 68) = v541;\n            *(_DWORD *)(v222 + 76) = v542;\n            *(_DWORD *)(v222 + 80) = v225;\n            *(_DWORD *)(v222 + 84) = v224;\n            *(_OWORD *)(v222 + 88) = v226;\n          }\n          else\n          {\n            v222 = 0;\n          }\n          LOBYTE(v425) = 1;\n          v227 = v221(v464, \"OverlaySmokeUpdate\", &v540, v222, v425);\n          LODWORD(v854) = 1999951517;\n          v228 = v227;\n          if ( (unsigned __int8)sub_180DBD2E0(v227 + 496, v447, &v854, 0) )\n          {\n            v229 = 0x94D049BB133111EBuLL\n                 * ((0xBF58476D1CE4E5B9uLL\n                   * ((v447[0] | 0x7734D69D00000000LL) ^ ((v447[0] | 0x7734D69D00000000uLL) >> 30)))\n                  ^ ((0xBF58476D1CE4E5B9uLL\n                    * ((v447[0] | 0x7734D69D00000000LL) ^ ((v447[0] | 0x7734D69D00000000uLL) >> 30))) >> 27));\n            *(_QWORD *)(v228 + 1128) ^= v229 ^ (v229 >> 31);\n          }\n          sub_18016FE80(v228 + 496, 1999951517, 1);\n          *(_QWORD *)(v228 + 1128) ^= 0x7E3D89D2AE28B3ABuLL;\n          sub_181179B40(v228, -298883831, v565.m128i_i32[0], 0, 1, 0);\n          sub_181179B40(v228, 1863479108, v564.m128i_i32[2], 0, 1, 0);\n          v230 = a1[12];\n          v453 = 0;\n          v522 = -1;\n          if ( (*(unsigned __int8 (__fastcall **)(_QWORD, __int64, unsigned int *, char *))(**(_QWORD **)(v228 + 1776)\n                                                                                          + 776LL))(\n                 *(_QWORD *)(v228 + 1776),\n                 v230,\n                 &v522,\n                 &v453) )\n          {\n            v854 = v522 | 0x100000000LL;\n            sub_180DD95B0(v228 + 1280, 2638189766LL, v854);\n          }\n          v726.m128_u64[0] = v230;\n          v726.m128_i32[2] = -1;\n          si128 = v726;\n          sub_180194250(v228 + 608, 2638189766LL, &si128);\n          v718 = v230;\n          v719 = 0;\n          sub_180DAF5A0(v228 + 1816, &v718);\n          v231 = (__m128)dword_182433F34;\n          *(double *)v231.m128_u64 = sub_1818B9204();\n          v231.m128_f32[0] = v231.m128_f32[0] * v220;\n          v600 = _mm_shuffle_ps(v231, v231, 0);\n          si128 = v600;\n          sub_1801702B0(v228 + 224, 838129465, &si128);\n          sub_18016FE80(v228 + 496, 2631655000LL, 0);\n          if ( flt_1823BC638 != 0.0 || unk_1823BC63C != 0.0 || flt_1823BC640 != 0.0 )\n          {\n            v232 = flt_1823BC640 - *((float *)v464 + 6);\n            si128.m128_u64[0] = v464[2];\n            v233 = _mm_shuffle_ps((__m128)si128.m128_u64[0], (__m128)si128.m128_u64[0], 85).m128_f32[0];\n            if ( (float)((float)((float)((float)(unk_1823BC63C - v233) * (float)(unk_1823BC63C - v233))\n                               + (float)((float)(flt_1823BC638 - si128.m128_f32[0])\n                                       * (float)(flt_1823BC638 - si128.m128_f32[0])))\n                       + (float)(v232 * v232)) < 52900.0 )\n              sub_18016FE80(v228 + 496, 2631655000LL, 1);\n            *(_QWORD *)&flt_1823BC638 = 0;\n            flt_1823BC640 = 0.0;\n          }\n          if ( flt_1823BC644 != 0.0 || unk_1823BC648 != 0.0 || flt_1823BC64C != 0.0 )\n          {\n            v234 = flt_1823BC64C - *((float *)v464 + 6);\n            si128.m128_u64[0] = v464[2];\n            v235 = _mm_shuffle_ps((__m128)si128.m128_u64[0], (__m128)si128.m128_u64[0], 85).m128_f32[0];\n            if ( (float)((float)((float)((float)(unk_1823BC648 - v235) * (float)(unk_1823BC648 - v235))\n                               + (float)((float)(flt_1823BC644 - si128.m128_f32[0])\n                                       * (float)(flt_1823BC644 - si128.m128_f32[0])))\n                       + (float)(v234 * v234)) < 52900.0 )\n              sub_18016FE80(v228 + 496, 2631655000LL, 1);\n            *(_QWORD *)&flt_1823BC644 = 0;\n            flt_1823BC64C = 0.0;\n          }\n          if ( flt_1823BC650 != 0.0 || unk_1823BC654 != 0.0 || flt_1823BC658 != 0.0 )\n          {\n            v236 = flt_1823BC658 - *((float *)v464 + 6);\n            si128.m128_u64[0] = v464[2];\n            v237 = _mm_shuffle_ps((__m128)si128.m128_u64[0], (__m128)si128.m128_u64[0], 85).m128_f32[0];\n            if ( (float)((float)((float)((float)(unk_1823BC654 - v237) * (float)(unk_1823BC654 - v237))\n                               + (float)((float)(flt_1823BC650 - si128.m128_f32[0])\n                                       * (float)(flt_1823BC650 - si128.m128_f32[0])))\n                       + (float)(v236 * v236)) < 52900.0 )\n              sub_18016FE80(v228 + 496, 2631655000LL, 1);\n            *(_QWORD *)&flt_1823BC650 = 0;\n            flt_1823BC658 = 0.0;\n          }\n          if ( flt_1823BC65C != 0.0 || unk_1823BC660 != 0.0 || flt_1823BC664[0] != 0.0 )\n          {\n            v238 = flt_1823BC664[0] - *((float *)v464 + 6);\n            si128.m128_u64[0] = v464[2];\n            v239 = _mm_shuffle_ps((__m128)si128.m128_u64[0], (__m128)si128.m128_u64[0], 85).m128_f32[0];\n            if ( (float)((float)((float)((float)(unk_1823BC660 - v239) * (float)(unk_1823BC660 - v239))\n                               + (float)((float)(flt_1823BC65C - si128.m128_f32[0])\n                                       * (float)(flt_1823BC65C - si128.m128_f32[0])))\n                       + (float)(v238 * v238)) < 52900.0 )\n              sub_18016FE80(v228 + 496, 2631655000LL, 1);\n            *(_QWORD *)&flt_1823BC65C = 0;\n            flt_1823BC664[0] = 0.0;\n          }\n          v805 = 0;\n          v240 = *((_BYTE *)v469 + 9);\n          *(_QWORD *)(v228 + 168) = -1;\n          *(_DWORD *)(v228 + 88) = v218 != -1;\n          v241 = 1;\n          *(_QWORD *)(v228 + 96) = v218;\n          *(_BYTE *)(v228 + 160) = v240;\n          *(_OWORD *)(v228 + 1492) = 0;\n          if ( *(__int16 *)(v228 + 1488) > 1 )\n            v241 = *(_WORD *)(v228 + 1488);\n          *(_WORD *)(v228 + 1488) = v241;\n          *(_DWORD *)(v228 + 80) |= 0xFFu;\n          *(_QWORD *)(v228 + 72) |= 4uLL;\n          v242 = a1[11];\n          a1[11] = a1[12];\n          a1[12] = v242;\n          dword_182433F34 = 0;\n        }\n        v243 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, __int64, int))(*v464 + 16);\n        v244 = sub_180BCAC10(104);\n        if ( v244 )\n        {\n          v245 = unk_1824328A8;\n          v246 = v467;\n          v247 = v466.m128_i32[3];\n          *(_QWORD *)v244 = &CCsgoQuadRenderer::`vftable';\n          *(_DWORD *)(v244 + 8) = 0;\n          *(_QWORD *)(v244 + 16) = 0;\n          v734 = 0;\n          if ( v245 )\n          {\n            *(_QWORD *)(v244 + 16) = v245;\n            _InterlockedIncrement((volatile signed __int32 *)(v245 + 32));\n          }\n          *(__m128 *)(v244 + 24) = v466;\n          *(_QWORD *)(v244 + 40) = v467;\n          *(_DWORD *)(v244 + 48) = v468;\n          *(__m128 *)(v244 + 52) = v466;\n          v248 = v734;\n          *(_QWORD *)(v244 + 68) = v467;\n          *(_DWORD *)(v244 + 76) = v468;\n          *(_DWORD *)(v244 + 80) = v247;\n          *(_DWORD *)(v244 + 84) = v246;\n          *(_OWORD *)(v244 + 88) = v248;\n        }\n        else\n        {\n          v244 = 0;\n        }\n        LOBYTE(v425) = 1;\n        v249 = v243(v464, \"OverlaySmoke\", &v466, v244, v425);\n        LODWORD(v854) = 841267463;\n        v250 = v249;\n        if ( (unsigned __int8)sub_180DBD2E0(v249 + 496, v447, &v854, 0) )\n          *(_QWORD *)(v250 + 1128) ^= (0x94D049BB133111EBuLL\n                                     * ((0xBF58476D1CE4E5B9uLL\n                                       * ((v447[0] | 0x3224B90700000000LL) ^ ((v447[0] | 0x3224B90700000000uLL) >> 30)))\n                                      ^ ((0xBF58476D1CE4E5B9uLL\n                                        * ((v447[0] | 0x3224B90700000000LL) ^ ((v447[0] | 0x3224B90700000000uLL) >> 30))) >> 27)))\n                                    ^ ((0x94D049BB133111EBuLL\n                                      * ((0xBF58476D1CE4E5B9uLL\n                                        * ((v447[0] | 0x3224B90700000000LL) ^ ((v447[0] | 0x3224B90700000000uLL) >> 30)))\n                                       ^ ((0xBF58476D1CE4E5B9uLL\n                                         * ((v447[0] | 0x3224B90700000000LL) ^ ((v447[0] | 0x3224B90700000000uLL) >> 30))) >> 27))) >> 31);\n        sub_18016FE80(v250 + 496, 841267463, 1);\n        *(_QWORD *)(v250 + 1128) ^= 0xBF57756A2EA11C36uLL;\n        v251 = a1[12];\n        v454 = 0;\n        v523 = -1;\n        if ( (*(unsigned __int8 (__fastcall **)(_QWORD, __int64, unsigned int *, char *))(**(_QWORD **)(v250 + 1776)\n                                                                                        + 776LL))(\n               *(_QWORD *)(v250 + 1776),\n               v251,\n               &v523,\n               &v454) )\n        {\n          v854 = v523 | 0x100000000LL;\n          sub_180DD95B0(v250 + 1280, 2638189766LL, v854);\n        }\n        v720.m128_u64[0] = v251;\n        v720.m128_i32[2] = -1;\n        si128 = v720;\n        sub_180194250(v250 + 608, 2638189766LL, &si128);\n        v715 = v251;\n        v716 = 0;\n        sub_180DAF5A0(v250 + 1816, &v715);\n        v252 = v472;\n        v206 = v463;\n        v15 = v472 == -1;\n        v482 = a1[12];\n        v253 = *((_BYTE *)v469 + 9);\n        *(_QWORD *)(v250 + 168) = -1;\n        *(_DWORD *)(v250 + 88) = !v15;\n        *(_QWORD *)(v250 + 96) = v252;\n        *(_BYTE *)(v250 + 160) = v253;\n        *(_QWORD *)(v250 + 72) |= 0x804uLL;\n        goto LABEL_509;\n      }\n      v208 = a1 + 9;\n      v209 = a1 + 9;\n    }\n    sub_180170B70(a1 + 9);\n    v680 = 0;\n    sub_180202760(a1 + 9, &v680);\n    sub_180170B70(a1 + 10);\n    v677 = 0;\n    sub_180202760(a1 + 10, &v677);\n    goto LABEL_454;\n  }\nLABEL_509:\n  sub_1811537E0(a1, &v464);\n  if ( v512 )\n    sub_181135F40(a1, &v464);\n  if ( v505 )\n  {\n    v254 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, _QWORD *, int))(*v464 + 16);\n    v255 = (_QWORD *)sub_180BCAC10(32);\n    if ( v255 )\n    {\n      v256 = a1[103];\n      if ( v256 )\n        _InterlockedIncrement((volatile signed __int32 *)(v256 + 8));\n      v257 = (volatile signed __int32 *)a1[103];\n      v258 = a1[102];\n      v259 = a1[101];\n      *v255 = &CMouseTraceCoordReadbackRenderer::`vftable';\n      v255[1] = v259;\n      v255[2] = 0;\n      v255[3] = 0;\n      if ( v257 )\n      {\n        _InterlockedIncrement(v257 + 2);\n        v255[2] = v258;\n        v255[3] = v257;\n        if ( _InterlockedExchangeAdd(v257 + 2, 0xFFFFFFFF) == 1 )\n        {\n          (**(void (__fastcall ***)(volatile signed __int32 *))v257)(v257);\n          if ( _InterlockedExchangeAdd(v257 + 3, 0xFFFFFFFF) == 1 )\n            (*(void (__fastcall **)(volatile signed __int32 *))(*(_QWORD *)v257 + 8LL))(v257);\n        }\n      }\n      else\n      {\n        v255[2] = v258;\n        v255[3] = 0;\n      }\n    }\n    else\n    {\n      v255 = nullptr;\n    }\n    LOBYTE(v425) = 1;\n    v260 = v254(v464, \"MouseTraceCoordReadback\", &v466, v255, v425);\n    *(_QWORD *)(v260 + 72) |= 0x30004uLL;\n    v261 = v472;\n    v15 = v472 == -1;\n    v262 = *((_BYTE *)v469 + 9);\n    *(_QWORD *)(v260 + 168) = v473;\n    *(_DWORD *)(v260 + 88) = !v15;\n    *(_QWORD *)(v260 + 96) = v261;\n    *(_BYTE *)(v260 + 160) = v262;\n  }\n  v263 = 0;\n  v264 = &v564.m128i_i64[1];\n  do\n  {\n    (*(void (__fastcall **)(__int64 *, _QWORD))(*v464 + 752))(v464, *(v264 - 1));\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, *v264);\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v264[1]);\n    ++v263;\n    v264 += 5;\n  }\n  while ( v263 < 3 );\n  v265 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v464 + 8);\n  v626 = 0;\n  v627[1] = -1073741816;\n  v627[0] = 0;\n  v628 = 0;\n  sub_180DD5C80(&v626, \"CsgoForward\");\n  v266 = v265(v464, \"GameOverlay Particles\", &v466, &v626);\n  CBufferString::Purge((CBufferString *)v627, 0);\n  v267 = v472;\n  v15 = v472 == -1;\n  *(_QWORD *)(v266 + 168) = v473;\n  *(_DWORD *)(v266 + 88) = !v15;\n  *(_QWORD *)(v266 + 96) = v267;\n  *(_BYTE *)(v266 + 160) = 0;\n  *(_QWORD *)(v266 + 1152) |= 0x400uLL;\n  *(_QWORD *)(v266 + 1168) |= 0x800000uLL;\n  *(_QWORD *)(v266 + 72) |= 1uLL;\n  v268 = v495;\n  v269 = (_BYTE *)sub_1818607C0(&unk_182433000, 0xFFFFFFFFLL);\n  if ( !v269 )\n    v269 = *(_BYTE **)(unk_182433008 + 8LL);\n  v270 = *v269 && !v268;\n  v271 = (_BYTE *)sub_1818607C0(&unk_1823AEAD0, 0xFFFFFFFFLL);\n  if ( !v271 )\n    v271 = *(_BYTE **)(unk_1823AEAD8 + 8LL);\n  v272 = &v484;\n  v273 = 0;\n  if ( !*v271 )\n    v273 = v270;\n  if ( v273 )\n    v272 = v485;\n  sub_181162B90(\n    v494,\n    (_DWORD)v464,\n    v266 + 224,\n    (_DWORD)v272,\n    v479,\n    (__int64)v464,\n    (unsigned int)&xmmword_18200C330,\n    0,\n    -1,\n    0);\n  v274 = (int *)sub_1818607C0(&unk_182432810, 0xFFFFFFFFLL);\n  if ( !v274 )\n    v274 = *(int **)(unk_182432818 + 8LL);\n  v275 = a5;\n  v276 = *v274;\n  v277 = a5;\n  v278 = _mm_load_si128((const __m128i *)&xmmword_181B01D70);\n  while ( 1 )\n  {\n    v279 = 0;\n    v280 = (__m128i *)v277;\n    while ( 1 )\n    {\n      v281 = _mm_movemask_ps((__m128)_mm_cmpeq_epi32(v278, *v280));\n      if ( v281 )\n        break;\n      ++v279;\n      ++v280;\n      if ( v279 >= 2 )\n        goto LABEL_544;\n    }\n    v282 = dword_1820F5EC0[v281] + 4 * v279;\n    if ( (unsigned int)v282 < 8 )\n      break;\nLABEL_544:\n    v283 = *(_QWORD **)(v277 + 168);\n    if ( v283 )\n    {\n      while ( 2 )\n      {\n        v284 = (__m128i *)(v283 + 2);\n        v285 = 0;\n        while ( 1 )\n        {\n          v286 = _mm_movemask_ps((__m128)_mm_cmpeq_epi32(v278, *v284));\n          if ( v286 )\n            break;\n          ++v285;\n          ++v284;\n          if ( v285 )\n            goto LABEL_550;\n        }\n        v287 = dword_1820F5EC0[v286] + 4 * v285;\n        if ( (unsigned int)v287 < 4 )\n        {\n          v296 = (__m128 *)&v283[2 * v287 + 4];\n          goto LABEL_559;\n        }\nLABEL_550:\n        v283 = (_QWORD *)*v283;\n        if ( v283 )\n          continue;\n        break;\n      }\n    }\n    v277 = *(_QWORD *)(v277 + 160);\n    v463 = v206;\n    if ( !v277 )\n    {\n      v288 = 0;\n      v463 = v206;\nLABEL_553:\n      v276 = 0;\n      v289 = -1;\n      goto LABEL_554;\n    }\n  }\n  v296 = (__m128 *)(v277 + 16 * (v282 + 2LL));\nLABEL_559:\n  v288 = *v296;\n  if ( COERCE_FLOAT(*v296) == 0.0\n    && _mm_shuffle_ps(v288, v288, 85).m128_f32[0] == 0.0\n    && _mm_shuffle_ps(v288, v288, 170).m128_f32[0] == 0.0\n    && _mm_shuffle_ps(v288, v288, 255).m128_f32[0] == 0.0\n    || v461 )\n  {\n    goto LABEL_553;\n  }\n  v289 = -1;\n  if ( v276 > 0 )\n  {\n    v289 = v473;\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 744))(v464, v473);\n  }\nLABEL_554:\n  if ( v503 )\n  {\n    v290 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v464 + 8);\n    v623 = 0;\n    v624[1] = -1073741816;\n    v624[0] = 0;\n    v625 = 0;\n    sub_180DD5C80(&v623, \"ToolsUtil\");\n    v291 = v290(v464, \"ToolsUtil Translucent\", &v466, &v623);\n    CBufferString::Purge((CBufferString *)v624, 0);\n    v292 = v472;\n    v15 = v472 == -1;\n    v293 = *((_BYTE *)v469 + 9);\n    *(_QWORD *)(v291 + 168) = v473;\n    *(_DWORD *)(v291 + 88) = !v15;\n    *(_QWORD *)(v291 + 96) = v292;\n    *(_BYTE *)(v291 + 160) = v293;\n    v294 = *(_QWORD *)(v291 + 1152) | 2LL;\n    *(_QWORD *)(v291 + 1152) = v294;\n    v295 = *(_QWORD *)(v291 + 1160) | 0x400000000LL;\n    *(_QWORD *)(v291 + 1160) = v295;\n    if ( v500 )\n      *(_QWORD *)(v291 + 1152) = v294 | 0x400000;\n    else\n      *(_QWORD *)(v291 + 1160) = v295 | 0x800000;\n    v297 = v473;\n    v298 = v472;\n    v299 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *))(*v464 + 8);\n    v672 = 0;\n    v673[1] = -1073741816;\n    v673[0] = 0;\n    v674 = 0;\n    v300 = v299(v464, \"Tools_Translucent\", &v466, &v672);\n    CBufferString::Purge((CBufferString *)v673, 0);\n    *(_QWORD *)(v300 + 168) = v297;\n    *(_DWORD *)(v300 + 88) = v298 != -1;\n    *(_QWORD *)(v300 + 96) = v298;\n    v275 = a5;\n    *(_BYTE *)(v300 + 160) = 1;\n    *(_QWORD *)(v300 + 72) |= 1uLL;\n    *(_DWORD *)(v300 + 1756) = -1031947966;\n  }\n  si128.m128_u64[0] = -1;\n  v301 = (_BYTE *)sub_1818607C0(&unk_182432BD0, 0xFFFFFFFFLL);\n  if ( !v301 )\n    v301 = *(_BYTE **)(unk_182432BD8 + 8LL);\n  if ( *v301 )\n  {\n    if ( v507 || (v302 = 1, v508) )\n      v302 = 0;\n    if ( (unsigned int)sub_180166DF0(v470 + 272, 3762944595LL, v302) )\n      si128.m128_u64[0] = sub_181134FE0(a1, &v464);\n  }\n  v303 = (_BYTE *)sub_1818607C0(&unk_182432BA0, 0xFFFFFFFFLL);\n  if ( !v303 )\n    v303 = *(_BYTE **)(unk_182432BA8 + 8LL);\n  if ( *v303 && v512 && !v507 && (unsigned int)sub_180166DF0(v470 + 272, 1725806762, 1) )\n  {\n    v304 = (*(__int64 (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1256LL))(qword_1825C74E8);\n    v305 = 16;\n    if ( v304 == 61 )\n      v305 = 0;\n    v306 = *v469;\n    v603[1] = v469[1] / 2;\n    v603[2] = v305;\n    v603[0] = v306 / 2;\n    v604 = 0;\n    v605 = 9;\n    v307 = (*(__int64 (__fastcall **)(__int64 *, const char *, _DWORD *, __int64))(*v464 + 728))(\n             v464,\n             \"halfResTranslucentScreenSpace\",\n             v603,\n             1);\n    v578 = HIDWORD(v467);\n    v576 = v466.m128_i32[3] / 2;\n    v579 = v468;\n    v574 = 1;\n    v577 = (int)v467 / 2;\n    v575 = 0;\n    v308 = *(__int64 (__fastcall **)(__int64 *, const char *, __int64 *, int *))(*v464 + 8);\n    v620 = 0;\n    v621[1] = -1073741816;\n    v621[0] = 0;\n    v622 = 0;\n    sub_180DD5C80(&v620, &byte_181969088);\n    v309 = v308(v464, \"ClearSmokeTargets\", &v574, &v620);\n    CBufferString::Purge((CBufferString *)v621, 0);\n    v310 = 1;\n    *(_OWORD *)(v309 + 1492) = 0;\n    v311 = *(_WORD *)(v309 + 1488);\n    v806 = 0;\n    if ( v311 > 1 )\n      v310 = v311;\n    *(_WORD *)(v309 + 1488) = v310;\n    *(_QWORD *)(v309 + 168) = -1;\n    *(_DWORD *)(v309 + 88) = v307 != -1;\n    *(_QWORD *)(v309 + 96) = v307;\n    *(_BYTE *)(v309 + 160) = 0;\n    *(_QWORD *)(v309 + 72) |= 4uLL;\n    *(_DWORD *)(v309 + 80) = 255;\n    *(_QWORD *)(v309 + 1160) = -1;\n    LOBYTE(v435) = *((_BYTE *)v469 + 9);\n    v312 = (*(__int64 (__fastcall **)(_QWORD *, __int64 *, __int64 *, char *, __int64, __int64, int))(*qword_1825C74F8 + 128LL))(\n             qword_1825C74F8,\n             v464,\n             &v574,\n             v496,\n             v307,\n             -1,\n             v435);\n    v313 = 1.0;\n    v314 = 1.0;\n    v315 = (float)v576 / (float)v577;\n    if ( v315 <= 1.7777778 )\n    {\n      if ( v315 < 1.7777778 )\n        v313 = v315 / 1.7777778;\n    }\n    else\n    {\n      v314 = 1.7777778 / v315;\n    }\n    sub_181619000(&v835);\n    v316 = v314 * 200.0;\n    v836 = 0;\n    v844 = v313 * 200.0;\n    v837 = -1028390912;\n    v838 = 0;\n    v839 = -1028390912;\n    v840 = -1082130432;\n    v842 = -1027080192;\n    v843 = 1120403456;\n    v835 = 0;\n    v841 = (float)(v313 * 200.0) / v316;\n    v845 = v316;\n    v846 = _mm_load_si128((const __m128i *)&xmmword_18196F450);\n    sub_18161AF60(&v835);\n    (*(void (__fastcall **)(__int64, __int64 *))(*(_QWORD *)v312 + 32LL))(v312, &v835);\n    (*(void (__fastcall **)(__int64, _QWORD))(*(_QWORD *)v312 + 24LL))(v312, 0);\n    v770[1] = v472;\n    v774 = 0;\n    v770[0] = v472 != -1;\n    v775 = 0xFFFFFFFFFFFFFFFFuLL;\n    v771 = 0;\n    BYTE8(v774) = 1;\n    v772 = 0;\n    v773 = 0;\n    v776 = 0;\n    v777 = 0;\n    if ( qword_182432928 )\n      v317 = *qword_182432928;\n    else\n      v317 = 0;\n    LOBYTE(v431) = 0;\n    v318 = (*(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, __int64, _QWORD *, int))(*v464 + 88))(\n             v464,\n             \"ScreenParticleCombine\",\n             &v466,\n             v317,\n             v770,\n             v431);\n    sub_181179B40(v318, 852930852, v307, 0, 1, 0);\n    (*(void (__fastcall **)(__int64, const char *))(*(_QWORD *)v312 + 120LL))(v312, \"Translucent Screen Space\");\n  }\n  if ( v463 )\n  {\n    if ( v503 || !v512 )\n      goto LABEL_611;\n    v319 = sub_18088B930(v463);\n    v320 = v319;\n    if ( v319 )\n    {\n      if ( sub_1807CEBD0(v319) )\n      {\n        v321 = sub_1807CEBD0(v320);\n        v322 = v321;\n        if ( v321 )\n        {\n          if ( (unsigned __int8)sub_1807F18F0(v321) )\n            sub_18115D1E0(v322, (_DWORD)v464, (unsigned int)&v466, v472, v473);\n        }\n      }\n    }\n  }\n  if ( !v503 && v512 )\n  {\n    if ( dword_182076CB0 == -1 )\n    {\n      v323 = 0.0;\n    }\n    else\n    {\n      v324 = *((float *)off_18208ED60 + 13);\n      v323 = dword_182076CB0 == *((_DWORD *)off_18208ED60 + 1)\n           ? fminf(1.0, (float)(v324 * 8.0) + flt_182433F38)\n           : fmaxf(0.0, flt_182433F38 - (float)(v324 * 10.0));\n    }\n    flt_182433F38 = v323;\n    v325 = (int)(float)((float)((float)v465[1].m128_i32[0] / 10.0) * v323);\n    if ( v325 > 0 )\n    {\n      (*(void (__fastcall **)(_QWORD *, __int64 *, __int64))(*qword_1825C74E8 + 408LL))(qword_1825C74E8, &v582, 1);\n      LOBYTE(v441) = 1;\n      v738[1] = v472;\n      v742 = 0;\n      BYTE8(v742) = 1;\n      v743 = 0xFFFFFFFFFFFFFFFFuLL;\n      v738[0] = v472 != -1;\n      v739 = 0;\n      v740 = 0;\n      v741 = 0;\n      v744 = 0;\n      v745 = 0;\n      v640 = v465->m128_i32[3];\n      v638 = 1;\n      v639 = 0;\n      v641 = v325;\n      v642 = 0;\n      v643 = 1065353216;\n      (*(void (__fastcall **)(_QWORD *, __int64 *, const char *, _QWORD *, __int64 *, __int64, _DWORD, int))(*qword_1825C74F8 + 224LL))(\n        qword_1825C74F8,\n        v464,\n        \"LetterboxTop\",\n        v738,\n        &v638,\n        v582,\n        0,\n        v441);\n      LOBYTE(v442) = 1;\n      v326 = v465[1].m128_i32[0];\n      v652 = v465->m128_i32[3];\n      v651 = v326 - v325;\n      v653 = v326;\n      v650 = 1;\n      v654 = 0;\n      v655 = 1065353216;\n      (*(void (__fastcall **)(_QWORD *, __int64 *, const char *, _QWORD *, __int64 *, __int64, _DWORD, int))(*qword_1825C74F8 + 224LL))(\n        qword_1825C74F8,\n        v464,\n        \"LetterboxBottom\",\n        v738,\n        &v650,\n        v582,\n        0,\n        v442);\n    }\n  }\nLABEL_611:\n  if ( v276 )\n  {\n    v520 = 0;\n    v327 = *(_DWORD *)sub_1801CBB80(v275, v809, 2961920256LL, &v520);\n    if ( (*(unsigned int (__fastcall **)(_QWORD *))(*qword_1825C74E8 + 1256LL))(qword_1825C74E8) == 61 )\n    {\n      if ( v509 )\n        sub_18114F620(a1, &v464, 0);\n      v328 = v477;\n    }\n    else\n    {\n      v328 = v289;\n    }\n    v520 = v288;\n    sub_18115A1C0((_DWORD)a1, v276, (unsigned int)&v464, (unsigned int)&v520, v327, v472, v328);\n  }\n  if ( v289 != -1 )\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v289);\n  if ( v509 )\n  {\n    v329 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n    if ( !v329 )\n      v329 = *(_BYTE **)(unk_182432B68 + 8LL);\n    if ( *v329 )\n    {\n      v330 = sub_181152FA0(a1, &v464);\n      *(_QWORD *)(v330 + 1152) |= 0x8000000000000uLL;\n    }\n    v331 = (_BYTE *)sub_1818607C0(&unk_182432B60, 0xFFFFFFFFLL);\n    if ( !v331 )\n      v331 = *(_BYTE **)(unk_182432B68 + 8LL);\n    if ( *v331 && v501 )\n    {\n      v528 = 0;\n      CUtlString::Set((CUtlString *)&v528, \"Dynamic\");\n      LOBYTE(v332) = 1;\n      v333 = (_QWORD *)sub_1811527E0(a1, &v464, v332, &v528);\n      if ( v528 )\n        CUtlString::FreeMemoryBlock((CUtlString *)&v528);\n      (*(void (__fastcall **)(_QWORD *, _QWORD *))(*v333 + 48LL))(v333, v333);\n      v333[144] |= 0x8000000000000uLL;\n    }\n  }\n  v334 = (_BYTE *)sub_1818607C0(&unk_182432B80, 0xFFFFFFFFLL);\n  if ( !v334 )\n    v334 = *(_BYTE **)(unk_182432B88 + 8LL);\n  if ( *v334 && v512 )\n  {\n    v335 = (_DWORD *)sub_1818607C0(&unk_182432B90, 0xFFFFFFFFLL);\n    if ( !v335 )\n      v335 = *(_DWORD **)(unk_182432B98 + 8LL);\n    LOBYTE(v430) = v500;\n    sub_18115E2D0((_DWORD)v464, (unsigned int)&v466, v472, v473, *v335, v430);\n    if ( !v503 )\n    {\n      v336 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, __int64, int))(*v464 + 16);\n      v337 = sub_180BCAC10(16);\n      if ( v337 )\n      {\n        sub_1818607C0(&unk_182432E50, 0xFFFFFFFFLL);\n        v338 = sub_181130170(v337);\n      }\n      else\n      {\n        v338 = 0;\n      }\n      LOBYTE(v426) = 1;\n      v339 = v336(v464, \"PlayerHealthGlow\", &v466, v338, v426);\n      v340 = v472;\n      v15 = v472 == -1;\n      v341 = *((_BYTE *)v469 + 9);\n      *(_QWORD *)(v339 + 168) = v473;\n      *(_DWORD *)(v339 + 88) = !v15;\n      *(_QWORD *)(v339 + 96) = v340;\n      *(_BYTE *)(v339 + 160) = v341;\n    }\n  }\n  if ( v498 == 10 )\n  {\n    v342 = unk_1824329A8;\n  }\n  else\n  {\n    if ( v498 != 11 )\n      goto LABEL_654;\n    v342 = unk_1824329B0;\n  }\n  if ( v342 )\n  {\n    v343 = (__int16 *)(*(__int64 (__fastcall **)(_QWORD, __int64))(*unk_1825C7498 + 712LL))(unk_1825C7498, v342);\n    if ( v343 )\n    {\n      v344 = v343[1];\n      v345 = *v343;\n      v560 = v345;\n      v561 = v344;\n      v558 = 1;\n      v559 = 0;\n      v562 = 0;\n      v563 = 1065353216;\n      while ( v345 > v466.m128_i32[3] || 2 * v344 > (int)v467 )\n      {\n        v345 /= 2;\n        v560 = v345;\n        v344 /= 2;\n        v561 = v344;\n      }\n      LOBYTE(v441) = 1;\n      v778[1] = v472;\n      v559 = v467 - v344;\n      HIDWORD(v558) = (v466.m128_i32[3] - v345) / 2;\n      v782 = 0;\n      v778[0] = v472 != -1;\n      v783 = 0xFFFFFFFFFFFFFFFFuLL;\n      v779 = 0;\n      BYTE8(v782) = 1;\n      v780 = 0;\n      v781 = 0;\n      v784 = 0;\n      v785 = 0;\n      (*(void (__fastcall **)(_QWORD *, __int64 *, const char *, _QWORD *, __int64 *, __int64, int, int))(*qword_1825C74F8 + 224LL))(\n        qword_1825C74F8,\n        v464,\n        \"AlbedoOrReflectivity\",\n        v778,\n        &v558,\n        v342,\n        3,\n        v441);\n    }\n  }\nLABEL_654:\n  v346 = dword_1820B6190;\n  if ( dword_1820B6190 == -1 )\n    goto LABEL_665;\n  v347 = unk_1821CFDF0;\n  if ( !unk_1821CFDF0 )\n    goto LABEL_665;\n  if ( dword_1820B6190 != -2\n    && (v348 = *(_QWORD *)(unk_1821CFDF0 + 8 * ((unsigned __int64)(dword_1820B6190 & 0x7FFF) >> 9))) != 0\n    && (v349 = v348 + 112LL * (dword_1820B6190 & 0x1FF)) != 0 )\n  {\n    if ( *(_DWORD *)(v349 + 16) != dword_1820B6190 )\n      v349 = 0;\n  }\n  else\n  {\n    v349 = 0;\n  }\n  if ( !v349 || !*(_QWORD *)v349 )\n  {\nLABEL_665:\n    v350 = Plat_FloatTime();\n    v346 = dword_1820B6190;\n    v347 = unk_1821CFDF0;\n    v351 = v350;\n    flt_182433F3C = v351;\n  }\n  if ( v346 != -1 && v347 )\n  {\n    if ( v346 != -2\n      && (v352 = *(_QWORD *)(v347 + 8 * ((unsigned __int64)(v346 & 0x7FFF) >> 9))) != 0\n      && (v353 = v352 + 112LL * (v346 & 0x1FF)) != 0 )\n    {\n      if ( *(_DWORD *)(v353 + 16) != v346 )\n        v353 = 0;\n    }\n    else\n    {\n      v353 = 0;\n    }\n    if ( v353 && *(_QWORD *)v353 )\n    {\n      if ( v346 != -2\n        && (v354 = *(_QWORD *)(v347 + 8 * ((unsigned __int64)(v346 & 0x7FFF) >> 9))) != 0\n        && (v355 = (_DWORD *)(v354 + 112LL * (v346 & 0x1FF))) != nullptr )\n      {\n        if ( v355[4] != v346 )\n          v355 = nullptr;\n      }\n      else\n      {\n        v355 = nullptr;\n      }\n      if ( v355 )\n      {\n        if ( *(_QWORD *)v355 )\n        {\n          v356 = *(_QWORD *)(*(_QWORD *)v355 + 4032LL);\n          if ( v356 )\n          {\n            v357 = (__int16 *)(*(__int64 (__fastcall **)(_QWORD, _QWORD))(*unk_1825C7498 + 712LL))(\n                                unk_1825C7498,\n                                *(_QWORD *)(*(_QWORD *)v355 + 4032LL));\n            if ( v357 )\n            {\n              v358 = 1;\n              v359 = (*(__int64 (__fastcall **)(_QWORD, unsigned __int64))(*unk_1825C7498 + 768LL))(unk_1825C7498, v356);\n              switch ( v359 )\n              {\n                case 1:\n                  v358 = 2;\n                  break;\n                case 2:\n                  v358 = 4;\n                  break;\n                case 3:\n                  v358 = 6;\n                  break;\n                case 4:\n                  v358 = 8;\n                  break;\n                case 5:\n                  v358 = 16;\n                  break;\n              }\n              v360 = v357[1];\n              v659 = *v357;\n              v660 = v360;\n              v657 = 1;\n              v656[1] = v466.m128_i32[3] / 100;\n              v658 = 0;\n              v661 = 0;\n              v662 = 1065353216;\n              v656[0] = 1;\n              v656[5] = 0;\n              v656[6] = 1065353216;\n              v656[2] = (int)(float)((float)(int)v467 / 1.65);\n              v656[3] = v466.m128_i32[3] / 3;\n              v656[4] = (int)v467 / 3;\n              v436 = v357[1];\n              v361 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *, _QWORD, int, int, __int64 *, _DWORD *))(*v464 + 104);\n              v432 = *v357;\n              v545 = 0;\n              v362 = v361(v464, \"GrenadeCamera\", &v466, &v545, unk_182432910, v432, v436, &v657, v656);\n              v363 = v472;\n              v364 = (__m128i *)v362;\n              v15 = v472 == -1;\n              *(_QWORD *)(v362 + 168) = -1;\n              *(_DWORD *)(v362 + 88) = !v15;\n              *(_QWORD *)(v362 + 96) = v363;\n              *(_BYTE *)(v362 + 160) = 1;\n              v455 = 0;\n              v524 = -1;\n              if ( (*(unsigned __int8 (__fastcall **)(_QWORD, unsigned __int64, unsigned int *, char *))(**(_QWORD **)(v362 + 1776) + 776LL))(\n                     *(_QWORD *)(v362 + 1776),\n                     v356,\n                     &v524,\n                     &v455) )\n              {\n                a5 = v524 | 0x100000000LL;\n                sub_180DD95B0(&v364[80], 195809487, a5);\n              }\n              v717.m128_u64[0] = v356;\n              v717.m128_i32[2] = -1;\n              v520 = v717;\n              sub_180194250(&v364[38], 195809487, &v520);\n              v713 = v356;\n              v714 = 0;\n              sub_180DAF5A0(&v364[113].m128i_u64[1], &v713);\n              v365 = _mm_load_si128((const __m128i *)&xmmword_181BC3520);\n              v366 = v364 + 31;\n              v367 = 0;\n              while ( 1 )\n              {\n                v368 = _mm_movemask_ps((__m128)_mm_cmpeq_epi32(v365, *v366));\n                if ( v368 )\n                  break;\n                ++v367;\n                ++v366;\n                if ( v367 >= 3 )\n                  goto LABEL_703;\n              }\n              v373 = dword_1820F5EC0[v368] + 4 * v367;\n              if ( (unsigned int)v373 < 0xC )\n              {\n                v374 = &v364[34].m128i_i32[v373];\nLABEL_714:\n                v376 = 0xBF58476D1CE4E5B9uLL\n                     * ((*v374 | 0x4736309B00000000LL) ^ ((*v374 | 0x4736309B00000000uLL) >> 30));\n                v364[70].m128i_i64[1] ^= (0x94D049BB133111EBuLL * (v376 ^ (v376 >> 27)))\n                                       ^ ((0x94D049BB133111EBuLL * (v376 ^ (v376 >> 27))) >> 31);\n                goto LABEL_715;\n              }\nLABEL_703:\n              v369 = (_QWORD *)v364[37].m128i_i64[1];\n              if ( v369 )\n              {\n                while ( 2 )\n                {\n                  v370 = (__m128i *)(v369 + 2);\n                  v371 = 0;\n                  while ( 1 )\n                  {\n                    v372 = _mm_movemask_ps((__m128)_mm_cmpeq_epi32(v365, *v370));\n                    if ( v372 )\n                      break;\n                    ++v371;\n                    ++v370;\n                    if ( v371 >= 3 )\n                      goto LABEL_711;\n                  }\n                  v375 = dword_1820F5EC0[v372] + 4 * v371;\n                  if ( (unsigned int)v375 < 0xC )\n                  {\n                    v374 = (__int32 *)v369 + v375 + 16;\n                    goto LABEL_714;\n                  }\nLABEL_711:\n                  v369 = (_QWORD *)*v369;\n                  if ( v369 )\n                    continue;\n                  break;\n                }\n              }\nLABEL_715:\n              sub_18016FE80(&v364[31], 1194733723, v358 > 1);\n              v377 = 0xBF58476D1CE4E5B9uLL\n                   * (((v358 > 1) | 0x4736309B00000000LL) ^ (((v358 > 1) | 0x4736309B00000000uLL) >> 30));\n              v364[70].m128i_i64[1] ^= (0x94D049BB133111EBuLL * (v377 ^ (v377 >> 27)))\n                                     ^ ((0x94D049BB133111EBuLL * (v377 ^ (v377 >> 27))) >> 31);\n              sub_18016FE80(&v364[31], 2124330973, v358);\n              sub_18016FE80(&v364[31], 2812409297LL, (unsigned int)*v357);\n              sub_18016FE80(&v364[31], 4174409816LL, (unsigned int)v357[1]);\n              if ( unk_182319B1C )\n              {\n                v378 = (__m128)dword_182433F40[0];\n                v379 = *((float *)off_18208ED60 + 13) + *((float *)off_18208ED60 + 13);\n                if ( (float)(1.0 - *(float *)dword_182433F40) <= v379 )\n                {\n                  if ( (float)-v379 <= (float)(1.0 - *(float *)dword_182433F40) )\n                    v378 = (__m128)0x3F800000u;\n                  else\n                    v378.m128_f32[0] = *(float *)dword_182433F40 - v379;\n                }\n                else\n                {\n                  v378.m128_f32[0] = *(float *)dword_182433F40 + v379;\n                }\n              }\n              else\n              {\n                v378 = 0;\n              }\n              v380 = _mm_shuffle_ps(v378, v378, 0);\n              dword_182433F40[0] = v380.m128_i32[0];\n              v520 = v380;\n              v601 = v380;\n              sub_1801702B0(&v364[14], 2848524937LL, &v520);\n              v381 = 0;\n              v381.m128_f32[0] = Plat_FloatTime();\n              v381.m128_f32[0] = v381.m128_f32[0] - flt_182433F3C;\n              v520 = _mm_shuffle_ps(v381, v381, 0);\n              v602 = v520;\n              sub_1801702B0(&v364[14], 3020131132LL, &v520);\n            }\n          }\n        }\n      }\n    }\n  }\n  if ( v498 == 16 )\n  {\n    v382 = *qword_1825C7330;\n    v519[0] = v465[1].m128_i32[0] / 2;\n    v383 = v519[0];\n    v384 = v519[0];\n    v385 = (KeyValues *)(*(__int64 (__fastcall **)(_QWORD *))(v382 + 144))(qword_1825C7330);\n    Key = KeyValues::FindKey(v385, \"MaterialSystem2/ShaderIDColors\", 0);\n    FirstSubKey = KeyValues::GetFirstSubKey(Key);\n    if ( FirstSubKey )\n    {\n      do\n      {\n        Name = KeyValues::GetName(FirstSubKey);\n        v514 = 0;\n        v389 = Name;\n        KeyValues::GetColor(FirstSubKey, v518, 0, &v514);\n        v447[0] = v518[2];\n        LODWORD(v854) = v518[1];\n        v390 = *v464;\n        LODWORD(a5) = v518[0];\n        v391 = (*(__int64 (__fastcall **)(__int64 *))(v390 + 424))(v464);\n        for ( j = 0; j < 9; ++j )\n        {\n          if ( j != 4 )\n          {\n            v393 = *(void (__fastcall **)(__int64, __int64, _QWORD, const char *, int, int *, _QWORD))(*(_QWORD *)v391 + 224LL);\n            v515 = -16777216;\n            v394 = sub_18015ECF0(v728);\n            v393(v391, v394, 0, v389, 1065353216, &v515, 0);\n          }\n        }\n        v395 = *(void (__fastcall **)(__int64, __int64, _QWORD, const char *, int, _BYTE *, _QWORD))(*(_QWORD *)v391 + 224LL);\n        v516[0] = a5;\n        v516[1] = v854;\n        v516[2] = v447[0];\n        v516[3] = -1;\n        v396 = sub_18015ECF0(v737);\n        v395(v391, v396, 0, v389, 1065353216, v516, 0);\n        v384 += 12;\n        FirstSubKey = KeyValues::GetNextKey(FirstSubKey);\n      }\n      while ( FirstSubKey );\n      v383 = v519[0];\n    }\n    (*(void (__fastcall **)(_QWORD *, __int64 *, __int64))(*qword_1825C74E8 + 408LL))(qword_1825C74E8, v685, 1);\n    v786[1] = v472;\n    v790 = 0;\n    BYTE8(v790) = 1;\n    v791 = 0xFFFFFFFFFFFFFFFFuLL;\n    v786[0] = v472 != -1;\n    v787 = 0;\n    v788 = 0;\n    v789 = 0;\n    v792 = 0;\n    v793 = 0;\n    sub_1811166E0((unsigned int)v804, 6, v383 - 6, 270, v384 - v383 + 6, 0, 1065353216);\n    LOBYTE(v441) = 1;\n    (*(void (__fastcall **)(_QWORD *, __int64 *, const char *, _QWORD *, _BYTE *, __int64, _DWORD, int))(*qword_1825C74F8 + 224LL))(\n      qword_1825C74F8,\n      v464,\n      \"BackgroundForShaderIDs\",\n      v786,\n      v804,\n      v685[0],\n      0,\n      v441);\n    v77 = a1;\n  }\n  if ( v456 )\n    v397 = !v446;\n  else\n    v397 = 1;\n  sub_18114C3E0((_DWORD)v77, (unsigned int)&v464, v457, v456, si128.m128_i64[0], (__int64)v727, v397);\n  (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v472);\n  v472 = -1;\n  sub_1811363B0(v77, &v464);\n  (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v475);\n  v475 = -1;\n  sub_1811530B0(v77, &v464);\n  if ( (*(unsigned __int8 (__fastcall **)(_QWORD))(*unk_1825C74A8 + 464LL))(unk_1825C74A8) )\n  {\n    v398 = (_BYTE *)sub_1818607C0(&unk_182433180, 0xFFFFFFFFLL);\n    if ( !v398 )\n      v398 = *(_BYTE **)(unk_182433188 + 8LL);\n    if ( *v398 )\n      sub_18113BB60(v77, &v464);\n  }\n  if ( v474.m128i_i64[0] != -1 )\n  {\n    (*(void (__fastcall **)(__int64 *))(*v464 + 752))(v464);\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v474.m128i_i64[1]);\n    v474 = v92;\n  }\n  v399 = sub_181169A40(v470 + 784, 804196462, 0);\n  v400 = *v465;\n  v555 = *v465;\n  v401 = v465[1].m128_i64[0];\n  v556 = v401;\n  v402 = v465[1].m128_i32[2];\n  v557 = v402;\n  if ( v399 )\n  {\n    v400 = *(__m128 *)v399;\n    v555 = *(__m128 *)v399;\n    v401 = *(_QWORD *)(v399 + 16);\n    v556 = v401;\n    v402 = *(_DWORD *)(v399 + 24);\n    v557 = v402;\n  }\n  if ( v544 )\n  {\n    v450 = v402;\n    si128 = v400;\n    v449 = v401;\n    sub_18113B690(v77, &v464, &si128);\n  }\n  if ( v446 )\n  {\n    v678 = 0;\n    v679 = 13;\n    (*(void (__fastcall **)(__int64 *, __int64, __int128 *))(*v464 + 336))(v464, v471, &v678);\n    v403 = *v469;\n    v617[1] = v469[1];\n    v617[0] = v403;\n    v617[2] = 0;\n    v618 = BYTE12(v678);\n    v619 = 13;\n    v404 = (*(__int64 (__fastcall **)(__int64 *, const char *, _DWORD *, _QWORD))(*v464 + 728))(\n             v464,\n             \"PanoramaAlphaCopy\",\n             v617,\n             0);\n    LOBYTE(v441) = 0;\n    v794[0] = v404 != -1;\n    v405 = v404;\n    v798 = 0;\n    v794[1] = v404;\n    v799 = 0xFFFFFFFFFFFFFFFFuLL;\n    v795 = 0;\n    BYTE8(v798) = 1;\n    v796 = 0;\n    v797 = 0;\n    v800 = 0;\n    v801 = 0;\n    (*(void (__fastcall **)(__int64 *, const char *, __int64, __m128 *, __m128 *, _QWORD *, _QWORD, int, _QWORD, _QWORD))(*v464 + 344))(\n      v464,\n      \"Copy for Panorama Alpha\",\n      v471,\n      &v466,\n      &v466,\n      v794,\n      0,\n      v441,\n      0,\n      0);\n    v684 = v468;\n    v681 = v466;\n    v683 = HIDWORD(v467);\n    v681.m128_i32[2] = v467;\n    v682 = -(int)v467;\n    v406 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, int *, _QWORD, int, int, __m128 *, __m128 *))(*v464 + 104);\n    v437 = v469[1];\n    v434 = *v469;\n    v546 = 0;\n    v407 = v406(v464, \"PanoramaAlphaSetup\", &v466, &v546, unk_182432960, v434, v437, &v466, &v681);\n    v408 = v471;\n    v15 = v471 == -1;\n    v409 = v407;\n    *(_QWORD *)(v407 + 168) = -1;\n    *(_DWORD *)(v407 + 88) = !v15;\n    *(_QWORD *)(v407 + 96) = v408;\n    *(_BYTE *)(v407 + 160) = 0;\n    if ( v405 != -1 )\n    {\n      (*(void (__fastcall **)(_QWORD, unsigned __int64 *, __int64))(**(_QWORD **)(v407 + 1776) + 360LL))(\n        *(_QWORD *)(v407 + 1776),\n        &v552,\n        v405);\n      v458 = 0;\n      v525 = -1;\n      (*(void (__fastcall **)(_QWORD, unsigned __int64, unsigned int *, char *))(**(_QWORD **)(v409 + 1776) + 776LL))(\n        *(_QWORD *)(v409 + 1776),\n        v552,\n        &v525,\n        &v458);\n      a5 = v525 | 0x100000000LL;\n      sub_180DD95B0(v409 + 1280, 1424936617, a5);\n      v712.m128_u64[0] = v552;\n      v712.m128_i32[2] = -1;\n      si128 = v712;\n      sub_180194250(v409 + 608, 1424936617, &si128);\n      v721 = v552;\n      v722 = 0;\n      sub_180DAF5A0(v409 + 1816, &v721);\n    }\n    if ( v477 != -1 )\n    {\n      (*(void (__fastcall **)(_QWORD, unsigned __int64 *))(**(_QWORD **)(v409 + 1776) + 360LL))(\n        *(_QWORD *)(v409 + 1776),\n        &v553);\n      v459[0] = 0;\n      v526 = -1;\n      (*(void (__fastcall **)(_QWORD, unsigned __int64, unsigned int *, char *))(**(_QWORD **)(v409 + 1776) + 776LL))(\n        *(_QWORD *)(v409 + 1776),\n        v553,\n        &v526,\n        v459);\n      a5 = v526 | 0x100000000LL;\n      sub_180DD95B0(v409 + 1280, 3137953608LL, a5);\n      v725.m128_u64[0] = v553;\n      v725.m128_i32[2] = -1;\n      si128 = v725;\n      sub_180194250(v409 + 608, 3137953608LL, &si128);\n      v723 = v553;\n      v724 = 0;\n      sub_180DAF5A0(v409 + 1816, &v723);\n    }\n    v588.m128_i32[3] = 0;\n    v410 = v588;\n    v410.m128_f32[0] = 1.0 / (float)*v469;\n    v411 = _mm_shuffle_ps(v410, v410, 225);\n    v411.m128_f32[0] = 1.0 / (float)v469[1];\n    v412 = _mm_shuffle_ps(v411, v411, 198);\n    v412.m128_f32[0] = 0.0;\n    si128 = _mm_shuffle_ps(v412, v412, 201);\n    sub_1801702B0(v409 + 224, 3540550633LL, &si128);\n    si128 = _mm_shuffle_ps((__m128)v468, (__m128)v468, 0);\n    v587 = si128;\n    sub_1801702B0(v409 + 224, 2786492063LL, &si128);\n    (*(void (__fastcall **)(__int64 *, __int64))(*v464 + 752))(v464, v405);\n    v77 = a1;\n  }\n  if ( (unsigned __int8)sub_180C75920() )\n  {\n    v450 = v557;\n    si128 = v555;\n    v449 = v556;\n    LOBYTE(v433) = *((_BYTE *)v469 + 9);\n    sub_18113C520((_DWORD)v77 + 840, 0, (_DWORD)v464, v471, (__int64)&si128);\n  }\n  if ( v26 > 0.001 )\n  {\n    v413 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, __int64, int, int))(*v464 + 16);\n    v414 = sub_180DB3F10(*v464, &unk_182432978, &v555);\n    LOBYTE(v427) = 1;\n    v415 = v413(v464, \"Fade To Black\", &v555, v414, v427, v433);\n    *(_QWORD *)(v415 + 72) |= 0x804uLL;\n    *(_DWORD *)(v415 + 80) = 0;\n    v416 = v471;\n    *(_QWORD *)(v415 + 168) = -1;\n    *(_DWORD *)(v415 + 88) = v416 != -1;\n    *(_QWORD *)(v415 + 96) = v416;\n    *(_BYTE *)(v415 + 160) = 0;\n  }\n  if ( v460 && !v547 )\n  {\n    v417 = *(__int64 (__fastcall **)(__int64 *, const char *, __m128 *, _QWORD *, int))(*v464 + 16);\n    v418 = (_QWORD *)sub_180BCAC10(8);\n    if ( v418 )\n      *v418 = &CCsgoMagBorderProceduralLayerRenderer::`vftable';\n    else\n      v418 = nullptr;\n    LOBYTE(v427) = 1;\n    v419 = v417(v464, \"MagBorder\", &v555, v418, v427);\n    v420 = v471;\n    v15 = v471 == -1;\n    *(_QWORD *)(v419 + 168) = -1;\n    LOBYTE(v28) = !v15;\n    *(_DWORD *)(v419 + 88) = v28;\n    *(_QWORD *)(v419 + 96) = v420;\n    *(_BYTE *)(v419 + 160) = 0;\n    *(_QWORD *)(v419 + 72) |= 0x20000uLL;\n  }\n  sub_18114AAC0(v77, &v464);\n  sub_18114A750(v77, &v464);\n  if ( (*(__int64 (__fastcall **)(__int64 *))(*v464 + 800))(v464) )\n    (*(void (__fastcall **)(__int64 *, _QWORD))(*v464 + 792))(v464, 0);\n  v421 = (_BYTE *)sub_1818607C0(&unk_182433300, 0xFFFFFFFFLL);\n  if ( !v421 )\n    v421 = *(_BYTE **)(unk_182433308 + 8LL);\n  if ( *v421 )\n    sub_18116E1C0(v77 + 47, v464, 0);\n  CBufferString::Purge((CBufferString *)v497, 0);\n  v422 = v583;\n  if ( v583 )\n  {\n    (*(void (__fastcall **)(__int64))(*(_QWORD *)v583 + 80LL))(v583);\n    (*(void (__fastcall **)(__int64, __int64))(*(_QWORD *)v584 + 504LL))(v584, v422);\n  }\n}",
+  "refs": [
+    {
+      "addr": "0x181167980",
+      "name": "sub_181167980"
+    },
+    {
+      "addr": "0x180189820",
+      "name": "sub_180189820"
+    },
+    {
+      "addr": "0x1825c7498",
+      "name": "unk_1825C7498"
+    },
+    {
+      "addr": "0x181bc2790",
+      "name": "aCreatePerviewc",
+      "string": "Create PerViewConstantBufferCsgo_t"
+    },
+    {
+      "addr": "0x181130a20",
+      "name": "sub_181130A20"
+    },
+    {
+      "addr": "0x18116a7b0",
+      "name": "sub_18116A7B0"
+    },
+    {
+      "addr": "0x181180060",
+      "name": "sub_181180060"
+    },
+    {
+      "addr": "0x182407e40",
+      "name": "unk_182407E40"
+    },
+    {
+      "addr": "0x18208ed60",
+      "name": "off_18208ED60"
+    },
+    {
+      "addr": "0x1820a7bf4",
+      "name": "dword_1820A7BF4"
+    },
+    {
+      "addr": "0x181156b80",
+      "name": "sub_181156B80"
+    },
+    {
+      "addr": "0x1825c74e8",
+      "name": "qword_1825C74E8"
+    },
+    {
+      "addr": "0x181169a40",
+      "name": "sub_181169A40"
+    },
+    {
+      "addr": "0x181bc27b8",
+      "name": "aIntermediateDe",
+      "string": "intermediate_depth_rt"
+    },
+    {
+      "addr": "0x181bc27d0",
+      "name": "aIntermediateCo",
+      "string": "intermediate_color_rt"
+    },
+    {
+      "addr": "0x180170090",
+      "name": "sub_180170090"
+    },
+    {
+      "addr": "0x1818aa338",
+      "name": "sub_1818AA338"
+    },
+    {
+      "addr": "0x182433f30",
+      "name": "dword_182433F30"
+    },
+    {
+      "addr": "0x1825c7330",
+      "name": "qword_1825C7330"
+    },
+    {
+      "addr": "0x182433f2c",
+      "name": "unk_182433F2C"
+    },
+    {
+      "addr": "0x181957700",
+      "name": "?GetInt@KeyValues@@QEBAHPEBDH@Z"
+    },
+    {
+      "addr": "0x181bc1430",
+      "name": "aEngine2Renderi",
+      "string": "Engine2/RenderingPipeline/AmbientOcclusionProxies"
+    },
+    {
+      "addr": "0x1818aa2cc",
+      "name": "sub_1818AA2CC"
+    },
+    {
+      "addr": "0x180166df0",
+      "name": "sub_180166DF0"
+    },
+    {
+      "addr": "0x1818607c0",
+      "name": "sub_1818607C0"
+    },
+    {
+      "addr": "0x182432a70",
+      "name": "unk_182432A70"
+    },
+    {
+      "addr": "0x182432a78",
+      "name": "unk_182432A78"
+    },
+    {
+      "addr": "0x1801cbb80",
+      "name": "sub_1801CBB80"
+    },
+    {
+      "addr": "0x181131180",
+      "name": "sub_181131180"
+    },
+    {
+      "addr": "0x180c107d0",
+      "name": "sub_180C107D0"
+    },
+    {
+      "addr": "0x1808a0520",
+      "name": "sub_1808A0520"
+    },
+    {
+      "addr": "0x180926510",
+      "name": "sub_180926510"
+    },
+    {
+      "addr": "0x18161a890",
+      "name": "sub_18161A890"
+    },
+    {
+      "addr": "0x1801702b0",
+      "name": "sub_1801702B0"
+    },
+    {
+      "addr": "0x180848e20",
+      "name": "sub_180848E20"
+    },
+    {
+      "addr": "0x182433210",
+      "name": "unk_182433210"
+    },
+    {
+      "addr": "0x182433218",
+      "name": "unk_182433218"
+    },
+    {
+      "addr": "0x182433230",
+      "name": "unk_182433230"
+    },
+    {
+      "addr": "0x182433238",
+      "name": "unk_182433238"
+    },
+    {
+      "addr": "0x18016fe80",
+      "name": "sub_18016FE80"
+    },
+    {
+      "addr": "0x1819adbd0",
+      "name": "xmmword_1819ADBD0"
+    },
+    {
+      "addr": "0x181979d70",
+      "name": "xmmword_181979D70"
+    },
+    {
+      "addr": "0x182433240",
+      "name": "unk_182433240"
+    },
+    {
+      "addr": "0x182433248",
+      "name": "unk_182433248"
+    },
+    {
+      "addr": "0x182433200",
+      "name": "unk_182433200"
+    },
+    {
+      "addr": "0x182433208",
+      "name": "unk_182433208"
+    },
+    {
+      "addr": "0x182433220",
+      "name": "unk_182433220"
+    },
+    {
+      "addr": "0x182433228",
+      "name": "unk_182433228"
+    },
+    {
+      "addr": "0x1824331f0",
+      "name": "unk_1824331F0"
+    },
+    {
+      "addr": "0x1824331f8",
+      "name": "unk_1824331F8"
+    },
+    {
+      "addr": "0x18200dbf0",
+      "name": "dword_18200DBF0"
+    },
+    {
+      "addr": "0x1821cfdf0",
+      "name": "unk_1821CFDF0"
+    },
+    {
+      "addr": "0x18200f0d0",
+      "name": "dword_18200F0D0"
+    },
+    {
+      "addr": "0x1801df7d0",
+      "name": "sub_1801DF7D0"
+    },
+    {
+      "addr": "0x180362ec0",
+      "name": "sub_180362EC0"
+    },
+    {
+      "addr": "0x181983290",
+      "name": "xmmword_181983290"
+    },
+    {
+      "addr": "0x181957870",
+      "name": "V_sinf"
+    },
+    {
+      "addr": "0x18116e060",
+      "name": "sub_18116E060"
+    },
+    {
+      "addr": "0x182433300",
+      "name": "unk_182433300"
+    },
+    {
+      "addr": "0x182433308",
+      "name": "unk_182433308"
+    },
+    {
+      "addr": "0x18117bfe0",
+      "name": "sub_18117BFE0"
+    },
+    {
+      "addr": "0x181bc28b8",
+      "name": "aCsgoreflection",
+      "string": "CsgoReflectionColor"
+    },
+    {
+      "addr": "0x181bc28a0",
+      "name": "aCsgoreflection_0",
+      "string": "CsgoReflectionDepth"
+    },
+    {
+      "addr": "0x18117d190",
+      "name": "sub_18117D190"
+    },
+    {
+      "addr": "0x18116bfe0",
+      "name": "sub_18116BFE0"
+    },
+    {
+      "addr": "0x181160200",
+      "name": "sub_181160200"
+    },
+    {
+      "addr": "0x181bc28cc",
+      "name": "aPanort",
+      "string": "panoRT"
+    },
+    {
+      "addr": "0x182433338",
+      "name": "qword_182433338"
+    },
+    {
+      "addr": "0x181bc28d8",
+      "name": "aCopygamebackgr",
+      "string": "CopyGameBackground"
+    },
+    {
+      "addr": "0x180bcac10",
+      "name": "sub_180BCAC10"
+    },
+    {
+      "addr": "0x181bc00f8",
+      "name": "??_7CClearQuadOverdrawVisualizationTextures@@6B@"
+    },
+    {
+      "addr": "0x181bc28f0",
+      "name": "aClearquadcover",
+      "string": "ClearQuadCoverage"
+    },
+    {
+      "addr": "0x182432a90",
+      "name": "unk_182432A90"
+    },
+    {
+      "addr": "0x182432a98",
+      "name": "unk_182432A98"
+    },
+    {
+      "addr": "0x1811653e0",
+      "name": "sub_1811653E0"
+    },
+    {
+      "addr": "0x18114add0",
+      "name": "sub_18114ADD0"
+    },
+    {
+      "addr": "0x181134600",
+      "name": "sub_181134600"
+    },
+    {
+      "addr": "0x181bc2908",
+      "name": "aOcclusionquery",
+      "string": "OcclusionQueryIssueLayer"
+    },
+    {
+      "addr": "0x182433310",
+      "name": "unk_182433310"
+    },
+    {
+      "addr": "0x182433318",
+      "name": "unk_182433318"
+    },
+    {
+      "addr": "0x181bc2928",
+      "name": "aPlayerocclusio_0",
+      "string": "PlayerOcclusionQueryReadbackLayer"
+    },
+    {
+      "addr": "0x1801922f0",
+      "name": "sub_1801922F0"
+    },
+    {
+      "addr": "0x181b405b8",
+      "name": "aPlayerocclusio",
+      "string": "PlayerOcclusionQuerySceneObject"
+    },
+    {
+      "addr": "0x182433080",
+      "name": "unk_182433080"
+    },
+    {
+      "addr": "0x182433088",
+      "name": "unk_182433088"
+    },
+    {
+      "addr": "0x18113aaa0",
+      "name": "sub_18113AAA0"
+    },
+    {
+      "addr": "0x18113b170",
+      "name": "sub_18113B170"
+    },
+    {
+      "addr": "0x1819577c0",
+      "name": "?Set@CUtlString@@QEAAXPEBD@Z"
+    },
+    {
+      "addr": "0x181bc2950",
+      "name": "aStaticAlphates",
+      "string": "Static AlphaTest Forward"
+    },
+    {
+      "addr": "0x181134180",
+      "name": "sub_181134180"
+    },
+    {
+      "addr": "0x181957790",
+      "name": "?FreeMemoryBlock@CUtlString@@AEAAXXZ"
+    },
+    {
+      "addr": "0x181bc2970",
+      "name": "aAlphaTest",
+      "string": "Alpha Test"
+    },
+    {
+      "addr": "0x181979d90",
+      "name": "xmmword_181979D90"
+    },
+    {
+      "addr": "0x1811306a0",
+      "name": "sub_1811306A0"
+    },
+    {
+      "addr": "0x181bc2980",
+      "name": "aDynamicAlphate",
+      "string": "Dynamic AlphaTest Forward"
+    },
+    {
+      "addr": "0x181957968",
+      "name": "?Purge@CBufferString@@QEAAXH@Z"
+    },
+    {
+      "addr": "0x1825c74f8",
+      "name": "qword_1825C74F8"
+    },
+    {
+      "addr": "0x181bc29a0",
+      "name": "aHammerraytrace",
+      "string": "HammerRaytracedImage"
+    },
+    {
+      "addr": "0x181bc29b8",
+      "name": "aStaticOpaqueFo",
+      "string": "Static Opaque Forward"
+    },
+    {
+      "addr": "0x181149c90",
+      "name": "sub_181149C90"
+    },
+    {
+      "addr": "0x181bc21e8",
+      "name": "aOpaque",
+      "string": "Opaque"
+    },
+    {
+      "addr": "0x180dd5c80",
+      "name": "sub_180DD5C80"
+    },
+    {
+      "addr": "0x181bc29d0",
+      "name": "aToolsutil",
+      "string": "ToolsUtil"
+    },
+    {
+      "addr": "0x181bc29e0",
+      "name": "aToolsutilOpaqu",
+      "string": "ToolsUtil Opaque"
+    },
+    {
+      "addr": "0x181bc04a8",
+      "name": "aToolsOpaque",
+      "string": "Tools_Opaque"
+    },
+    {
+      "addr": "0x181bc04b8",
+      "name": "aToolsPretransl",
+      "string": "Tools_PreTranslucent"
+    },
+    {
+      "addr": "0x182432b20",
+      "name": "unk_182432B20"
+    },
+    {
+      "addr": "0x182432b28",
+      "name": "unk_182432B28"
+    },
+    {
+      "addr": "0x181152270",
+      "name": "sub_181152270"
+    },
+    {
+      "addr": "0x181132b90",
+      "name": "sub_181132B90"
+    },
+    {
+      "addr": "0x181bc29f8",
+      "name": "aCablesAlphates",
+      "string": "Cables (alphatest particle objects)"
+    },
+    {
+      "addr": "0x181bc2a20",
+      "name": "aDynamicOpaqueF_1",
+      "string": "Dynamic Opaque Forward (receiving AO proxies)"
+    },
+    {
+      "addr": "0x182432a50",
+      "name": "unk_182432A50"
+    },
+    {
+      "addr": "0x182432a58",
+      "name": "unk_182432A58"
+    },
+    {
+      "addr": "0x182432d40",
+      "name": "unk_182432D40"
+    },
+    {
+      "addr": "0x182432d48",
+      "name": "unk_182432D48"
+    },
+    {
+      "addr": "0x181139610",
+      "name": "sub_181139610"
+    },
+    {
+      "addr": "0x182432e70",
+      "name": "unk_182432E70"
+    },
+    {
+      "addr": "0x182432e78",
+      "name": "unk_182432E78"
+    },
+    {
+      "addr": "0x181bc04e8",
+      "name": "aForward_0",
+      "string": "Forward"
+    },
+    {
+      "addr": "0x181136300",
+      "name": "sub_181136300"
+    },
+    {
+      "addr": "0x181bc1188",
+      "name": "aSky",
+      "string": "Sky"
+    },
+    {
+      "addr": "0x181bc2a50",
+      "name": "aHammerselected",
+      "string": "HammerSelectedSky"
+    },
+    {
+      "addr": "0x181bc2a68",
+      "name": "aToolsPostOcclu",
+      "string": "Tools Post Occlusion Query"
+    },
+    {
+      "addr": "0x181b1dcf0",
+      "name": "aBeforetransluc",
+      "string": "BeforeTranslucent"
+    },
+    {
+      "addr": "0x181167d50",
+      "name": "sub_181167D50"
+    },
+    {
+      "addr": "0x1824330c0",
+      "name": "unk_1824330C0"
+    },
+    {
+      "addr": "0x1824330c8",
+      "name": "unk_1824330C8"
+    },
+    {
+      "addr": "0x182432b60",
+      "name": "unk_182432B60"
+    },
+    {
+      "addr": "0x182432b68",
+      "name": "unk_182432B68"
+    },
+    {
+      "addr": "0x18114f620",
+      "name": "sub_18114F620"
+    },
+    {
+      "addr": "0x181155560",
+      "name": "sub_181155560"
+    },
+    {
+      "addr": "0x182432f60",
+      "name": "unk_182432F60"
+    },
+    {
+      "addr": "0x182432f68",
+      "name": "unk_182432F68"
+    },
+    {
+      "addr": "0x181149210",
+      "name": "sub_181149210"
+    },
+    {
+      "addr": "0x182432f80",
+      "name": "unk_182432F80"
+    },
+    {
+      "addr": "0x182432f88",
+      "name": "unk_182432F88"
+    },
+    {
+      "addr": "0x182432bd0",
+      "name": "unk_182432BD0"
+    },
+    {
+      "addr": "0x182432bd8",
+      "name": "unk_182432BD8"
+    },
+    {
+      "addr": "0x181138ca0",
+      "name": "sub_181138CA0"
+    },
+    {
+      "addr": "0x1807939a0",
+      "name": "sub_1807939A0"
+    },
+    {
+      "addr": "0x1809ec310",
+      "name": "sub_1809EC310"
+    },
+    {
+      "addr": "0x182432a60",
+      "name": "unk_182432A60"
+    },
+    {
+      "addr": "0x181bc1020",
+      "name": "aSmokelpvsetup",
+      "string": "SmokeLPVSetup"
+    },
+    {
+      "addr": "0x1811606e0",
+      "name": "sub_1811606E0"
+    },
+    {
+      "addr": "0x181151970",
+      "name": "sub_181151970"
+    },
+    {
+      "addr": "0x18116bb50",
+      "name": "sub_18116BB50"
+    },
+    {
+      "addr": "0x181152fa0",
+      "name": "sub_181152FA0"
+    },
+    {
+      "addr": "0x181169480",
+      "name": "sub_181169480"
+    },
+    {
+      "addr": "0x18117cb30",
+      "name": "sub_18117CB30"
+    },
+    {
+      "addr": "0x181148230",
+      "name": "sub_181148230"
+    },
+    {
+      "addr": "0x18014c0e0",
+      "name": "sub_18014C0E0"
+    },
+    {
+      "addr": "0x181bc2a88",
+      "name": "aMboitDSmoke14",
+      "string": "MBOIT(%d) Smoke 1/4"
+    },
+    {
+      "addr": "0x181969088",
+      "name": "byte_181969088"
+    },
+    {
+      "addr": "0x181148470",
+      "name": "sub_181148470"
+    },
+    {
+      "addr": "0x181131ee0",
+      "name": "sub_181131EE0"
+    },
+    {
+      "addr": "0x180dbd2e0",
+      "name": "sub_180DBD2E0"
+    },
+    {
+      "addr": "0x182432fe0",
+      "name": "unk_182432FE0"
+    },
+    {
+      "addr": "0x182432fe8",
+      "name": "unk_182432FE8"
+    },
+    {
+      "addr": "0x18117acb0",
+      "name": "sub_18117ACB0"
+    },
+    {
+      "addr": "0x181bc2aa0",
+      "name": "aMboitDSmoke12",
+      "string": "MBOIT(%d) Smoke 1/2"
+    },
+    {
+      "addr": "0x1824330e0",
+      "name": "unk_1824330E0"
+    },
+    {
+      "addr": "0x1824330e8",
+      "name": "unk_1824330E8"
+    },
+    {
+      "addr": "0x181bc2ad0",
+      "name": "aMboitDTransluc",
+      "string": "MBOIT(%d) Translucent 1/2"
+    },
+    {
+      "addr": "0x1811447b0",
+      "name": "sub_1811447B0"
+    },
+    {
+      "addr": "0x182432ff0",
+      "name": "unk_182432FF0"
+    },
+    {
+      "addr": "0x182432ff8",
+      "name": "unk_182432FF8"
+    },
+    {
+      "addr": "0x181144a10",
+      "name": "sub_181144A10"
+    },
+    {
+      "addr": "0x181152480",
+      "name": "sub_181152480"
+    },
+    {
+      "addr": "0x1824330f0",
+      "name": "unk_1824330F0"
+    },
+    {
+      "addr": "0x1824330f8",
+      "name": "unk_1824330F8"
+    },
+    {
+      "addr": "0x181179b40",
+      "name": "sub_181179B40"
+    },
+    {
+      "addr": "0x181bc2ab8",
+      "name": "aMboitDSmokeFul",
+      "string": "MBOIT(%d) Smoke Full"
+    },
+    {
+      "addr": "0x18117faa0",
+      "name": "sub_18117FAA0"
+    },
+    {
+      "addr": "0x181144f90",
+      "name": "sub_181144F90"
+    },
+    {
+      "addr": "0x181145e50",
+      "name": "sub_181145E50"
+    },
+    {
+      "addr": "0x181bc2af0",
+      "name": "aWaterTransluce",
+      "string": "Water Translucent Combine"
+    },
+    {
+      "addr": "0x182432920",
+      "name": "qword_182432920"
+    },
+    {
+      "addr": "0x181bc2b10",
+      "name": "aWritesmokedept",
+      "string": "WriteSmokeDepth"
+    },
+    {
+      "addr": "0x181162380",
+      "name": "sub_181162380"
+    },
+    {
+      "addr": "0x1811557a0",
+      "name": "sub_1811557A0"
+    },
+    {
+      "addr": "0x182432b30",
+      "name": "unk_182432B30"
+    },
+    {
+      "addr": "0x182432b38",
+      "name": "unk_182432B38"
+    },
+    {
+      "addr": "0x1811372f0",
+      "name": "sub_1811372F0"
+    },
+    {
+      "addr": "0x181bc1970",
+      "name": "aMixedResolutio",
+      "string": "Mixed Resolution Particles"
+    },
+    {
+      "addr": "0x181148f00",
+      "name": "sub_181148F00"
+    },
+    {
+      "addr": "0x181bbf6a0",
+      "name": "aDynamic",
+      "string": "Dynamic"
+    },
+    {
+      "addr": "0x1811527e0",
+      "name": "sub_1811527E0"
+    },
+    {
+      "addr": "0x180dd95b0",
+      "name": "sub_180DD95B0"
+    },
+    {
+      "addr": "0x180194250",
+      "name": "sub_180194250"
+    },
+    {
+      "addr": "0x180daf5a0",
+      "name": "sub_180DAF5A0"
+    },
+    {
+      "addr": "0x182432f70",
+      "name": "unk_182432F70"
+    },
+    {
+      "addr": "0x182432f78",
+      "name": "unk_182432F78"
+    },
+    {
+      "addr": "0x182433f34",
+      "name": "dword_182433F34"
+    },
+    {
+      "addr": "0x181bc2b20",
+      "name": "aSmokeoverlayda",
+      "string": "SmokeOverlayDataA.vtex"
+    },
+    {
+      "addr": "0x180202760",
+      "name": "sub_180202760"
+    },
+    {
+      "addr": "0x181bc2b38",
+      "name": "aSmokeoverlayda_0",
+      "string": "SmokeOverlayDataB.vtex"
+    },
+    {
+      "addr": "0x181130190",
+      "name": "sub_181130190"
+    },
+    {
+      "addr": "0x181bc2b50",
+      "name": "aCrenderingpipe_0",
+      "string": "CRenderingPipelineCsgo::AddLayersToView(10761): "
+    },
+    {
+      "addr": "0x180dacd10",
+      "name": "sub_180DACD10"
+    },
+    {
+      "addr": "0x181bc2b88",
+      "name": "aRtSmokeoverlay",
+      "string": "rt_SmokeOverlayData"
+    },
+    {
+      "addr": "0x1824330d0",
+      "name": "unk_1824330D0"
+    },
+    {
+      "addr": "0x1824330d8",
+      "name": "unk_1824330D8"
+    },
+    {
+      "addr": "0x1824328a8",
+      "name": "unk_1824328A8"
+    },
+    {
+      "addr": "0x181bc0e28",
+      "name": "??_7CCsgoQuadRenderer@@6B@"
+    },
+    {
+      "addr": "0x181bc2ba0",
+      "name": "aOverlaysmokeup",
+      "string": "OverlaySmokeUpdate"
+    },
+    {
+      "addr": "0x1818b9204",
+      "name": "sub_1818B9204"
+    },
+    {
+      "addr": "0x1823bc640",
+      "name": "flt_1823BC640"
+    },
+    {
+      "addr": "0x1823bc63c",
+      "name": "unk_1823BC63C"
+    },
+    {
+      "addr": "0x1823bc638",
+      "name": "flt_1823BC638"
+    },
+    {
+      "addr": "0x1823bc64c",
+      "name": "flt_1823BC64C"
+    },
+    {
+      "addr": "0x1823bc648",
+      "name": "unk_1823BC648"
+    },
+    {
+      "addr": "0x1823bc644",
+      "name": "flt_1823BC644"
+    },
+    {
+      "addr": "0x1823bc658",
+      "name": "flt_1823BC658"
+    },
+    {
+      "addr": "0x1823bc654",
+      "name": "unk_1823BC654"
+    },
+    {
+      "addr": "0x1823bc650",
+      "name": "flt_1823BC650"
+    },
+    {
+      "addr": "0x1823bc664",
+      "name": "flt_1823BC664"
+    },
+    {
+      "addr": "0x1823bc660",
+      "name": "unk_1823BC660"
+    },
+    {
+      "addr": "0x1823bc65c",
+      "name": "flt_1823BC65C"
+    },
+    {
+      "addr": "0x181bc23a8",
+      "name": "aOverlaysmoke",
+      "string": "OverlaySmoke"
+    },
+    {
+      "addr": "0x180170b70",
+      "name": "sub_180170B70"
+    },
+    {
+      "addr": "0x1811537e0",
+      "name": "sub_1811537E0"
+    },
+    {
+      "addr": "0x181135f40",
+      "name": "sub_181135F40"
+    },
+    {
+      "addr": "0x181bc0340",
+      "name": "??_7CMouseTraceCoordReadbackRenderer@@6B@"
+    },
+    {
+      "addr": "0x181bc2bb8",
+      "name": "aMousetracecoor",
+      "string": "MouseTraceCoordReadback"
+    },
+    {
+      "addr": "0x181b651d0",
+      "name": "aCsgoforward",
+      "string": "CsgoForward"
+    },
+    {
+      "addr": "0x181bc2bd0",
+      "name": "aGameoverlayPar",
+      "string": "GameOverlay Particles"
+    },
+    {
+      "addr": "0x182433000",
+      "name": "unk_182433000"
+    },
+    {
+      "addr": "0x182433008",
+      "name": "unk_182433008"
+    },
+    {
+      "addr": "0x1823aead0",
+      "name": "unk_1823AEAD0"
+    },
+    {
+      "addr": "0x1823aead8",
+      "name": "unk_1823AEAD8"
+    },
+    {
+      "addr": "0x181162b90",
+      "name": "sub_181162B90"
+    },
+    {
+      "addr": "0x18200c330",
+      "name": "xmmword_18200C330"
+    },
+    {
+      "addr": "0x182432810",
+      "name": "unk_182432810"
+    },
+    {
+      "addr": "0x182432818",
+      "name": "unk_182432818"
+    },
+    {
+      "addr": "0x181b01d70",
+      "name": "xmmword_181B01D70"
+    },
+    {
+      "addr": "0x1820f5ec0",
+      "name": "dword_1820F5EC0"
+    },
+    {
+      "addr": "0x181bc2be8",
+      "name": "aToolsutilTrans",
+      "string": "ToolsUtil Translucent"
+    },
+    {
+      "addr": "0x181bc04d0",
+      "name": "aToolsTransluce",
+      "string": "Tools_Translucent"
+    },
+    {
+      "addr": "0x181134fe0",
+      "name": "sub_181134FE0"
+    },
+    {
+      "addr": "0x182432ba0",
+      "name": "unk_182432BA0"
+    },
+    {
+      "addr": "0x182432ba8",
+      "name": "unk_182432BA8"
+    },
+    {
+      "addr": "0x181bc2c00",
+      "name": "aHalfrestranslu",
+      "string": "halfResTranslucentScreenSpace"
+    },
+    {
+      "addr": "0x181bc2c20",
+      "name": "aClearsmoketarg",
+      "string": "ClearSmokeTargets"
+    },
+    {
+      "addr": "0x181619000",
+      "name": "sub_181619000"
+    },
+    {
+      "addr": "0x18196f450",
+      "name": "xmmword_18196F450"
+    },
+    {
+      "addr": "0x18161af60",
+      "name": "sub_18161AF60"
+    },
+    {
+      "addr": "0x182432928",
+      "name": "qword_182432928"
+    },
+    {
+      "addr": "0x181bc2c38",
+      "name": "aScreenparticle",
+      "string": "ScreenParticleCombine"
+    },
+    {
+      "addr": "0x181bc2c50",
+      "name": "aTranslucentScr",
+      "string": "Translucent Screen Space"
+    },
+    {
+      "addr": "0x18088b930",
+      "name": "sub_18088B930"
+    },
+    {
+      "addr": "0x1807cebd0",
+      "name": "sub_1807CEBD0"
+    },
+    {
+      "addr": "0x18115d1e0",
+      "name": "sub_18115D1E0"
+    },
+    {
+      "addr": "0x1807f18f0",
+      "name": "sub_1807F18F0"
+    },
+    {
+      "addr": "0x182076cb0",
+      "name": "dword_182076CB0"
+    },
+    {
+      "addr": "0x182433f38",
+      "name": "flt_182433F38"
+    },
+    {
+      "addr": "0x181bc2c70",
+      "name": "aLetterboxtop",
+      "string": "LetterboxTop"
+    },
+    {
+      "addr": "0x181bc2c80",
+      "name": "aLetterboxbotto",
+      "string": "LetterboxBottom"
+    },
+    {
+      "addr": "0x18115a1c0",
+      "name": "sub_18115A1C0"
+    },
+    {
+      "addr": "0x182432b80",
+      "name": "unk_182432B80"
+    },
+    {
+      "addr": "0x182432b88",
+      "name": "unk_182432B88"
+    },
+    {
+      "addr": "0x182432b90",
+      "name": "unk_182432B90"
+    },
+    {
+      "addr": "0x182432b98",
+      "name": "unk_182432B98"
+    },
+    {
+      "addr": "0x18115e2d0",
+      "name": "sub_18115E2D0"
+    },
+    {
+      "addr": "0x182432e50",
+      "name": "unk_182432E50"
+    },
+    {
+      "addr": "0x181130170",
+      "name": "sub_181130170"
+    },
+    {
+      "addr": "0x181bc2c90",
+      "name": "aPlayerhealthgl",
+      "string": "PlayerHealthGlow"
+    },
+    {
+      "addr": "0x1824329a8",
+      "name": "unk_1824329A8"
+    },
+    {
+      "addr": "0x1824329b0",
+      "name": "unk_1824329B0"
+    },
+    {
+      "addr": "0x181bc2ca8",
+      "name": "aAlbedoorreflec",
+      "string": "AlbedoOrReflectivity"
+    },
+    {
+      "addr": "0x1820b6190",
+      "name": "dword_1820B6190"
+    },
+    {
+      "addr": "0x181957830",
+      "name": "Plat_FloatTime"
+    },
+    {
+      "addr": "0x182433f3c",
+      "name": "flt_182433F3C"
+    },
+    {
+      "addr": "0x181bc2cc0",
+      "name": "aGrenadecamera",
+      "string": "GrenadeCamera"
+    },
+    {
+      "addr": "0x182432910",
+      "name": "unk_182432910"
+    },
+    {
+      "addr": "0x181bc3520",
+      "name": "xmmword_181BC3520"
+    },
+    {
+      "addr": "0x182433f40",
+      "name": "dword_182433F40"
+    },
+    {
+      "addr": "0x182319b1c",
+      "name": "unk_182319B1C"
+    },
+    {
+      "addr": "0x181957720",
+      "name": "?FindKey@KeyValues@@QEAAPEAV1@PEBD_N@Z"
+    },
+    {
+      "addr": "0x181bc2cd0",
+      "name": "aMaterialsystem_0",
+      "string": "MaterialSystem2/ShaderIDColors"
+    },
+    {
+      "addr": "0x181957710",
+      "name": "?GetFirstSubKey@KeyValues@@QEAAPEAV1@XZ"
+    },
+    {
+      "addr": "0x181957740",
+      "name": "?GetName@KeyValues@@QEBAPEBDXZ"
+    },
+    {
+      "addr": "0x181956810",
+      "name": "?GetColor@KeyValues@@QEBA?AVColor@@PEBDAEBV2@@Z"
+    },
+    {
+      "addr": "0x18015ecf0",
+      "name": "sub_18015ECF0"
+    },
+    {
+      "addr": "0x181957708",
+      "name": "?GetNextKey@KeyValues@@QEAAPEAV1@XZ"
+    },
+    {
+      "addr": "0x1811166e0",
+      "name": "sub_1811166E0"
+    },
+    {
+      "addr": "0x181bc2cf0",
+      "name": "aBackgroundfors",
+      "string": "BackgroundForShaderIDs"
+    },
+    {
+      "addr": "0x18114c3e0",
+      "name": "sub_18114C3E0"
+    },
+    {
+      "addr": "0x1811363b0",
+      "name": "sub_1811363B0"
+    },
+    {
+      "addr": "0x1811530b0",
+      "name": "sub_1811530B0"
+    },
+    {
+      "addr": "0x182433180",
+      "name": "unk_182433180"
+    },
+    {
+      "addr": "0x182433188",
+      "name": "unk_182433188"
+    },
+    {
+      "addr": "0x18113bb60",
+      "name": "sub_18113BB60"
+    },
+    {
+      "addr": "0x1825c74a8",
+      "name": "unk_1825C74A8"
+    },
+    {
+      "addr": "0x18113b690",
+      "name": "sub_18113B690"
+    },
+    {
+      "addr": "0x181bc2d08",
+      "name": "aPanoramaalphac",
+      "string": "PanoramaAlphaCopy"
+    },
+    {
+      "addr": "0x181bc2d20",
+      "name": "aCopyForPanoram",
+      "string": "Copy for Panorama Alpha"
+    },
+    {
+      "addr": "0x181bc2d38",
+      "name": "aPanoramaalphas",
+      "string": "PanoramaAlphaSetup"
+    },
+    {
+      "addr": "0x182432960",
+      "name": "unk_182432960"
+    },
+    {
+      "addr": "0x18113c520",
+      "name": "sub_18113C520"
+    },
+    {
+      "addr": "0x180c75920",
+      "name": "sub_180C75920"
+    },
+    {
+      "addr": "0x180db3f10",
+      "name": "sub_180DB3F10"
+    },
+    {
+      "addr": "0x182432978",
+      "name": "unk_182432978"
+    },
+    {
+      "addr": "0x181bc2d50",
+      "name": "aFadeToBlack",
+      "string": "Fade To Black"
+    },
+    {
+      "addr": "0x181bc0ee0",
+      "name": "??_7CCsgoMagBorderProceduralLayerRenderer@@6B@"
+    },
+    {
+      "addr": "0x181bc2d60",
+      "name": "aMagborder",
+      "string": "MagBorder"
+    },
+    {
+      "addr": "0x18114aac0",
+      "name": "sub_18114AAC0"
+    },
+    {
+      "addr": "0x18114a750",
+      "name": "sub_18114A750"
+    },
+    {
+      "addr": "0x18116e1c0",
+      "name": "sub_18116E1C0"
+    }
+  ]
+}

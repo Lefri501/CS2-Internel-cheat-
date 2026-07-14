@@ -1,0 +1,95 @@
+﻿  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_tables.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  kiero.cpp
+  safetyhook.cpp
+  cutlbuffer.cpp
+  utlhash.cpp
+  keyvalues.cpp
+  ISchemaClass.cpp
+  CCSPlayerController.cpp
+  C_CSPlayerPawn.cpp
+  C_CSWeaponBase.cpp
+  aim.cpp
+  hitchance.cpp
+  autowall.cpp
+C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\external\safetyhook\Zydis.h(2,9): warning C4005: 'ZYDIS_STATIC_BUILD': macro redefinition
+  (compiling source file 'external/safetyhook/safetyhook.cpp')
+      C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\external\safetyhook\Zydis.h(2,9):
+      'ZYDIS_STATIC_BUILD' previously declared on the command line
+  
+  gamemode.cpp
+  bones.cpp
+  trace.cpp
+  nade_pred.cpp
+  widgets.cpp
+  steam_avatar.cpp
+C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\source\templeware\interfaces\CUserCmd\CUserCmd.h(398,7): warning C4099: 'CUserCmd': type name first seen using 'struct' now seen using 'class'
+  (compiling source file 'source/templeware/features/aim/aim.cpp')
+      C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\source\templeware\interfaces\CUserCmd\CUserCmd.h(398,7):
+      see declaration of 'CUserCmd'
+  
+  notify.cpp
+  chams.cpp
+  glow.cpp
+  skinchanger.cpp
+  knife_skins.cpp
+  glove_weapon.cpp
+  agent_changer.cpp
+  skin_preview.cpp
+  movement.cpp
+  prediction.cpp
+  antiflash.cpp
+  fov.cpp
+  scope.cpp
+  removals.cpp
+  CGameEntitySystem.cpp
+  interfaces.cpp
+  debug.cpp
+  config.cpp
+  world.cpp
+  weather.cpp
+  hooks.cpp
+  keybinds.cpp
+  hud.cpp
+  log.cpp
+  console.cpp
+  math.cpp
+  vector.cpp
+  viewmatrix.cpp
+  gaa.cpp
+  memsafe.cpp
+  patternscan.cpp
+  module.cpp
+  memsecurity.cpp
+  sehsupport.cpp
+  threadspoof.cpp
+  vacdetect.cpp
+C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\source\templeware\features\aim\aim.h(3,8): warning C4099: 'CUserCmd': type name first seen using 'class' now seen using 'struct'
+  (compiling source file 'source/templeware/hooks/hooks.cpp')
+      C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\source\templeware\interfaces\CUserCmd\CUserCmd.h(398,7):
+      see declaration of 'CUserCmd'
+  
+  playerHook.cpp
+  players.cpp
+  templeware.cpp
+  main.cpp
+  menu.cpp
+  visuals.cpp
+  schema.cpp
+  Zydis.c
+C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\external\safetyhook\Zydis.h(2,9): warning C4005: 'ZYDIS_STATIC_BUILD': macro redefinition
+  (compiling source file 'external/safetyhook/Zydis.c')
+      C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\TempleWare-CS2\external\safetyhook\Zydis.h(2,9):
+      'ZYDIS_STATIC_BUILD' previously declared on the command line
+  
+     Creating library C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\x64\Release\TempleWare.lib and object C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\x64\Release\TempleWare.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 10030 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  TempleWare-CS2.vcxproj -> C:\Users\Administrator\Desktop\cs2 project\TempleWare-CS2\x64\Release\TempleWare.dll
