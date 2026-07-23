@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{04B17470-CB82-4724-904B-25445926AB86}</ProjectGuid>
+    <RootNamespace>LefrizzelAi</RootNamespace>
+    <ProjectName>Lefrizzel Ai</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <TargetName>Lefrizzel Ai</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x64;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <TargetName>Lefrizzel Ai</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\safetyhook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp23</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard_C>Default</LanguageStandard_C>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)external\safetyhook;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalUsingDirectories>
+      </AdditionalUsingDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>d3d11.lib;dxgi.lib;winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="external\imgui\imgui.cpp" />
+    <ClCompile Include="external\imgui\imgui_demo.cpp" />
+    <ClCompile Include="external\imgui\imgui_draw.cpp" />
+    <ClCompile Include="external\imgui\imgui_tables.cpp" />
+    <ClCompile Include="external\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="external\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="external\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="external\kiero\kiero.cpp" />
+    <ClCompile Include="external\safetyhook\safetyhook.cpp" />
+    <ClCompile Include="external\safetyhook\Zydis.c" />
+    <ClCompile Include="source\cs2\datatypes\cutlbuffer\cutlbuffer.cpp" />
+    <ClCompile Include="source\cs2\datatypes\cutl\utlhash\utlhash.cpp" />
+    <ClCompile Include="source\cs2\datatypes\keyvalues\keyvalues.cpp" />
+    <ClCompile Include="source\cs2\datatypes\schema\ISchemaClass\ISchemaClass.cpp" />
+    <ClCompile Include="source\cs2\entity\CCSPlayerController\CCSPlayerController.cpp" />
+    <ClCompile Include="source\cs2\entity\C_CSPlayerPawn\C_CSPlayerPawn.cpp" />
+    <ClCompile Include="source\cs2\entity\C_CSWeaponBase\C_CSWeaponBase.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\aim\aim.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\aim\aim_common.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\autofire\autofire.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\triggerbot\triggerbot.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\hitchance\hitchance.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\nospread\nospread.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\autowall\autowall.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\gamemode\gamemode.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\engine2\engine2.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\w2s\w2s.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\bomb\bomb.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\knifebot\knifebot.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\auto_pistol\auto_pistol.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\enemy_spec\enemy_spec.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\bones\bones.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\trace\trace.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\nade_pred\nade_pred.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\nade_lineup\nade_lineup.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\hitmarker\hitmarker.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\tracers\tracers.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\hitsound\hitsound.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\sound_esp\sound_esp.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\vote\vote.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\widgets\widgets.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\widgets\steam_avatar.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\notify\notify.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\chams\chams.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\glow\glow.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\skinchanger.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\knife_skins.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\glove_weapon.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\agent_changer.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\knife_custom.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\custom_assets.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\skin_preview.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\skinchanger\custom_paint.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\panorama\panorama.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\movement\movement.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\movement\jumpbug.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\backtrack\backtrack.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\hitlog\hitlog.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\input_inject\input_inject.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\subtick_move\subtick_move.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\cl_bypass\cl_bypass.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\prediction\prediction.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\sdk_prio_a\sdk_prio_a.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\visuals\antiflash\antiflash.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\visuals\fov\fov.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\visuals\scope\scope.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\visuals\removals\removals.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\interfaces\CGameEntitySystem\CGameEntitySystem.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\interfaces\interfaces.cpp" />
+    <ClCompile Include="source\debug\debug.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\config\config.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\world\world.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\world\weather.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\world\fog_handler.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\hooks\hooks.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\keybinds\keybinds.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\menu\hud.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\logging\log.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\console\console.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\math\math.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\math\vector\vector.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\math\viewmatrix\viewmatrix.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\memory\gaa\gaa.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\memory\memsafe\memsafe.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\memory\patternscan\patternscan.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\module\module.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\security\memsecurity.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\security\sehsupport.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\security\threadspoof.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\security\vacdetect.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\players\hook\playerHook.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\players\players.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\lefrizzel Ai.cpp" />
+    <ClCompile Include="source\main.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\menu\menu.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\menu\menu_ui.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\features\visuals\visuals.cpp" />
+    <ClCompile Include="source\lefrizzel Ai\utils\schema\schema.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="external\imgui\imconfig.h" />
+    <ClInclude Include="external\imgui\imgui.h" />
+    <ClInclude Include="external\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="external\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="external\imgui\imgui_internal.h" />
+    <ClInclude Include="external\imgui\imstb_rectpack.h" />
+    <ClInclude Include="external\imgui\imstb_textedit.h" />
+    <ClInclude Include="external\imgui\imstb_truetype.h" />
+    <ClInclude Include="external\json\json.hpp" />
+    <ClInclude Include="source\cs2\datatypes\cutlbuffer\cutlbuffer.h" />
+    <ClInclude Include="source\cs2\datatypes\cutl\utlhash\utlhash.h" />
+    <ClInclude Include="source\cs2\datatypes\keyvalues\keyvalues.h" />
+    <ClInclude Include="source\cs2\datatypes\schema\ISchemaClass\ISchemaClass.h" />
+    <ClInclude Include="source\cs2\datatypes\viewmatrix\viewmatrix.h" />
+    <ClInclude Include="source\cs2\entity\C_AggregateSceneObject\C_AggregateSceneObject.h" />
+    <ClInclude Include="source\cs2\entity\C_BaseEntity\C_BaseEntity.h" />
+    <ClInclude Include="source\cs2\entity\CCSPlayerController\CCSPlayerController.h" />
+    <ClInclude Include="source\cs2\entity\C_CSPlayerPawn\C_CSPlayerPawn.h" />
+    <ClInclude Include="source\cs2\entity\C_CSWeaponBase\C_CSWeaponBase.h" />
+    <ClInclude Include="source\cs2\entity\C_EntityInstance\C_EntityInstance.h" />
+    <ClInclude Include="source\cs2\entity\C_Material\C_Material.h" />
+    <ClInclude Include="source\cs2\entity\handle.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\aim\aim.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\aim\aim_common.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\autofire\autofire.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\triggerbot\triggerbot.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\hitchance\hitchance.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\nospread\nospread.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\autowall\autowall.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\gamemode\gamemode.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\trace\trace.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\nade_pred\nade_pred.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\nade_lineup\nade_lineup.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\hitmarker\hitmarker.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\hitsound\hitsound.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\sound_esp\sound_esp.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\vote\vote.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\panorama\panorama.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\widgets\widgets.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\widgets\steam_avatar.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\chams\chams.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\skinchanger.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\custom_assets.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\knife_custom.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\knife_skins.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\skin_preview.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\skinchanger\custom_paint.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\movement\movement.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\movement\jumpbug.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\backtrack\backtrack.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\hitlog\hitlog.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\input_inject\input_inject.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\subtick_move\subtick_move.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\auto_pistol\auto_pistol.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\enemy_spec\enemy_spec.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\prediction\prediction.h" />
+    <ClInclude Include="source\lefrizzel Ai\interfaces\CCSGOInput\CCSGOInput.h" />
+    <ClInclude Include="source\lefrizzel Ai\interfaces\CGameEntitySystem\CGameEntitySystem.h" />
+    <ClInclude Include="source\lefrizzel Ai\interfaces\CUserCmd\CUserCmd.h" />
+    <ClInclude Include="source\lefrizzel Ai\interfaces\IEngineClient\IEngineClient.h" />
+    <ClInclude Include="source\lefrizzel Ai\interfaces\interfaces.h" />
+    <ClInclude Include="source\debug\debug.h" />
+    <ClInclude Include="source\lefrizzel Ai\config\config.h" />
+    <ClInclude Include="source\lefrizzel Ai\config\configmanager.h" />
+    <ClInclude Include="source\lefrizzel Ai\hooks\hooks.h" />
+    <ClInclude Include="source\lefrizzel Ai\hooks\includeHooks.h" />
+    <ClInclude Include="source\lefrizzel Ai\keybinds\keybinds.h" />
+    <ClInclude Include="source\lefrizzel Ai\menu\hud.h" />
+    <ClInclude Include="source\lefrizzel Ai\offsets\offsets.h" />
+    <ClInclude Include="source\lefrizzel Ai\renderer\icons.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\fnv1a\fnv1a.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\logging\log.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\console\console.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\math.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\utlmemory\utlmemory.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\utlstring\utlstring.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\utlstronghandle\utlstronghandle.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\utlvector\utlvector.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\vector\vector.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\math\viewmatrix\viewmatrix.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\memory\gaa\gaa.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\memory\Interface\Interface.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\memory\memorycommon.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\memory\patternscan\patternscan.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\memory\vfunc\vfunc.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\module\module.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\crypto\xorstr.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\security\memsecurity.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\security\sehsupport.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\security\threadspoof.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\security\vacdetect.h" />
+    <ClInclude Include="source\lefrizzel Ai\players\hook\playerHook.h" />
+    <ClInclude Include="source\lefrizzel Ai\players\players.h" />
+    <ClInclude Include="source\lefrizzel Ai\renderer\renderer.h" />
+    <ClInclude Include="source\lefrizzel Ai\lefrizzel Ai.h" />
+    <ClInclude Include="source\features\visuals\visuals.h" />
+    <ClInclude Include="source\globals\globals.h" />
+    <ClInclude Include="source\offsets\offsets.h" />
+    <ClInclude Include="source\includes.h" />
+    <ClInclude Include="external\kiero\kiero.h" />
+    <ClInclude Include="external\safetyhook\safetyhook.hpp" />
+    <ClInclude Include="external\safetyhook\Zydis.h" />
+    <ClInclude Include="source\lefrizzel Ai\menu\menu.h" />
+    <ClInclude Include="source\lefrizzel Ai\menu\menu_ui.h" />
+    <ClInclude Include="source\lefrizzel Ai\features\visuals\visuals.h" />
+    <ClInclude Include="source\lefrizzel Ai\utils\schema\schema.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,13 +1,13 @@
-# TempleWare-CS2 — Project Memory
+# Lefrizzel Ai — Project Memory
 
 ## Project
 Internal CS2 (Counter-Strike 2) cheat DLL. C++23, VS2022 (v143), Windows SDK 10.0.26100.0, x64 only.
 
 ## Build
-`TempleWare-CS2.sln` → `TempleWare.dll` (DynamicLibrary). Deps: `d3d11.lib`, `dxgi.lib`. Preprocessor: `ZYDIS_STATIC_BUILD`. Exception: `/EHa`. External: `external/` (imgui DX11/Win32, kiero, safetyhook+Zydis, lz4, stb_image, nlohmann/json).
+`Lefrizzel-Ai.sln` → `Lefrizzel Ai.dll` (DynamicLibrary). Deps: `d3d11.lib`, `dxgi.lib`. Preprocessor: `ZYDIS_STATIC_BUILD`. Exception: `/EHa`. External: `external/` (imgui DX11/Win32, kiero, safetyhook+Zydis, lz4, stb_image, nlohmann/json).
 
 ## Entry & Init
-`main.cpp` → DllMain detects manual map via PEB walk → `MainThread` → waits for `d3d11.dll` + `client.dll` → kiero binds `IDXGISwapChain::Present` index 8 → `hkPresent` is the frame callback (ImGui newframe → menu → HUD → ESP → weather). `TempleWare::init()` order: modules → schema → interfaces → visuals → chams materials → hooks → VAC monitor → memory hardening.
+`main.cpp` → DllMain detects manual map via PEB walk → `MainThread` → waits for `d3d11.dll` + `client.dll` → kiero binds `IDXGISwapChain::Present` index 8 → `hkPresent` is the frame callback (ImGui newframe → menu → HUD → ESP → weather). `LefrizzelAi::init()` order: modules → schema → interfaces → visuals → chams materials → hooks → VAC monitor → memory hardening.
 
 ## Hooks (SafetyHook mid-function)
 Installed in `Hooks::init()`. All hooks use `CInlineHookObj<T>` wrapper. SEH-guarded. Key hooks: `FrameStageNotify`, `CreateMove`, `DrawArray` (chams), `DrawGlow`, `OverrideView`, `FireEventClientSide` (skin changer killfeed), `LevelInit`, `SetupMapInfo` (weather), `GetRenderFov`, `MouseInputEnabled`, `IsRelativeMouseMode`.
@@ -49,3 +49,59 @@ External dump at `cs2 sdk dump all you need/` (build 14169, 502/505 sigs). Singl
 - Schema binding via `utils/schema/`
 - `renderer/` owns ImGui init, menu + HUD + visual draw
 - Console output, file logging available
+
+# CS2 IDA + pattern dump workflow
+
+When reversing CS2 (patterns, offsets, vfuncs, map name, hooks), use **IDA MCP** together with the local SDK dump. Do **not** guess paths or invent signatures.
+
+## 1) Pattern / SDK dump (check first)
+
+Root:
+
+`C:\Users\Administrator\Desktop\cs2 project\Lefrizzel-Ai\cs2 sdk dump all you need`
+
+| Resource | Path |
+|----|---|
+| **patterns.hpp** | `...\Patterns\patterns.hpp` |
+| **patterns.json** | `...\Patterns\patterns.json` |
+| Offsets | `...\offsets\` |
+| Schemas | `...\schemas\` |
+| Interfaces | `...\interfaces\` |
+
+**Before IDA:** look up the named pattern in `patterns.hpp` / `patterns.json`, then `find_bytes` that signature in the matching `.i64`.
+
+## 2) IDA databases (`.dll.i64`)
+
+Install root:
+
+`C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\`
+
+| Module | `.i64` path |
+|-----|----|
+| **client.dll** | `...\game\csgo\bin\win64\client.dll.i64` |
+| **server.dll** | `...\game\csgo\bin\win64\server.dll.i64` |
+| **engine2.dll** | `...\game\bin\win64\engine2.dll.i64` |
+
+Absolute:
+
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\bin\win64\client.dll.i64`
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\bin\win64\server.dll.i64`
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\bin\win64\engine2.dll.i64`
+
+Other modules in `game\bin\win64\`: `materialsystem2`, `panorama`, `particles`, `scenesystem`, `schemasystem`, `soundsystem`, `tier0`.
+
+**Lefrizzel Ai note:** client inject only. `server.dll` patterns apply on listen/dedicated server — not VAC MM client process.
+
+## 3) Workflow
+
+1. Read dump: `patterns.hpp` / `patterns.json`.
+2. `idb_list` — reuse open session if present.
+3. Else `idb_open` absolute `.i64`.
+4. `find_bytes` → `decompile` / `analyze_function`.
+
+
+skills always to use:
+reverse-engineering
+idapython
+game-hacking
+game-engine

@@ -306,3 +306,60 @@ rtk pip list            rtk pnpm install        rtk npm run <script>
 - For debugging, use raw command without rtk prefix
 - `rtk proxy <cmd>` runs command without filtering but tracks usage
 <!-- /headroom:rtk-instructions -->
+
+
+# CS2 IDA + pattern dump workflow
+
+When reversing CS2 (patterns, offsets, vfuncs, map name, hooks), use **IDA MCP** together with the local SDK dump. Do **not** guess paths or invent signatures.
+
+## 1) Pattern / SDK dump (check first)
+
+Root:
+
+`C:\Users\Administrator\Desktop\cs2 project\Lefrizzel-Ai\cs2 sdk dump all you need`
+
+| Resource | Path |
+|----|---|
+| **patterns.hpp** | `...\Patterns\patterns.hpp` |
+| **patterns.json** | `...\Patterns\patterns.json` |
+| Offsets | `...\offsets\` |
+| Schemas | `...\schemas\` |
+| Interfaces | `...\interfaces\` |
+
+**Before IDA:** look up the named pattern in `patterns.hpp` / `patterns.json`, then `find_bytes` that signature in the matching `.i64`.
+
+## 2) IDA databases (`.dll.i64`)
+
+Install root:
+
+`C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\`
+
+| Module | `.i64` path |
+|-----|----|
+| **client.dll** | `...\game\csgo\bin\win64\client.dll.i64` |
+| **server.dll** | `...\game\csgo\bin\win64\server.dll.i64` |
+| **engine2.dll** | `...\game\bin\win64\engine2.dll.i64` |
+
+Absolute:
+
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\bin\win64\client.dll.i64`
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\csgo\bin\win64\server.dll.i64`
+- `C:\Program Files (x86)\Steam\steamapps\common\Counter-Strike Global Offensive\game\bin\win64\engine2.dll.i64`
+
+Other modules in `game\bin\win64\`: `materialsystem2`, `panorama`, `particles`, `scenesystem`, `schemasystem`, `soundsystem`, `tier0`.
+
+**Lefrizzel Ai note:** client inject only. `server.dll` patterns apply on listen/dedicated server — not VAC MM client process.
+
+## 3) Workflow
+
+1. Read dump: `patterns.hpp` / `patterns.json`.
+2. `idb_list` — reuse open session if present.
+3. Else `idb_open` absolute `.i64`.
+4. `find_bytes` → `decompile` / `analyze_function`.
+
+
+skills always to use:
+reverse-engineering
+idapython
+game-hacking
+game-engine
