@@ -63,7 +63,6 @@ Use any manual-map injector. The DLL detects manual-map injection and initialize
 - Process Hacker Native Injector
 - Extreme Injector (manual map mode)
 
-Do **not** use LoadLibrary injection — the DLL only maps through manual-map.
 
 ---
 
