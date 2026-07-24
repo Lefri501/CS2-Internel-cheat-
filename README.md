@@ -91,7 +91,7 @@ cs2 sdk dump all you need/        # CS2 SDK dump (offsets, patterns, schemas)
 
 ## Credits
 
-- **AI (Claude/GPT)** — entire codebase
+- **AI (Claude/GROK AI)** — entire codebase
 - **IDA Pro MCP** — all reverse engineering and pattern discovery
 - The CS2 reversing community for public SDK references
 
